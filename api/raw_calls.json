@@ -377,6 +377,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"textMessage\": {\n    \"text\": \"<message>\"\n  },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "AZR": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -425,6 +426,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"mediaMessage\": {\n    \"mediatype\": \"<mediatype>\",\n    \"caption\": \"<message>\",\n    \"media\": \"<url_media>\"\n  },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "Adb": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -483,6 +485,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"buttonMessage\": {\n    \"title\": <title>,\n    \"description\": \"<message>\" ,\n    \"footerText\": <footer>,\n    \"buttons\": [\n      <buttons>\n    ]\n          <media-opcional>\n      \n  },\n \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "Aab": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -540,6 +543,7 @@
             "url": "[url]/message/sendButtons/[instance]",
             "url_params": {
                 "AVF": {
+                    "doc": "",
                     "key": "url"
                 },
                 "AaI": {
@@ -554,6 +558,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"locationMessage\": {\n    \"name\": \"<name>\",\n    \"address\": \"<address>\",\n    \"latitude\": <latitude>,\n    \"longitude\": <longitude>\n  },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "AaA": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -616,6 +621,7 @@
             "body": "{\n    \"number\": \"<number>\",\n    \"listMessage\": {\n        \"title\": <title>,\n        \"description\": \"<message>\",\n        \"footerText\": <footer>,\n        \"buttonText\": \"<button>\",\n\t\t\"sections\": [ <sections> ]\n    },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "AbY": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -686,6 +692,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"contactMessage\": [\n  <contacts>\n  ],\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "Abo": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -786,7 +793,7 @@
             "body": "{\n  \"numbers\": [\n    <numbers>\n   \n  ]\n}",
             "body_params": {
                 "AcI": {
-                    "doc": "Example:\n\"552198765431\", \"551198765431\"",
+                    "doc": "Example:\n\"552198765431\", \"551198765431\"\n\nOptions:\n1. just put the phone number\n2. number@s.whatsapp.net\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net",
                     "key": "numbers",
                     "private": true,
                     "value": ""
@@ -832,6 +839,7 @@
             "body": "{\n  \"number\": \"<number>\"\n}",
             "body_params": {
                 "AcM": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -1461,6 +1469,7 @@
             "body": "{\n    \"number\": \"<number>\",\n    \"listMessage\": {\n        \"title\": <title>,\n        \"description\": \"<message>\",\n        \"footerText\": <footer>,\n        \"buttonText\": \"<button>\",\n        \"sections\": [\n                 \t   {    \"title\": \"<title_section>\",\n       \t\t\t\t\t\t \"rows\": [ <rows> ]\n        \t\t\t\t\t}\n      \t\t        ]\n    },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "AbJ": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -1538,6 +1547,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"audioMessage\": {\n    \"audio\": \"<audio_url>\"\n  },\n  \"options\": {\n    \"delay\": <delay>,\n    \"presence\": \"recording\"\n  }\n}",
             "body_params": {
                 "AZR": {
+                    "doc": "Options:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
@@ -1590,7 +1600,7 @@
             "body": "{\n  \"number\": \"<number>\",\n  \"templateMessage\": {\n    \"title\": <title>,\n    \"description\": \"<message>\" ,\n    \"footerText\": <footer>,\n    \"buttons\": [\n      <buttons>\n    ]\n          <media-opcional>\n      \n  },\n \"options\": {\n    \"delay\": <delay>\n  }\n}",
             "body_params": {
                 "Aab": {
-                    "doc": "iOS devices do not receive this type of message.",
+                    "doc": ">>> iOS devices do not receive this type of message. <<<\n\nOptions:\n1. just put the phone number\n2. number@s.whatsapp.net - for contact\n3. groupid@g.us - for groups\n\nRecommendation, if you are going to send it to a Brazilian number, put only the number, if you are going to send it to an international number, it is preferable to put number@s.whatsapp.net\n\nAnd of course, if it's a group, it's mandatory to put the groupid@g.us",
                     "key": "number",
                     "private": true,
                     "value": ""
