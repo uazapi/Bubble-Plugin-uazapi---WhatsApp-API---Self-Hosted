@@ -1,0 +1,1694 @@
+{
+    "auth": "none",
+    "calls": {
+        "ATo": {
+            "body": "{\n  \"where\": {\n    \"key\": {\n      \"remoteJid\": \"<remoteJid>\"\n    }\n  },\n  \"limit\": <limit>\n}",
+            "body_params": {
+                "AcQ": {
+                    "doc": "number@s.whatsapp.net - for contact\ngroupid@g.us - for groups",
+                    "key": "remoteJid",
+                    "private": true,
+                    "value": ""
+                },
+                "AcR": {
+                    "key": "limit",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "ATp": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYY": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "is_list": true,
+            "method": "post",
+            "name": "📄 Find messages",
+            "publish_as": "data",
+            "rank": 22,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.ATo",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ATo\":{\"caption\":\"📄 Find message\",\"fields\":{\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"16C0D60914AB4AA9E412A05560A8E4D0\",\"path\":[\"key\",\"id\"]},\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"63cb3847f8ad41b3fae57d51\",\"path\":[\"_id\"]},\"_p_pushName\":{\"ret_value\":\"text\",\"caption\":\"pushName\",\"sample_value\":\"Fernanda - Eu Agendei\",\"path\":[\"pushName\"]},\"_p_message.conversation\":{\"ret_value\":\"text\",\"caption\":\"message conversation\",\"sample_value\":\"3\",\"path\":[\"message\",\"conversation\"]},\"_p_source\":{\"ret_value\":\"text\",\"caption\":\"source\",\"sample_value\":\"android\",\"path\":[\"source\"]},\"_p_messageTimestamp\":{\"ret_value\":\"number\",\"caption\":\"messageTimestamp\",\"sample_value\":1674262599,\"path\":[\"messageTimestamp\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521986231256@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p___v\":{\"ret_value\":\"number\",\"caption\":\"__v\",\"sample_value\":0,\"path\":[\"__v\"]},\"_p_message.messageContextInfo.deviceListMetadata.senderKeyHash\":{\"ret_value\":\"text\",\"caption\":\"message messageContextInfo deviceListMetadata senderKeyHash\",\"sample_value\":\"V9xJAJuI5TK5KQ==\",\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"senderKeyHash\"]},\"_p_message.messageContextInfo.deviceListMetadata.senderTimestamp.low\":{\"ret_value\":\"number\",\"caption\":\"message messageContextInfo deviceListMetadata senderTimestamp low\",\"sample_value\":1674247810,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"senderTimestamp\",\"low\"]},\"_p_message.messageContextInfo.deviceListMetadata.senderTimestamp.high\":{\"ret_value\":\"number\",\"caption\":\"message messageContextInfo deviceListMetadata senderTimestamp high\",\"sample_value\":0,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"senderTimestamp\",\"high\"]},\"_p_message.messageContextInfo.deviceListMetadata.senderTimestamp.unsigned\":{\"ret_value\":\"boolean\",\"caption\":\"message messageContextInfo deviceListMetadata senderTimestamp unsigned\",\"sample_value\":true,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"senderTimestamp\",\"unsigned\"]},\"_p_message.messageContextInfo.deviceListMetadata.recipientKeyHash\":{\"ret_value\":\"text\",\"caption\":\"message messageContextInfo deviceListMetadata recipientKeyHash\",\"sample_value\":\"wM7H2Poe9/uZKg==\",\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"recipientKeyHash\"]},\"_p_message.messageContextInfo.deviceListMetadata.recipientTimestamp.low\":{\"ret_value\":\"number\",\"caption\":\"message messageContextInfo deviceListMetadata recipientTimestamp low\",\"sample_value\":1674162296,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"recipientTimestamp\",\"low\"]},\"_p_message.messageContextInfo.deviceListMetadata.recipientTimestamp.high\":{\"ret_value\":\"number\",\"caption\":\"message messageContextInfo deviceListMetadata recipientTimestamp high\",\"sample_value\":0,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"recipientTimestamp\",\"high\"]},\"_p_message.messageContextInfo.deviceListMetadata.recipientTimestamp.unsigned\":{\"ret_value\":\"boolean\",\"caption\":\"message messageContextInfo deviceListMetadata recipientTimestamp unsigned\",\"sample_value\":true,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadata\",\"recipientTimestamp\",\"unsigned\"]},\"_p_message.messageContextInfo.deviceListMetadataVersion\":{\"ret_value\":\"number\",\"caption\":\"message messageContextInfo deviceListMetadataVersion\",\"sample_value\":2,\"path\":[\"message\",\"messageContextInfo\",\"deviceListMetadataVersion\"]},\"_p_message.messageContextInfo.messageSecret\":{\"ret_value\":\"text\",\"caption\":\"message messageContextInfo messageSecret\",\"sample_value\":\"\",\"path\":[\"message\",\"messageContextInfo\",\"messageSecret\"]},\"_p_message.messageContextInfo.paddingBytes\":{\"ret_value\":\"text\",\"caption\":\"message messageContextInfo paddingBytes\",\"sample_value\":\"\",\"path\":[\"message\",\"messageContextInfo\",\"paddingBytes\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedButtons\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.ATo.message.templateMessage.hydratedTemplate.hydratedButtons\",\"caption\":\"message templateMessage hydratedTemplate hydratedButtons\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedButtons\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedTitleText\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate hydratedTitleText\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedTitleText\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/d/f/AqhiUnYdmPEz7LYZJlVYLwxt_yCe8uEe9oooedQOBW8k.enc\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"url\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mimetype\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileSha256\",\"sample_value\":\"X1OMOqAqF7P0FeaIYE9e17VPcnsqMsMumAlNWJckJl4=\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileLength.low\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileLength low\",\"sample_value\":289553,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileLength\",\"low\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileLength.high\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileLength high\",\"sample_value\":0,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileLength\",\"high\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileLength.unsigned\":{\"ret_value\":\"boolean\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileLength unsigned\",\"sample_value\":true,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileLength\",\"unsigned\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.height\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage height\",\"sample_value\":1165,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"height\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.width\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage width\",\"sample_value\":1599,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"width\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mediaKey\",\"sample_value\":\"ETkzOUE7xWpePmqRsJalLhp889DgrhvyY00v/uYDUjk=\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKey\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileEncSha256\",\"sample_value\":\"zmNAnaK7iVeiw6JIdilE1iGPtZUSLtzvfZAmI+zC2yI=\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileEncSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/12083008_155328693605183_4343688339030990777_n.enc?ccb=11-4&oh=01_AdSthjBAq9Q3hQ6RY5dqBT7HWXhiekwgbANlkCMjb8NDEg&oe=63F29C94\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"directPath\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mediaKeyTimestamp.low\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mediaKeyTimestamp low\",\"sample_value\":1674253808,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKeyTimestamp\",\"low\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mediaKeyTimestamp.high\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mediaKeyTimestamp high\",\"sample_value\":0,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKeyTimestamp\",\"high\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mediaKeyTimestamp.unsigned\":{\"ret_value\":\"boolean\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mediaKeyTimestamp unsigned\",\"sample_value\":false,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKeyTimestamp\",\"unsigned\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage jpegThumbnail\",\"sample_value\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIABcAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AJ9MIaJVyo2ygEdznFZvctbFiJTKskiuGWIAN83TLD/6/wCtTfWw7My9NlQRXbnqTuz3xnNaSWxKZduY2iijjC52xqpA6ZwM/rmoXcpmTp4YCRQzKRhwQcdK0exC3NK1gtjpb3n2lhPGSCBj5c8AEYrnlJxkkjoiua9zPtHSISKB8jYBHc1te5lZIuzX5llYkDL5IRR0OOfxo5bIVyzZ6S8LtGwTzWG4D0XkZz9e3tWXtVuUoFNoHa3it0OZdp35PqDkf99Y/KtLrcWuxlyQMrhcjIBIZSfnI+tXdMnUeV3q2948Kud4yO+OmKL2Dc//2Q==\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"jpegThumbnail\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.caption\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage caption\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"caption\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.contextInfo\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage contextInfo\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"contextInfo\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.firstScanSidecar\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage firstScanSidecar\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"firstScanSidecar\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.firstScanLength\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage firstScanLength\",\"sample_value\":0,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"firstScanLength\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.experimentGroupId\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage experimentGroupId\",\"sample_value\":0,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"experimentGroupId\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.scansSidecar\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage scansSidecar\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"scansSidecar\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.midQualityFileSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage midQualityFileSha256\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"midQualityFileSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.midQualityFileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage midQualityFileEncSha256\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"midQualityFileEncSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.viewOnce\":{\"ret_value\":\"boolean\",\"caption\":\"message templateMessage hydratedTemplate imageMessage viewOnce\",\"sample_value\":false,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"viewOnce\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.thumbnailDirectPath\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage thumbnailDirectPath\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"thumbnailDirectPath\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.thumbnailSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage thumbnailSha256\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"thumbnailSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.thumbnailEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage thumbnailEncSha256\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"thumbnailEncSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.staticUrl\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage staticUrl\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"staticUrl\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedContentText\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate hydratedContentText\",\"sample_value\":\"message\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedContentText\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedFooterText\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate hydratedFooterText\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedFooterText\"]},\"_p_message.templateMessage.hydratedTemplate.templateId\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate templateId\",\"sample_value\":\"69e1b2c2-47d5-401c-8d37-1af6a8598341\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"templateId\"]},\"_p_message.templateMessage.hydratedTemplate.documentMessage\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate documentMessage\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"documentMessage\"]},\"_p_message.templateMessage.hydratedTemplate.videoMessage\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate videoMessage\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"videoMessage\"]},\"_p_message.templateMessage.hydratedTemplate.locationMessage\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate locationMessage\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"locationMessage\"]},\"_p_message.templateMessage.templateId\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage templateId\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"templateId\"]},\"_p_message.templateMessage.fourRowTemplate\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage fourRowTemplate\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"fourRowTemplate\"]},\"_p_message.templateMessage.hydratedFourRowTemplate\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedFourRowTemplate\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"hydratedFourRowTemplate\"]},\"_p_message.templateMessage.interactiveMessageTemplate\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage interactiveMessageTemplate\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"interactiveMessageTemplate\"]},\"_p_message.senderKeyDistributionMessage\":{\"ret_value\":\"text\",\"caption\":\"message senderKeyDistributionMessage\",\"sample_value\":null,\"path\":[\"message\",\"senderKeyDistributionMessage\"]},\"_p_message.imageMessage\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage\",\"sample_value\":null,\"path\":[\"message\",\"imageMessage\"]},\"_p_message.contactMessage\":{\"ret_value\":\"text\",\"caption\":\"message contactMessage\",\"sample_value\":null,\"path\":[\"message\",\"contactMessage\"]},\"_p_message.locationMessage\":{\"ret_value\":\"text\",\"caption\":\"message locationMessage\",\"sample_value\":null,\"path\":[\"message\",\"locationMessage\"]},\"_p_message.extendedTextMessage\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage\",\"sample_value\":null,\"path\":[\"message\",\"extendedTextMessage\"]},\"_p_message.documentMessage\":{\"ret_value\":\"text\",\"caption\":\"message documentMessage\",\"sample_value\":null,\"path\":[\"message\",\"documentMessage\"]},\"_p_message.audioMessage\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage\",\"sample_value\":null,\"path\":[\"message\",\"audioMessage\"]},\"_p_message.videoMessage\":{\"ret_value\":\"text\",\"caption\":\"message videoMessage\",\"sample_value\":null,\"path\":[\"message\",\"videoMessage\"]},\"_p_message.call\":{\"ret_value\":\"text\",\"caption\":\"message call\",\"sample_value\":null,\"path\":[\"message\",\"call\"]},\"_p_message.chat\":{\"ret_value\":\"text\",\"caption\":\"message chat\",\"sample_value\":null,\"path\":[\"message\",\"chat\"]},\"_p_message.protocolMessage\":{\"ret_value\":\"text\",\"caption\":\"message protocolMessage\",\"sample_value\":null,\"path\":[\"message\",\"protocolMessage\"]},\"_p_message.contactsArrayMessage\":{\"ret_value\":\"text\",\"caption\":\"message contactsArrayMessage\",\"sample_value\":null,\"path\":[\"message\",\"contactsArrayMessage\"]},\"_p_message.highlyStructuredMessage\":{\"ret_value\":\"text\",\"caption\":\"message highlyStructuredMessage\",\"sample_value\":null,\"path\":[\"message\",\"highlyStructuredMessage\"]},\"_p_message.fastRatchetKeySenderKeyDistributionMessage\":{\"ret_value\":\"text\",\"caption\":\"message fastRatchetKeySenderKeyDistributionMessage\",\"sample_value\":null,\"path\":[\"message\",\"fastRatchetKeySenderKeyDistributionMessage\"]},\"_p_message.sendPaymentMessage\":{\"ret_value\":\"text\",\"caption\":\"message sendPaymentMessage\",\"sample_value\":null,\"path\":[\"message\",\"sendPaymentMessage\"]},\"_p_message.liveLocationMessage\":{\"ret_value\":\"text\",\"caption\":\"message liveLocationMessage\",\"sample_value\":null,\"path\":[\"message\",\"liveLocationMessage\"]},\"_p_message.requestPaymentMessage\":{\"ret_value\":\"text\",\"caption\":\"message requestPaymentMessage\",\"sample_value\":null,\"path\":[\"message\",\"requestPaymentMessage\"]},\"_p_message.declinePaymentRequestMessage\":{\"ret_value\":\"text\",\"caption\":\"message declinePaymentRequestMessage\",\"sample_value\":null,\"path\":[\"message\",\"declinePaymentRequestMessage\"]},\"_p_message.cancelPaymentRequestMessage\":{\"ret_value\":\"text\",\"caption\":\"message cancelPaymentRequestMessage\",\"sample_value\":null,\"path\":[\"message\",\"cancelPaymentRequestMessage\"]},\"_p_message.stickerMessage\":{\"ret_value\":\"text\",\"caption\":\"message stickerMessage\",\"sample_value\":null,\"path\":[\"message\",\"stickerMessage\"]},\"_p_message.groupInviteMessage\":{\"ret_value\":\"text\",\"caption\":\"message groupInviteMessage\",\"sample_value\":null,\"path\":[\"message\",\"groupInviteMessage\"]},\"_p_message.templateButtonReplyMessage\":{\"ret_value\":\"text\",\"caption\":\"message templateButtonReplyMessage\",\"sample_value\":null,\"path\":[\"message\",\"templateButtonReplyMessage\"]},\"_p_message.productMessage\":{\"ret_value\":\"text\",\"caption\":\"message productMessage\",\"sample_value\":null,\"path\":[\"message\",\"productMessage\"]},\"_p_message.deviceSentMessage\":{\"ret_value\":\"text\",\"caption\":\"message deviceSentMessage\",\"sample_value\":null,\"path\":[\"message\",\"deviceSentMessage\"]},\"_p_message.messageContextInfo\":{\"ret_value\":\"text\",\"caption\":\"message messageContextInfo\",\"sample_value\":null,\"path\":[\"message\",\"messageContextInfo\"]},\"_p_message.listMessage\":{\"ret_value\":\"text\",\"caption\":\"message listMessage\",\"sample_value\":null,\"path\":[\"message\",\"listMessage\"]},\"_p_message.viewOnceMessage\":{\"ret_value\":\"text\",\"caption\":\"message viewOnceMessage\",\"sample_value\":null,\"path\":[\"message\",\"viewOnceMessage\"]},\"_p_message.orderMessage\":{\"ret_value\":\"text\",\"caption\":\"message orderMessage\",\"sample_value\":null,\"path\":[\"message\",\"orderMessage\"]},\"_p_message.listResponseMessage\":{\"ret_value\":\"text\",\"caption\":\"message listResponseMessage\",\"sample_value\":null,\"path\":[\"message\",\"listResponseMessage\"]},\"_p_message.ephemeralMessage\":{\"ret_value\":\"text\",\"caption\":\"message ephemeralMessage\",\"sample_value\":null,\"path\":[\"message\",\"ephemeralMessage\"]},\"_p_message.invoiceMessage\":{\"ret_value\":\"text\",\"caption\":\"message invoiceMessage\",\"sample_value\":null,\"path\":[\"message\",\"invoiceMessage\"]},\"_p_message.buttonsMessage\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage\",\"sample_value\":null,\"path\":[\"message\",\"buttonsMessage\"]},\"_p_message.buttonsResponseMessage\":{\"ret_value\":\"text\",\"caption\":\"message buttonsResponseMessage\",\"sample_value\":null,\"path\":[\"message\",\"buttonsResponseMessage\"]},\"_p_message.paymentInviteMessage\":{\"ret_value\":\"text\",\"caption\":\"message paymentInviteMessage\",\"sample_value\":null,\"path\":[\"message\",\"paymentInviteMessage\"]},\"_p_message.interactiveMessage\":{\"ret_value\":\"text\",\"caption\":\"message interactiveMessage\",\"sample_value\":null,\"path\":[\"message\",\"interactiveMessage\"]},\"_p_message.reactionMessage\":{\"ret_value\":\"text\",\"caption\":\"message reactionMessage\",\"sample_value\":null,\"path\":[\"message\",\"reactionMessage\"]},\"_p_message.stickerSyncRmrMessage\":{\"ret_value\":\"text\",\"caption\":\"message stickerSyncRmrMessage\",\"sample_value\":null,\"path\":[\"message\",\"stickerSyncRmrMessage\"]},\"_p_message.interactiveResponseMessage\":{\"ret_value\":\"text\",\"caption\":\"message interactiveResponseMessage\",\"sample_value\":null,\"path\":[\"message\",\"interactiveResponseMessage\"]},\"_p_message.pollCreationMessage\":{\"ret_value\":\"text\",\"caption\":\"message pollCreationMessage\",\"sample_value\":null,\"path\":[\"message\",\"pollCreationMessage\"]},\"_p_message.pollUpdateMessage\":{\"ret_value\":\"text\",\"caption\":\"message pollUpdateMessage\",\"sample_value\":null,\"path\":[\"message\",\"pollUpdateMessage\"]},\"_p_message.keepInChatMessage\":{\"ret_value\":\"text\",\"caption\":\"message keepInChatMessage\",\"sample_value\":null,\"path\":[\"message\",\"keepInChatMessage\"]},\"_p_message.documentWithCaptionMessage\":{\"ret_value\":\"text\",\"caption\":\"message documentWithCaptionMessage\",\"sample_value\":null,\"path\":[\"message\",\"documentWithCaptionMessage\"]},\"_p_message.requestPhoneNumberMessage\":{\"ret_value\":\"text\",\"caption\":\"message requestPhoneNumberMessage\",\"sample_value\":null,\"path\":[\"message\",\"requestPhoneNumberMessage\"]},\"_p_message.viewOnceMessageV2\":{\"ret_value\":\"text\",\"caption\":\"message viewOnceMessageV2\",\"sample_value\":null,\"path\":[\"message\",\"viewOnceMessageV2\"]},\"_p_message.encReactionMessage\":{\"ret_value\":\"text\",\"caption\":\"message encReactionMessage\",\"sample_value\":null,\"path\":[\"message\",\"encReactionMessage\"]},\"_p_message.editedMessage\":{\"ret_value\":\"text\",\"caption\":\"message editedMessage\",\"sample_value\":null,\"path\":[\"message\",\"editedMessage\"]},\"_p_message.viewOnceMessageV2Extension\":{\"ret_value\":\"text\",\"caption\":\"message viewOnceMessageV2Extension\",\"sample_value\":null,\"path\":[\"message\",\"viewOnceMessageV2Extension\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\"]},\"_p_message.extendedTextMessage.text\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage text\",\"sample_value\":\"Mensagem teste\",\"path\":[\"message\",\"extendedTextMessage\",\"text\"]},\"_p_message.extendedTextMessage.matchedText\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage matchedText\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"matchedText\"]},\"_p_message.extendedTextMessage.canonicalUrl\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage canonicalUrl\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"canonicalUrl\"]},\"_p_message.extendedTextMessage.description\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage description\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"description\"]},\"_p_message.extendedTextMessage.title\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage title\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"title\"]},\"_p_message.extendedTextMessage.textArgb\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage textArgb\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"textArgb\"]},\"_p_message.extendedTextMessage.backgroundArgb\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage backgroundArgb\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"backgroundArgb\"]},\"_p_message.extendedTextMessage.font\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage font\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"font\"]},\"_p_message.extendedTextMessage.previewType\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage previewType\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"previewType\"]},\"_p_message.extendedTextMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage jpegThumbnail\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"jpegThumbnail\"]},\"_p_message.extendedTextMessage.doNotPlayInline\":{\"ret_value\":\"boolean\",\"caption\":\"message extendedTextMessage doNotPlayInline\",\"sample_value\":false,\"path\":[\"message\",\"extendedTextMessage\",\"doNotPlayInline\"]},\"_p_message.extendedTextMessage.thumbnailDirectPath\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage thumbnailDirectPath\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"thumbnailDirectPath\"]},\"_p_message.extendedTextMessage.thumbnailSha256\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage thumbnailSha256\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"thumbnailSha256\"]},\"_p_message.extendedTextMessage.thumbnailEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage thumbnailEncSha256\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"thumbnailEncSha256\"]},\"_p_message.extendedTextMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage mediaKey\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"mediaKey\"]},\"_p_message.extendedTextMessage.mediaKeyTimestamp.low\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage mediaKeyTimestamp low\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"mediaKeyTimestamp\",\"low\"]},\"_p_message.extendedTextMessage.mediaKeyTimestamp.high\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage mediaKeyTimestamp high\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"mediaKeyTimestamp\",\"high\"]},\"_p_message.extendedTextMessage.mediaKeyTimestamp.unsigned\":{\"ret_value\":\"boolean\",\"caption\":\"message extendedTextMessage mediaKeyTimestamp unsigned\",\"sample_value\":false,\"path\":[\"message\",\"extendedTextMessage\",\"mediaKeyTimestamp\",\"unsigned\"]},\"_p_message.extendedTextMessage.thumbnailHeight\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage thumbnailHeight\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"thumbnailHeight\"]},\"_p_message.extendedTextMessage.thumbnailWidth\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage thumbnailWidth\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"thumbnailWidth\"]},\"_p_message.extendedTextMessage.inviteLinkGroupType\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage inviteLinkGroupType\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"inviteLinkGroupType\"]},\"_p_message.extendedTextMessage.inviteLinkParentGroupSubjectV2\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage inviteLinkParentGroupSubjectV2\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"inviteLinkParentGroupSubjectV2\"]},\"_p_message.extendedTextMessage.inviteLinkParentGroupThumbnailV2\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage inviteLinkParentGroupThumbnailV2\",\"sample_value\":\"\",\"path\":[\"message\",\"extendedTextMessage\",\"inviteLinkParentGroupThumbnailV2\"]},\"_p_message.extendedTextMessage.inviteLinkGroupTypeV2\":{\"ret_value\":\"number\",\"caption\":\"message extendedTextMessage inviteLinkGroupTypeV2\",\"sample_value\":0,\"path\":[\"message\",\"extendedTextMessage\",\"inviteLinkGroupTypeV2\"]},\"_p_message.extendedTextMessage.viewOnce\":{\"ret_value\":\"boolean\",\"caption\":\"message extendedTextMessage viewOnce\",\"sample_value\":false,\"path\":[\"message\",\"extendedTextMessage\",\"viewOnce\"]},\"_p_message.templateMessage\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage\",\"sample_value\":null,\"path\":[\"message\",\"templateMessage\"]}}},\"plugin_api.ATo.message.templateMessage.hydratedTemplate.hydratedButtons\":{\"caption\":\"📄 Find messages message templateMessage hydratedTemplate hydratedButton\",\"fields\":{\"_p_urlButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"urlButton displayText\",\"sample_value\":\"Go\",\"path\":[\"urlButton\",\"displayText\"]},\"_p_urlButton.url\":{\"ret_value\":\"text\",\"caption\":\"urlButton url\",\"sample_value\":\"https://uazapi.bubbleapps.io/\",\"path\":[\"urlButton\",\"url\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]},\"_p_quickReplyButton\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton\",\"sample_value\":null,\"path\":[\"quickReplyButton\"]},\"_p_callButton\":{\"ret_value\":\"text\",\"caption\":\"callButton\",\"sample_value\":null,\"path\":[\"callButton\"]},\"_p_callButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"callButton displayText\",\"sample_value\":\"Call me\",\"path\":[\"callButton\",\"displayText\"]},\"_p_callButton.phoneNumber\":{\"ret_value\":\"text\",\"caption\":\"callButton phoneNumber\",\"sample_value\":\"+55 31 9 0000-0000\",\"path\":[\"callButton\",\"phoneNumber\"]},\"_p_urlButton\":{\"ret_value\":\"text\",\"caption\":\"urlButton\",\"sample_value\":null,\"path\":[\"urlButton\"]},\"_p_quickReplyButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton displayText\",\"sample_value\":\"Click here 1\",\"path\":[\"quickReplyButton\",\"displayText\"]},\"_p_quickReplyButton.id\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton id\",\"sample_value\":\"1\",\"path\":[\"quickReplyButton\",\"id\"]}}}}",
+            "url": "[url]/chat/findMessages/[instance]",
+            "url_params": {
+                "ATq": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AcP": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "ATu": {
+            "body": "{\n  \"where\": {\n    \"key\": {\n\n       \"id\": \"<id>\"\n    }\n  },\n  \"limit\": <limit>\n}",
+            "body_params": {
+                "ATy": {
+                    "doc": "id da mensagem",
+                    "key": "id",
+                    "value": ""
+                },
+                "AcX": {
+                    "key": "limit",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "ATv": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYa": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "is_list": true,
+            "method": "post",
+            "name": "📄 Message Status (received or read)",
+            "publish_as": "data",
+            "rank": 24,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.ATu",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ATu\":{\"caption\":\"📄 Message Status (received or read)\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"63cb0624f8ad41b3fae57b38\",\"path\":[\"_id\"]},\"_p_remoteJid\":{\"ret_value\":\"text\",\"caption\":\"remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"remoteJid\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"BAE512FBDC140194\",\"path\":[\"id\"]},\"_p_fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"fromMe\",\"sample_value\":true,\"path\":[\"fromMe\"]},\"_p_datetime\":{\"ret_value\":\"number\",\"caption\":\"datetime\",\"sample_value\":1674249764953,\"path\":[\"datetime\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"DELIVERY_ACK\",\"path\":[\"status\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521986231256@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p___v\":{\"ret_value\":\"number\",\"caption\":\"__v\",\"sample_value\":0,\"path\":[\"__v\"]}}}}",
+            "url": "[url]/chat/findStatusMessage/[instance]",
+            "url_params": {
+                "ATw": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AcU": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUA": {
+            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
+            "body_params": {
+                "AUD": {
+                    "key": "instanceName",
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AUB": {
+                    "doc": "⚠️ only works with global apikey",
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Instance - Create  ⚠️",
+            "publish_as": "action",
+            "rank": 0,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUA",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUA\":{\"caption\":\"✅ Instance - Create ⚠️\",\"fields\":{\"_p_instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"instance instanceName\",\"sample_value\":\"teste1\",\"path\":[\"instance\",\"instanceName\"]},\"_p_instance.status\":{\"ret_value\":\"text\",\"caption\":\"instance status\",\"sample_value\":\"created\",\"path\":[\"instance\",\"status\"]},\"_p_hash.apikey\":{\"ret_value\":\"text\",\"caption\":\"hash apikey\",\"sample_value\":\"FD8A8552-2BA4-4715-A36E-D794963EB040\",\"path\":[\"hash\",\"apikey\"]}}}}",
+            "url": "[url]/instance/create",
+            "url_params": {
+                "AUC": {
+                    "key": "url",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUE": {
+            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
+            "body_params": {
+                "AUJ": {
+                    "key": "instanceName",
+                    "value": "codechat2"
+                }
+            },
+            "headers": {
+                "AUG": {
+                    "key": "apikey"
+                },
+                "AdJ": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "📄 Instance - Get QR Code",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUE\":{\"caption\":\"📄 Gerar QR Code\",\"fields\":{\"_p_code\":{\"ret_value\":\"text\",\"caption\":\"code\",\"sample_value\":\"2@tUvR6C1C2YJ9wnZ82LiJGcfBfTJ3Z7bV+N5TsScrnaFhzLfaQL7ovZ3YiTZ49vx6jx/5EUVOCGyakQ==,HdnPjpgfAXx4X2TR+2OaW57ExVonnGyKqfPfK7HanxU=,1PErngYuI2hcqoFKEx9LsbrfUvhXNTgFTV+HlJDhtEY=,m+Y82xb15hPxAgtI2aL1yqYAZxKTmh5o+tUDvdHCoVQ=\",\"path\":[\"code\"]},\"_p_base64\":{\"ret_value\":\"text\",\"caption\":\"base64\",\"sample_value\":\"(value too large to save 11802 bytes)\",\"path\":[\"base64\"]}}}}",
+            "url": "[url]/instance/connect/[instance]",
+            "url_params": {
+                "AUH": {
+                    "key": "url"
+                },
+                "AUI": {
+                    "key": "instance",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUK": {
+            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
+            "body_params": {
+                "AUO": {
+                    "key": "instanceName",
+                    "value": "codechat2"
+                }
+            },
+            "headers": {
+                "AUM": {
+                    "doc": "⚠️ only works with global apikey",
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AdI": {
+                    "doc": "Optional\nBy putting different data in the api call, it forces the bubble to update the data. The date does that job.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. A data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "📄 Instance - List all ⚠️",
+            "publish_as": "data",
+            "rank": 2,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUK",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUK\":{\"caption\":\"📄 Instance - List all ⚠️\",\"fields\":{\"_p_instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"instance instanceName\",\"sample_value\":\"uazapi\",\"path\":[\"instance\",\"instanceName\"]},\"_p_instance.owner\":{\"ret_value\":\"text\",\"caption\":\"instance owner\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"instance\",\"owner\"]},\"_p_instance.profileName\":{\"ret_value\":\"text\",\"caption\":\"instance profileName\",\"sample_value\":\"uazapi\",\"path\":[\"instance\",\"profileName\"]},\"_p_instance.profilePictureUrl\":{\"ret_value\":\"text\",\"caption\":\"instance profilePictureUrl\",\"sample_value\":\"https://pps.whatsapp.net/v/t61.24694-24/311627492_164638622952139_6016681321028139878_n.jpg?ccb=11-4&oh=01_AdSUfoBevkwHTGU1D91besyEbXu7e_75M7Vk7gx1ngSz4A&oe=63E0F4F1\",\"path\":[\"instance\",\"profilePictureUrl\"]}}}}",
+            "url": "[url]/instance/fetchInstances",
+            "url_params": {
+                "AUN": {
+                    "key": "url",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUP": {
+            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
+            "body_params": {
+                "AUU": {
+                    "key": "instanceName",
+                    "value": "codechat2"
+                }
+            },
+            "headers": {
+                "AUR": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AdK": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "📄 Instance - Connection state",
+            "publish_as": "data",
+            "rank": 4,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUP",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUP\":{\"caption\":\"📄 Instance - Connection state\",\"fields\":{\"_p_state\":{\"ret_value\":\"text\",\"caption\":\"state\",\"sample_value\":\"open\",\"path\":[\"state\"]},\"_p_statusReason\":{\"ret_value\":\"number\",\"caption\":\"statusReason\",\"sample_value\":200,\"path\":[\"statusReason\"]}}}}",
+            "url": "[url]/instance/connectionState/[instance]",
+            "url_params": {
+                "AUS": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AZE": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUV": {
+            "headers": {
+                "AUW": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "delete_method",
+            "name": "✅ Instance - Logout",
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUV",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUV\":{\"caption\":\"✅ Logout Instancia\",\"fields\":{\"_p_error\":{\"ret_value\":\"boolean\",\"caption\":\"error\",\"sample_value\":false,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Instance logged out\",\"path\":[\"message\"]}}}}",
+            "url": "[url]/instance/logout/[instance]",
+            "url_params": {
+                "AUX": {
+                    "key": "url"
+                },
+                "AZF": {
+                    "doc": "It will disconnect the cell phone from whatsapp.\n\nPT_BR: Irá desconectar o celular do whatsapp.",
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUZ": {
+            "body": "{\n  \"enabled\": <true/false>,\n  \"url\": \"<webhook_url>\"\n}",
+            "body_params": {
+                "AUd": {
+                    "doc": "",
+                    "key": "true/false",
+                    "value": "true"
+                },
+                "AUe": {
+                    "key": "webhook_url",
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AUa": {
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Instance - Set Webhook",
+            "publish_as": "action",
+            "rank": 7,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUZ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUZ\":{\"caption\":\"✅ Instance - Set Webhook\",\"fields\":{\"_p_webhook.instanceName\":{\"ret_value\":\"text\",\"caption\":\"webhook instanceName\",\"sample_value\":\"odgkfdyk54\",\"path\":[\"webhook\",\"instanceName\"]},\"_p_webhook.webhook.enabled\":{\"ret_value\":\"boolean\",\"caption\":\"webhook webhook enabled\",\"sample_value\":true,\"path\":[\"webhook\",\"webhook\",\"enabled\"]},\"_p_webhook.webhook.url\":{\"ret_value\":\"text\",\"caption\":\"webhook webhook url\",\"sample_value\":\"http://\",\"path\":[\"webhook\",\"webhook\",\"url\"]}}}}",
+            "url": "[url]/webhook/set/[instance]",
+            "url_params": {
+                "AUb": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AZH": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUf": {
+            "body": "{\n  \"enabled\": <true/false>,\n  \"url\": \"<webhook_url>\"\n}",
+            "body_params": {
+                "AUk": {
+                    "key": "true/false",
+                    "value": "true"
+                },
+                "AUl": {
+                    "key": "webhook_url",
+                    "value": "https://webhook.site/347884fb-5f40-4758-80f1-1b80855dd4f0"
+                }
+            },
+            "headers": {
+                "AUh": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AdL": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "📄 Instance - Status Webhook",
+            "publish_as": "data",
+            "rank": 8,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUf",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUf\":{\"caption\":\"📄 Instance - Status Webhook\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"odgkfdyk54\",\"path\":[\"_id\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"http://168.138.152.51:8080\",\"path\":[\"url\"]},\"_p_enabled\":{\"ret_value\":\"boolean\",\"caption\":\"enabled\",\"sample_value\":true,\"path\":[\"enabled\"]},\"_p___v\":{\"ret_value\":\"number\",\"caption\":\"__v\",\"sample_value\":0,\"path\":[\"__v\"]}}}}",
+            "url": "[url]/webhook/find/[instance]",
+            "url_params": {
+                "AUi": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AZI": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUm": {
+            "body": "{\n  \"number\": \"<number>\",\n  \"textMessage\": {\n    \"text\": \"<message>\"\n  },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "AZR": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "AZT": {
+                    "key": "message",
+                    "private": true,
+                    "value": ""
+                },
+                "AaH": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AUn": {
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send text",
+            "publish_as": "action",
+            "rank": 9,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUm",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUm\":{\"caption\":\"✅ Send text\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE5272C4BE6680A\",\"path\":[\"key\",\"id\"]},\"_p_message.extendedTextMessage.text\":{\"ret_value\":\"text\",\"caption\":\"message extendedTextMessage text\",\"sample_value\":\"oi\",\"path\":[\"message\",\"extendedTextMessage\",\"text\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1674244247\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/message/sendText/[instance]",
+            "url_params": {
+                "AUo": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AZJ": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AUt": {
+            "body": "{\n  \"number\": \"<number>\",\n  \"mediaMessage\": {\n    \"mediatype\": \"<mediatype>\",\n    \"caption\": \"<message>\",\n    \"media\": \"<url_media>\"\n  },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "Adb": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "Adc": {
+                    "doc": "Options: image | document | video | audio",
+                    "key": "mediatype",
+                    "private": true,
+                    "value": ""
+                },
+                "Add": {
+                    "key": "message",
+                    "private": true,
+                    "value": ""
+                },
+                "Ade": {
+                    "key": "url_media",
+                    "private": true,
+                    "value": ""
+                },
+                "Adf": {
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AUu": {
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send media",
+            "publish_as": "action",
+            "rank": 10,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUt",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AUt\":{\"caption\":\"✅ Enviar arquivo\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"4654545465@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE58C75D11244B9\",\"path\":[\"key\",\"id\"]},\"_p_message.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/d/f/AkXWCAbAedxdKudBmUDeZEpH09F_Y3OpH2iSPSbdlibB.enc\",\"path\":[\"message\",\"imageMessage\",\"url\"]},\"_p_message.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"message\",\"imageMessage\",\"mimetype\"]},\"_p_message.imageMessage.caption\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage caption\",\"sample_value\":\"mensagem\",\"path\":[\"message\",\"imageMessage\",\"caption\"]},\"_p_message.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage fileSha256\",\"sample_value\":\"3hQwvKG0GhM6CRg2S2tFkedSwszccxTLAk0oehSI04U=\",\"path\":[\"message\",\"imageMessage\",\"fileSha256\"]},\"_p_message.imageMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage fileLength\",\"sample_value\":\"92194\",\"path\":[\"message\",\"imageMessage\",\"fileLength\"]},\"_p_message.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage mediaKey\",\"sample_value\":\"KNtkw7tC4aKI985LytGGXFDZGFlGrGqM/X3mPjgHRKo=\",\"path\":[\"message\",\"imageMessage\",\"mediaKey\"]},\"_p_message.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage fileEncSha256\",\"sample_value\":\"th71CwbZ5GPpRM3Lxl1MV8F80azo9FDmGkNe5fEn3uQ=\",\"path\":[\"message\",\"imageMessage\",\"fileEncSha256\"]},\"_p_message.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/35073460_3387050924913872_1481097173000024250_n.enc?ccb=11-4&oh=01_AdQmloBk-qZ4Tde3OgTbisycXX-BDE5SLdEv_G_WSFP-7w&oe=63B91C6B\",\"path\":[\"message\",\"imageMessage\",\"directPath\"]},\"_p_message.imageMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"message imageMessage mediaKeyTimestamp\",\"sample_value\":\"1670495624\",\"path\":[\"message\",\"imageMessage\",\"mediaKeyTimestamp\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1670495625\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/message/sendMedia/[instance]",
+            "url_params": {
+                "AUv": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AZU": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AVD": {
+            "body": "{\n  \"number\": \"<number>\",\n  \"buttonMessage\": {\n    \"title\": <title>,\n    \"description\": \"<message>\" ,\n    \"footerText\": <footer>,\n    \"buttons\": [\n      <buttons>\n    ]\n          <media-opcional>\n      \n  },\n \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "Aab": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "Aac": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "title",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "Aad": {
+                    "key": "message",
+                    "private": true,
+                    "value": ""
+                },
+                "Aae": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "footer",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "Aaf": {
+                    "doc": "Send a json (text) with these attributes:\n\n{\n   \"buttonText\":\"Click here 1\",\n   \"buttonId\":\"1\"\n},\n{\n   \"buttonText\":\"Click here 2\",\n   \"buttonId\":\"2\"\n},\n{\n   \"buttonText\":\"Click here 3\",\n   \"buttonId\":\"3\"\n}\n\nPT-BR:\nEnvie no seguinte formato json acima.",
+                    "key": "buttons",
+                    "private": true,
+                    "value": ""
+                },
+                "Aag": {
+                    "allow_blank": false,
+                    "doc": "If you didn't want this field, leave an empty space, otherwise the bubble understands it as null and gives an error.\n\nPt-BR:\nCaso não queria esse campo, deixe um espaço vazio, caso contrário o bubble entende como null e dá erro.\n\nThis value is optional, you can send an image or video along with the button, example below:\n\n----------------------\n,\n\"mediaMessage\" : {\n    \"mediatype\" : \"image\",\n    \"media\" : \"<url>\"\n}\n\n-----------------\n\nDon't forget the comma at the beginning.\n\n\nPT-BR:\nEsse valor é opcional, você pode enviar uma imagem ou vídeo junto com o botão, exemplo abaixo:\n\n----------------------\n,\n\"mediaMessage\" : {\n   \"mediatype\" : \"image\",\n   \"media\" : \"<url>\"\n}\n\n-----------------\n\nNão esqueça da vírgula no início.",
+                    "key": "media-opcional",
+                    "private": true,
+                    "value": "  "
+                },
+                "Aah": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AVE": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send Buttons",
+            "publish_as": "action",
+            "rank": 13,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVD",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AVD\":{\"caption\":\"✅ Enviar botõe\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE55C0C875EA59B\",\"path\":[\"key\",\"id\"]},\"_p_message.buttonsMessage.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/d/f/Apra-F8Prle5QwobjeG_R9QF8aLceC39XatkiNTwStMq.enc\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"url\"]},\"_p_message.buttonsMessage.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"mimetype\"]},\"_p_message.buttonsMessage.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage fileSha256\",\"sample_value\":\"X1OMOqAqF7P0FeaIYE9e17VPcnsqMsMumAlNWJckJl4=\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"fileSha256\"]},\"_p_message.buttonsMessage.imageMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage fileLength\",\"sample_value\":\"289553\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"fileLength\"]},\"_p_message.buttonsMessage.imageMessage.height\":{\"ret_value\":\"number\",\"caption\":\"message buttonsMessage imageMessage height\",\"sample_value\":1165,\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"height\"]},\"_p_message.buttonsMessage.imageMessage.width\":{\"ret_value\":\"number\",\"caption\":\"message buttonsMessage imageMessage width\",\"sample_value\":1599,\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"width\"]},\"_p_message.buttonsMessage.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage mediaKey\",\"sample_value\":\"L6HWsdkZEIpjRKid/UH4r0fkJYY6+ceFhvCMXAFLV6Q=\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"mediaKey\"]},\"_p_message.buttonsMessage.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage fileEncSha256\",\"sample_value\":\"zwtPprTurOuyQ1EsiOKEVhy9DnB2FIJ+qzUTt83+js0=\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"fileEncSha256\"]},\"_p_message.buttonsMessage.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/33306525_1474711559601163_685485136280856368_n.enc?ccb=11-4&oh=01_AdTZPrFA-aC1Ste6-kQo6a5dmxpDvVy7UrLoj4qMBPHZPQ&oe=63E69BCF\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"directPath\"]},\"_p_message.buttonsMessage.imageMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage mediaKeyTimestamp\",\"sample_value\":\"1673471567\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"mediaKeyTimestamp\"]},\"_p_message.buttonsMessage.imageMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage imageMessage jpegThumbnail\",\"sample_value\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIABcAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AJ9MIaJVyo2ygEdznFZvctbFiJTKskiuGWIAN83TLD/6/wCtTfWw7My9NlQRXbnqTuz3xnNaSWxKZduY2iijjC52xqpA6ZwM/rmoXcpmTp4YCRQzKRhwQcdK0exC3NK1gtjpb3n2lhPGSCBj5c8AEYrnlJxkkjoiua9zPtHSISKB8jYBHc1te5lZIuzX5llYkDL5IRR0OOfxo5bIVyzZ6S8LtGwTzWG4D0XkZz9e3tWXtVuUoFNoHa3it0OZdp35PqDkf99Y/KtLrcWuxlyQMrhcjIBIZSfnI+tXdMnUeV3q2948Kud4yO+OmKL2Dc//2Q==\",\"path\":[\"message\",\"buttonsMessage\",\"imageMessage\",\"jpegThumbnail\"]},\"_p_message.buttonsMessage.contentText\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage contentText\",\"sample_value\":\"*titulo*\\n\\nmensagem\",\"path\":[\"message\",\"buttonsMessage\",\"contentText\"]},\"_p_message.buttonsMessage.footerText\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage footerText\",\"sample_value\":\"\",\"path\":[\"message\",\"buttonsMessage\",\"footerText\"]},\"_p_message.buttonsMessage.buttons\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AVD.message.buttonsMessage.buttons\",\"caption\":\"message buttonsMessage buttons\",\"path\":[\"message\",\"buttonsMessage\",\"buttons\"]},\"_p_message.buttonsMessage.headerType\":{\"ret_value\":\"text\",\"caption\":\"message buttonsMessage headerType\",\"sample_value\":\"IMAGE\",\"path\":[\"message\",\"buttonsMessage\",\"headerType\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1673471568\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}},\"plugin_api.AVD.message.buttonsMessage.buttons\":{\"caption\":\"✅ Enviar botões message buttonsMessage button\",\"fields\":{\"_p_buttonId\":{\"ret_value\":\"text\",\"caption\":\"buttonId\",\"sample_value\":\"1\",\"path\":[\"buttonId\"]},\"_p_buttonText.displayText\":{\"ret_value\":\"text\",\"caption\":\"buttonText displayText\",\"sample_value\":\"Click here 1\",\"path\":[\"buttonText\",\"displayText\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"RESPONSE\",\"path\":[\"type\"]}}}}",
+            "url": "[url]/message/sendButtons/[instance]",
+            "url_params": {
+                "AVF": {
+                    "key": "url"
+                },
+                "AaI": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AVO": {
+            "body": "{\n  \"number\": \"<number>\",\n  \"locationMessage\": {\n    \"name\": \"<name>\",\n    \"address\": \"<address>\",\n    \"latitude\": <latitude>,\n    \"longitude\": <longitude>\n  },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "AaA": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "AaB": {
+                    "key": "name",
+                    "private": true,
+                    "value": ""
+                },
+                "AaC": {
+                    "doc": "Example:\nAv. Pres. Castelo Branco, Gate 3 - Maracanã, Rio de Janeiro - RJ, 20271-130\n\nPt-BR:\nExemplo:\nAv. Pres. Castelo Branco, Portão 3 - Maracanã, Rio de Janeiro - RJ, 20271-130",
+                    "key": "address",
+                    "private": true,
+                    "value": ""
+                },
+                "AaD": {
+                    "key": "latitude",
+                    "private": true,
+                    "value": ""
+                },
+                "AaE": {
+                    "key": "longitude",
+                    "private": true,
+                    "value": ""
+                },
+                "AaF": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AVP": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send location",
+            "publish_as": "action",
+            "rank": 12,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVO",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AVO\":{\"caption\":\"✅ Enviar localização\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5646546451@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE54C148985BAF2\",\"path\":[\"key\",\"id\"]},\"_p_message.locationMessage.degreesLatitude\":{\"ret_value\":\"number\",\"caption\":\"message locationMessage degreesLatitude\",\"sample_value\":-20.32568196333534,\"path\":[\"message\",\"locationMessage\",\"degreesLatitude\"]},\"_p_message.locationMessage.degreesLongitude\":{\"ret_value\":\"number\",\"caption\":\"message locationMessage degreesLongitude\",\"sample_value\":-44.016271276581236,\"path\":[\"message\",\"locationMessage\",\"degreesLongitude\"]},\"_p_message.locationMessage.name\":{\"ret_value\":\"text\",\"caption\":\"message locationMessage name\",\"sample_value\":\"Moeda - MG\",\"path\":[\"message\",\"locationMessage\",\"name\"]},\"_p_message.locationMessage.address\":{\"ret_value\":\"text\",\"caption\":\"message locationMessage address\",\"sample_value\":\"🗺️ Moeda 🗺️\",\"path\":[\"message\",\"locationMessage\",\"address\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1670446776\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/message/sendLocation/[instance]",
+            "url_params": {
+                "AVQ": {
+                    "key": "url"
+                },
+                "AZj": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AVY": {
+            "body": "{\n    \"number\": \"<number>\",\n    \"listMessage\": {\n        \"title\": <title>,\n        \"description\": \"<message>\",\n        \"footerText\": <footer>,\n        \"buttonText\": \"<button>\",\n\t\t\"sections\": [ <sections> ]\n    },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "AbY": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "AbZ": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "title",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "Aba": {
+                    "key": "message",
+                    "private": true,
+                    "value": ""
+                },
+                "Abb": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "footer",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "Abc": {
+                    "key": "button",
+                    "private": true,
+                    "value": ""
+                },
+                "Abd": {
+                    "doc": "Fill it with a json like this:\n\n{\n   \"title\":\"Row tilte 01\",\n   \"rows\":[\n      {\n         \"title\":\"Title row 01\",\n         \"description\":\"Lorem Ipsum\",\n         \"rowId\":\"arowId 001\"\n      },\n      {\n         \"title\":\"Title row 02\",\n         \"description\":\"Lorem Ipsum,\",\n         \"rowId\":\"browId 002\"\n      }\n   ]\n},\n{\n   \"title\":\"Row tilte 02\",\n   \"rows\":[\n      {\n         \"title\":\"Title row 01\",\n         \"description\":\"Lorem Ipsum \",\n         \"rowId\":\"crowId 001\"\n      },\n      {\n         \"title\":\"Title row 02\",\n         \"description\":\"Lorem Ipsum,\",\n         \"rowId\":\"drowId 002\"\n      }\n\nPT-BR:\nPreencha com um json conforme mostrado acima:",
+                    "key": "sections",
+                    "private": true,
+                    "value": ""
+                },
+                "Abe": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AVZ": {
+                    "doc": "",
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send List",
+            "publish_as": "action",
+            "rank": 16,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVY",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AVY\":{\"caption\":\"✅ Enviar lista (titulo infinitos)\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE5D68E882C4A33\",\"path\":[\"key\",\"id\"]},\"_p_message.listMessage.title\":{\"ret_value\":\"text\",\"caption\":\"message listMessage title\",\"sample_value\":\"\",\"path\":[\"message\",\"listMessage\",\"title\"]},\"_p_message.listMessage.description\":{\"ret_value\":\"text\",\"caption\":\"message listMessage description\",\"sample_value\":\"msg\",\"path\":[\"message\",\"listMessage\",\"description\"]},\"_p_message.listMessage.buttonText\":{\"ret_value\":\"text\",\"caption\":\"message listMessage buttonText\",\"sample_value\":\"selecione\",\"path\":[\"message\",\"listMessage\",\"buttonText\"]},\"_p_message.listMessage.listType\":{\"ret_value\":\"text\",\"caption\":\"message listMessage listType\",\"sample_value\":\"SINGLE_SELECT\",\"path\":[\"message\",\"listMessage\",\"listType\"]},\"_p_message.listMessage.sections\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AVY.message.listMessage.sections\",\"caption\":\"message listMessage sections\",\"path\":[\"message\",\"listMessage\",\"sections\"]},\"_p_message.listMessage.footerText\":{\"ret_value\":\"text\",\"caption\":\"message listMessage footerText\",\"sample_value\":\"\",\"path\":[\"message\",\"listMessage\",\"footerText\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1673485479\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}},\"plugin_api.AVY.message.listMessage.sections\":{\"caption\":\"✅ Enviar lista (titulo infinitos) message listMessage section\",\"fields\":{\"_p_title\":{\"ret_value\":\"text\",\"caption\":\"title\",\"sample_value\":\"titulo1\",\"path\":[\"title\"]},\"_p_rows\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AVY.rows\",\"caption\":\"rows\",\"path\":[\"rows\"]}}},\"plugin_api.AVY.rows\":{\"caption\":\"✅ Enviar lista (titulo infinitos) row\",\"fields\":{\"_p_title\":{\"ret_value\":\"text\",\"caption\":\"title\",\"sample_value\":\"Title Option 1\",\"path\":[\"title\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"Option Description 1\",\"path\":[\"description\"]},\"_p_rowId\":{\"ret_value\":\"text\",\"caption\":\"rowId\",\"sample_value\":\"string11\",\"path\":[\"rowId\"]}}}}",
+            "url": "[url]/message/sendList/[instance]",
+            "url_params": {
+                "AVa": {
+                    "key": "url"
+                },
+                "Abf": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AVj": {
+            "body": "{\n  \"number\": \"<number>\",\n  \"contactMessage\": [\n  <contacts>\n  ],\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "Abo": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "Abp": {
+                    "doc": "Fill it with a json like this:\n\n     {\n       \"fullName\": \"Contact Name\",\n       \"wuid\": \"5531988882222\",\n       \"phoneNumber\": \"+55 31 9 8888-2222\"\n     },\n     {\n       \"fullName\": \"Contact Name\",\n       \"wuid\": \"5531988882222\",\n       \"phoneNumber\": \"+55 31 9 8888-2222\"\n     }\n\nPT-BR:\nEnvie um json conforme exemplo acima",
+                    "key": "contacts",
+                    "private": true,
+                    "value": ""
+                },
+                "Abq": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AVk": {
+                    "doc": "",
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send Contact",
+            "publish_as": "action",
+            "rank": 17,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVj",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AVj\":{\"caption\":\"✅ Enviar contato\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE50D5D4EB85A0B\",\"path\":[\"key\",\"id\"]},\"_p_message.contactMessage.displayName\":{\"ret_value\":\"text\",\"caption\":\"message contactMessage displayName\",\"sample_value\":\"Contact Name\",\"path\":[\"message\",\"contactMessage\",\"displayName\"]},\"_p_message.contactMessage.vcard\":{\"ret_value\":\"text\",\"caption\":\"message contactMessage vcard\",\"sample_value\":\"BEGIN:VCARD\\nVERSION:3.0\\nFN:Contact Name\\nitem1.TEL;waid=5521996015792:5521996015792\\nitem1.X-ABLabel:Celular\\nEND:VCARD\",\"path\":[\"message\",\"contactMessage\",\"vcard\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1673487190\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/message/sendContact/[instance]",
+            "url_params": {
+                "AVl": {
+                    "key": "url"
+                },
+                "Abg": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AVq": {
+            "body": "{\n  \"reactionMessage\": {\n    \"key\": {\n      \"remoteJid\": \"<remoteJid>\",\n      \"fromMe\": <fromMe>,\n      \"id\": \"<message_id>\"\n    },\n    \"reaction\": \"<reaction>\"\n  }\n}",
+            "body_params": {
+                "AcD": {
+                    "doc": "number@s.whatsapp.net - for contact\ngroupid@g.us - for groups",
+                    "key": "remoteJid",
+                    "private": true,
+                    "value": ""
+                },
+                "AcE": {
+                    "key": "fromMe",
+                    "private": true,
+                    "value": ""
+                },
+                "AcF": {
+                    "key": "message_id",
+                    "private": true,
+                    "value": ""
+                },
+                "AcG": {
+                    "key": "reaction",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AVr": {
+                    "doc": "",
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Message - Send reaction",
+            "publish_as": "action",
+            "rank": 18,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVq",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AVq\":{\"caption\":\"✅ Enviar reação\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE52E2550712540\",\"path\":[\"key\",\"id\"]},\"_p_message.reactionMessage.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"message reactionMessage key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"message\",\"reactionMessage\",\"key\",\"remoteJid\"]},\"_p_message.reactionMessage.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"message reactionMessage key fromMe\",\"sample_value\":false,\"path\":[\"message\",\"reactionMessage\",\"key\",\"fromMe\"]},\"_p_message.reactionMessage.key.id\":{\"ret_value\":\"text\",\"caption\":\"message reactionMessage key id\",\"sample_value\":\"3EB09981CA572F9E72EA\",\"path\":[\"message\",\"reactionMessage\",\"key\",\"id\"]},\"_p_message.reactionMessage.text\":{\"ret_value\":\"text\",\"caption\":\"message reactionMessage text\",\"sample_value\":\"❤️\",\"path\":[\"message\",\"reactionMessage\",\"text\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1673488554\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/message/sendReaction/[instance]",
+            "url_params": {
+                "AVs": {
+                    "key": "url"
+                },
+                "Abs": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AVy": {
+            "body": "{\n  \"numbers\": [\n    <numbers>\n   \n  ]\n}",
+            "body_params": {
+                "AcI": {
+                    "doc": "Example:\n\"552198765431\", \"551198765431\"",
+                    "key": "numbers",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AVz": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYV": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "is_list": true,
+            "method": "post",
+            "name": "📄 Numbers - Check",
+            "publish_as": "data",
+            "rank": 19,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVy",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AVy\":{\"caption\":\"📄 Numbers - Check\",\"fields\":{\"_p_jid\":{\"ret_value\":\"text\",\"caption\":\"jid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"jid\"]},\"_p_exists\":{\"ret_value\":\"boolean\",\"caption\":\"exists\",\"sample_value\":true,\"path\":[\"exists\"]}}}}",
+            "url": "[url]/chat/whatsappNumbers/[instance]",
+            "url_params": {
+                "AWA": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AcH": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AWD": {
+            "body": "{\n  \"number\": \"<number>\"\n}",
+            "body_params": {
+                "AcM": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AWE": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYW": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "📄 Number - Profile picture",
+            "publish_as": "data",
+            "rank": 20,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWD",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AWD\":{\"caption\":\"📄 Number - Profile picture\",\"fields\":{\"_p_wuid\":{\"ret_value\":\"text\",\"caption\":\"wuid\",\"sample_value\":\"21996015792@s.whatsapp.net\",\"path\":[\"wuid\"]},\"_p_profilePictureUrl\":{\"ret_value\":\"text\",\"caption\":\"profilePictureUrl\",\"sample_value\":null,\"path\":[\"profilePictureUrl\"]}}}}",
+            "url": "[url]/chat/fetchProfilePictureUrl/[instance]",
+            "url_params": {
+                "AWF": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AcJ": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AWI": {
+            "body": "{\n  \"where\": {\n}\n}",
+            "headers": {
+                "AWJ": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYX": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "is_list": true,
+            "method": "post",
+            "name": "📄 Find contacts",
+            "publish_as": "data",
+            "rank": 21,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWI",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AWI\":{\"caption\":\"📄 Find contact\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"63caef2ef8ad41b3fae57391\",\"path\":[\"_id\"]},\"_p_pushName\":{\"ret_value\":\"text\",\"caption\":\"pushName\",\"sample_value\":\"Kleante Novo\",\"path\":[\"pushName\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"5521988048170@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_profilePictureUrl\":{\"ret_value\":\"text\",\"caption\":\"profilePictureUrl\",\"sample_value\":\"https://pps.whatsapp.net/v/t61.24694-24/73589202_124051055880260_7974054251511916538_n.jpg?ccb=11-4&oh=01_AdTEEN95TZVCw9rg5_GVx8fhuUOrF-bynq2qwLfu7ZK9mg&oe=63D801F8\",\"path\":[\"profilePictureUrl\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p___v\":{\"ret_value\":\"number\",\"caption\":\"__v\",\"sample_value\":0,\"path\":[\"__v\"]}}}}",
+            "url": "[url]/chat/findContacts/[instance]",
+            "url_params": {
+                "AWK": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AcN": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AWM": {
+            "body": "{\n  \"readMessages\": [\n    {\n      \"remoteJid\": \"<remoteJid>\",\n      \"fromMe\": <fromMe>,\n      \"id\": \"<message_id>\"\n    }\n  ]\n}",
+            "body_params": {
+                "AWR": {
+                    "doc": "true/false",
+                    "key": "fromMe",
+                    "value": ""
+                },
+                "Aca": {
+                    "doc": "number@s.whatsapp.net - for contact\ngroupid@g.us - for groups",
+                    "key": "remoteJid",
+                    "private": true,
+                    "value": ""
+                },
+                "Ack": {
+                    "key": "message_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AWN": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "put",
+            "name": "✅ Message - Read",
+            "publish_as": "action",
+            "rank": 25,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWM",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AWM\":{\"caption\":\"✅ Ler mensagem\",\"fields\":{\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Read messages\",\"path\":[\"message\"]},\"_p_read\":{\"ret_value\":\"text\",\"caption\":\"read\",\"sample_value\":\"success\",\"path\":[\"read\"]}}}}",
+            "url": "[url]/chat/markMessageAsRead/[instance]",
+            "url_params": {
+                "AWO": {
+                    "key": "url"
+                },
+                "AcZ": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AWb": {
+            "body": "{\n  \"subject\": \"<group_name>\",\n  \"participants\": [<participants>],\n  \"description\": \"<description>\"\n}",
+            "body_params": {
+                "Acw": {
+                    "key": "group_name",
+                    "private": true,
+                    "value": ""
+                },
+                "Acx": {
+                    "doc": "Example:\n\"552198765431\", \"551198765431\"",
+                    "key": "participants",
+                    "private": true,
+                    "value": ""
+                },
+                "Acy": {
+                    "key": "description",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AWc": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Group - Create",
+            "publish_as": "action",
+            "rank": 27,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWb",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AWb\":{\"caption\":\"✅ Criar grupo\",\"fields\":{\"_p_groupMetadata.id\":{\"ret_value\":\"text\",\"caption\":\"groupMetadata id\",\"sample_value\":\"120363046733447121@g.us\",\"path\":[\"groupMetadata\",\"id\"]},\"_p_groupMetadata.subject\":{\"ret_value\":\"text\",\"caption\":\"groupMetadata subject\",\"sample_value\":\"nome do grupo2\",\"path\":[\"groupMetadata\",\"subject\"]},\"_p_groupMetadata.subjectOwner\":{\"ret_value\":\"text\",\"caption\":\"groupMetadata subjectOwner\",\"sample_value\":\"55265465455@s.whatsapp.net\",\"path\":[\"groupMetadata\",\"subjectOwner\"]},\"_p_groupMetadata.subjectTime\":{\"ret_value\":\"number\",\"caption\":\"groupMetadata subjectTime\",\"sample_value\":1671719392,\"path\":[\"groupMetadata\",\"subjectTime\"]},\"_p_groupMetadata.size\":{\"ret_value\":\"number\",\"caption\":\"groupMetadata size\",\"sample_value\":2,\"path\":[\"groupMetadata\",\"size\"]},\"_p_groupMetadata.creation\":{\"ret_value\":\"number\",\"caption\":\"groupMetadata creation\",\"sample_value\":1671719392,\"path\":[\"groupMetadata\",\"creation\"]},\"_p_groupMetadata.owner\":{\"ret_value\":\"text\",\"caption\":\"groupMetadata owner\",\"sample_value\":\"56546546555@s.whatsapp.net\",\"path\":[\"groupMetadata\",\"owner\"]},\"_p_groupMetadata.desc.type\":{\"ret_value\":\"text\",\"caption\":\"groupMetadata desc type\",\"sample_value\":\"Buffer\",\"path\":[\"groupMetadata\",\"desc\",\"type\"]},\"_p_groupMetadata.desc.data\":{\"ret_value\":\"list.number\",\"caption\":\"groupMetadata desc\",\"sample_value\":100,\"path\":[\"groupMetadata\",\"desc\",\"data\"]},\"_p_groupMetadata.descId\":{\"ret_value\":\"text\",\"caption\":\"groupMetadata descId\",\"sample_value\":\"BAE53C5E63E89751\",\"path\":[\"groupMetadata\",\"descId\"]},\"_p_groupMetadata.restrict\":{\"ret_value\":\"boolean\",\"caption\":\"groupMetadata restrict\",\"sample_value\":false,\"path\":[\"groupMetadata\",\"restrict\"]},\"_p_groupMetadata.announce\":{\"ret_value\":\"boolean\",\"caption\":\"groupMetadata announce\",\"sample_value\":false,\"path\":[\"groupMetadata\",\"announce\"]},\"_p_groupMetadata.participants\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AWb.groupMetadata.participants\",\"caption\":\"groupMetadata participants\",\"path\":[\"groupMetadata\",\"participants\"]}}},\"plugin_api.AWb.groupMetadata.participants\":{\"caption\":\"✅ Criar grupo groupMetadata participant\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"6546548485@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_admin\":{\"ret_value\":\"text\",\"caption\":\"admin\",\"sample_value\":\"superadmin\",\"path\":[\"admin\"]}}}}",
+            "url": "[url]/group/create/[instance]",
+            "url_params": {
+                "AWd": {
+                    "key": "url"
+                },
+                "Acr": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AWi": {
+            "body": "{\n  \"subject\": \"<nome_grupo>\",\n  \"participants\": [<participantes>],\n  \"profilePicture\": \"<imagem_grupo>\",\n  \"description\": \"<descricao>\"\n}",
+            "body_params": {
+                "AWn": {
+                    "key": "nome_grupo",
+                    "value": "grupo criado2"
+                },
+                "AWo": {
+                    "key": "participantes",
+                    "value": "\"5521996015792\", \"5521987153448\""
+                },
+                "AWp": {
+                    "key": "descricao",
+                    "value": "descrição"
+                },
+                "AWq": {
+                    "key": "imagem_grupo",
+                    "value": "https://cdn.pixabay.com/photo/2012/11/21/17/02/lion-66898_960_720.jpg"
+                }
+            },
+            "headers": {
+                "AWj": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYb": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "📄 Group - Details",
+            "publish_as": "data",
+            "rank": 28,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWi",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AWi\":{\"caption\":\"📄 Group - Detail\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"120363030487365570@g.us\",\"path\":[\"id\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"teste\",\"path\":[\"subject\"]},\"_p_subjectOwner\":{\"ret_value\":\"text\",\"caption\":\"subjectOwner\",\"sample_value\":\"5521986231256@s.whatsapp.net\",\"path\":[\"subjectOwner\"]},\"_p_subjectTime\":{\"ret_value\":\"number\",\"caption\":\"subjectTime\",\"sample_value\":1674163949,\"path\":[\"subjectTime\"]},\"_p_size\":{\"ret_value\":\"number\",\"caption\":\"size\",\"sample_value\":2,\"path\":[\"size\"]},\"_p_creation\":{\"ret_value\":\"number\",\"caption\":\"creation\",\"sample_value\":1674163949,\"path\":[\"creation\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521986231256@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p_desc\":{\"ret_value\":\"text\",\"caption\":\"desc\",\"sample_value\":\"desc\",\"path\":[\"desc\"]},\"_p_descId\":{\"ret_value\":\"text\",\"caption\":\"descId\",\"sample_value\":\"BAE57B0C3281FC21\",\"path\":[\"descId\"]},\"_p_restrict\":{\"ret_value\":\"boolean\",\"caption\":\"restrict\",\"sample_value\":false,\"path\":[\"restrict\"]},\"_p_announce\":{\"ret_value\":\"boolean\",\"caption\":\"announce\",\"sample_value\":false,\"path\":[\"announce\"]},\"_p_participants\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AWi.participants\",\"caption\":\"participants\",\"path\":[\"participants\"]}}},\"plugin_api.AWi.participants\":{\"caption\":\"📄 Group - Details participant\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"5521986231256@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_admin\":{\"ret_value\":\"text\",\"caption\":\"admin\",\"sample_value\":\"superadmin\",\"path\":[\"admin\"]}}}}",
+            "url": "[url]/group/findGroupInfos/[instance]?groupJid=[groupJid]",
+            "url_params": {
+                "AWk": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AWl": {
+                    "key": "instance",
+                    "value": ""
+                },
+                "AWm": {
+                    "key": "groupJid",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXA": {
+            "body": "{\n  \"subject\": \"<nome_grupo>\",\n  \"participants\": [<participantes>],\n  \"profilePicture\": \"<imagem_grupo>\",\n  \"description\": \"<descricao>\"\n}",
+            "body_params": {
+                "AXF": {
+                    "key": "nome_grupo",
+                    "value": "grupo criado2"
+                },
+                "AXG": {
+                    "key": "participantes",
+                    "value": "\"5521996015792\", \"5521987153448\""
+                },
+                "AXH": {
+                    "key": "descricao",
+                    "value": "descrição"
+                },
+                "AXI": {
+                    "key": "imagem_grupo",
+                    "value": "https://cdn.pixabay.com/photo/2012/11/21/17/02/lion-66898_960_720.jpg"
+                }
+            },
+            "headers": {
+                "AXB": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYc": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "📄 Group - Invite URL code",
+            "publish_as": "data",
+            "rank": 29,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXA",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXA\":{\"caption\":\"📄 Group - Invite URL code\",\"fields\":{\"_p_inviteUrl\":{\"ret_value\":\"text\",\"caption\":\"inviteUrl\",\"sample_value\":\"https://chat.whatsapp.com/I47eARmdImw4Tumj5HCx6o\",\"path\":[\"inviteUrl\"]},\"_p_inviteCode\":{\"ret_value\":\"text\",\"caption\":\"inviteCode\",\"sample_value\":\"I47eARmdImw4Tumj5HCx6o\",\"path\":[\"inviteCode\"]}}}}",
+            "url": "[url]/group/inviteCode/[instance]?groupJid=[groupJid]",
+            "url_params": {
+                "AXC": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AXD": {
+                    "key": "instance",
+                    "value": ""
+                },
+                "AXE": {
+                    "key": "groupJid",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXJ": {
+            "body": "{\n  \"action\": \"<add_remove_promote_demote>\",\n  \"participants\": [\n<participants>\n  ]\n}",
+            "body_params": {
+                "AdA": {
+                    "doc": "Options:\nadd - add participants\nremove - remove participants\npromote - Add to admin list\ndemote - Remove from admin list\n\nPT-BR:\nOpções:\nadd - adiciona participantes\nremove - remove participantes\npromote - Adiciona na lista de administradores\ndemote - Remove da lista de administradores",
+                    "key": "add_remove_promote_demote",
+                    "private": true,
+                    "value": ""
+                },
+                "AdB": {
+                    "doc": "Example:\n\"552198765431\", \"551198765431\"",
+                    "key": "participants",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AXK": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "put",
+            "name": "✅ Group - Update members",
+            "publish_as": "action",
+            "rank": 31,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXJ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXJ\":{\"caption\":\"✅ Configurar participantes no grupo\",\"fields\":{\"_p_updatePaticipants\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AXJ.updatePaticipants\",\"caption\":\"updatePaticipants\",\"path\":[\"updatePaticipants\"]}}},\"plugin_api.AXJ.updatePaticipants\":{\"caption\":\"✅ Configurar participantes no grupo updatePaticipant\",\"fields\":{\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"200\",\"path\":[\"status\"]},\"_p_jid\":{\"ret_value\":\"text\",\"caption\":\"jid\",\"sample_value\":\"5654654652@s.whatsapp.net\",\"path\":[\"jid\"]}}}}",
+            "url": "[url]/group/updateParticipant/[instance]?groupJid=[groupJid]",
+            "url_params": {
+                "AXL": {
+                    "key": "url"
+                },
+                "AXM": {
+                    "key": "instance",
+                    "value": ""
+                },
+                "AXN": {
+                    "key": "groupJid",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXQ": {
+            "headers": {
+                "AXR": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "put",
+            "name": "✅ Group - Revoke invite URL code",
+            "publish_as": "action",
+            "rank": 30,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXQ",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXQ\":{\"caption\":\"✅ Revogar Convite Grupo\",\"fields\":{\"_p_revoked\":{\"ret_value\":\"boolean\",\"caption\":\"revoked\",\"sample_value\":true,\"path\":[\"revoked\"]},\"_p_inviteCode\":{\"ret_value\":\"text\",\"caption\":\"inviteCode\",\"sample_value\":\"CdYXwZ9YheB7EhfXfYzjUW\",\"path\":[\"inviteCode\"]}}}}",
+            "url": "[url]/group/revokeInviteCode/[instance]?groupJid=[groupJid]",
+            "url_params": {
+                "AXS": {
+                    "key": "url"
+                },
+                "AXT": {
+                    "key": "instance",
+                    "value": ""
+                },
+                "AXU": {
+                    "key": "groupJid",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXV": {
+            "headers": {
+                "AXW": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "delete_method",
+            "name": "✅ Group - Leave ",
+            "publish_as": "action",
+            "rank": 33,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXV",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXV\":{\"caption\":\"✅ Sair do grupo \",\"fields\":{\"_p_groupJid\":{\"ret_value\":\"text\",\"caption\":\"groupJid\",\"sample_value\":\"120363046733447121@g.us\",\"path\":[\"groupJid\"]},\"_p_leave\":{\"ret_value\":\"boolean\",\"caption\":\"leave\",\"sample_value\":true,\"path\":[\"leave\"]}}}}",
+            "url": "[url]/group/leaveGroup/[instance]?groupJid=[groupJid]",
+            "url_params": {
+                "AXX": {
+                    "key": "url"
+                },
+                "AXY": {
+                    "key": "instance",
+                    "value": ""
+                },
+                "AXZ": {
+                    "key": "groupJid",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXa": {
+            "headers": {
+                "AXb": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "delete_method",
+            "name": "✅ Instance - Delete",
+            "publish_as": "action",
+            "rank": 6,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXa",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXa\":{\"caption\":\"✅ Delete Instancia\",\"fields\":{\"_p_error\":{\"ret_value\":\"boolean\",\"caption\":\"error\",\"sample_value\":false,\"path\":[\"error\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Instance deleted\",\"path\":[\"message\"]}}}}",
+            "url": "[url]/instance/delete/[instance]",
+            "url_params": {
+                "AXc": {
+                    "key": "url"
+                },
+                "AZG": {
+                    "doc": "You can only delete instances that are not connected.\n\nPT-BR:\nSó é possível deletar instâncias que não estão conectadas.",
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXe": {
+            "body": "{\n  \"key\": {\n    \"id\": \"<message_id>\"\n  }\n}",
+            "body_params": {
+                "AdF": {
+                    "key": "message_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AXf": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYd": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "📄 Get Base64 From Media Message",
+            "publish_as": "data",
+            "rank": 34,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXe",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXe\":{\"caption\":\"📄 Get Base64 From Media Message\",\"fields\":{\"_p_mediaType\":{\"ret_value\":\"text\",\"caption\":\"mediaType\",\"sample_value\":\"imageMessage\",\"path\":[\"mediaType\"]},\"_p_caption\":{\"ret_value\":\"text\",\"caption\":\"caption\",\"sample_value\":\"agora mudou\",\"path\":[\"caption\"]},\"_p_size.fileLength.low\":{\"ret_value\":\"number\",\"caption\":\"size fileLength low\",\"sample_value\":18508,\"path\":[\"size\",\"fileLength\",\"low\"]},\"_p_size.fileLength.high\":{\"ret_value\":\"number\",\"caption\":\"size fileLength high\",\"sample_value\":0,\"path\":[\"size\",\"fileLength\",\"high\"]},\"_p_size.fileLength.unsigned\":{\"ret_value\":\"boolean\",\"caption\":\"size fileLength unsigned\",\"sample_value\":true,\"path\":[\"size\",\"fileLength\",\"unsigned\"]},\"_p_size.height\":{\"ret_value\":\"number\",\"caption\":\"size height\",\"sample_value\":264,\"path\":[\"size\",\"height\"]},\"_p_size.width\":{\"ret_value\":\"number\",\"caption\":\"size width\",\"sample_value\":611,\"path\":[\"size\",\"width\"]},\"_p_mimetype\":{\"ret_value\":\"text\",\"caption\":\"mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"mimetype\"]},\"_p_base64\":{\"ret_value\":\"text\",\"caption\":\"base64\",\"sample_value\":\"(value too large to save 24680 bytes)\",\"path\":[\"base64\"]}}}}",
+            "url": "[url]/chat/getBase64FromMediaMessage/[instance]",
+            "url_params": {
+                "AXg": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AXh": {
+                    "key": "instance",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXj": {
+            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
+            "body_params": {
+                "AXo": {
+                    "key": "instanceName",
+                    "value": "codechat2"
+                }
+            },
+            "headers": {
+                "AXl": {
+                    "doc": "⚠️ only works with global apikey",
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AdH": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "get",
+            "name": "📄 Instance - details ⚠️",
+            "publish_as": "data",
+            "rank": 3,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXj",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXj\":{\"caption\":\"📄 Instance - details ⚠️\",\"fields\":{\"_p_instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"instance instanceName\",\"sample_value\":\"teste2\",\"path\":[\"instance\",\"instanceName\"]},\"_p_instance.owner\":{\"ret_value\":\"text\",\"caption\":\"instance owner\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"instance\",\"owner\"]},\"_p_instance.profileName\":{\"ret_value\":\"text\",\"caption\":\"instance profileName\",\"sample_value\":\"not loaded\",\"path\":[\"instance\",\"profileName\"]},\"_p_instance.profilePictureUrl\":{\"ret_value\":\"text\",\"caption\":\"instance profilePictureUrl\",\"sample_value\":\"https://pps.whatsapp.net/v/t61.24694-24/64330091_457280348153664_4544115063190978560_n.jpg?ccb=11-4&oh=01_AdSD0CiRsFGxqeAnLEORYrUY61H9mZjOIEtAwIvhOrbmQg&oe=63D7FEAB\",\"path\":[\"instance\",\"profilePictureUrl\"]}}}}",
+            "url": "[url]/instance/fetchInstances?instanceName=[instance]",
+            "url_params": {
+                "AXm": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AXn": {
+                    "doc": "",
+                    "key": "instance",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AXp": {
+            "headers": {
+                "AXq": {
+                    "key": "apikey",
+                    "value": ""
+                },
+                "AYZ": {
+                    "doc": "Optional\nBy placing different data in the API call, it forces the bubble to update the data. The date field does this function.\n\nPt-BR:\nOpcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
+                    "key": "date",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "is_list": true,
+            "method": "get",
+            "name": "📄 Find chats",
+            "publish_as": "data",
+            "rank": 23,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXp",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXp\":{\"caption\":\"📄 Find chat\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"63caee9df8ad41b3fae5718e\",\"path\":[\"_id\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"120363043037508782@g.us\",\"path\":[\"id\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p___v\":{\"ret_value\":\"number\",\"caption\":\"__v\",\"sample_value\":0,\"path\":[\"__v\"]}}}}",
+            "url": "[url]/chat/findChats/[instance]",
+            "url_params": {
+                "AXr": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AcT": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AXt": {
+            "body": "{ \n      \"remoteJid\": \"<remoteJid>\",\n      \"fromMe\": <fromMe>,\n      \"id\": \"<message_id>\"\n}",
+            "body_params": {
+                "Aco": {
+                    "doc": "number@s.whatsapp.net - for contact\ngroupid@g.us - for groups",
+                    "key": "remoteJid",
+                    "private": true,
+                    "value": ""
+                },
+                "Acp": {
+                    "key": "fromMe",
+                    "private": true,
+                    "value": ""
+                },
+                "Acq": {
+                    "key": "message_id",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AXu": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "delete_method",
+            "name": "✅ Message - Delete",
+            "publish_as": "action",
+            "rank": 26,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXt",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AXt\":{\"caption\":\"✅ Apagar mensagem\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE5AF660331EEE6\",\"path\":[\"key\",\"id\"]},\"_p_message.protocolMessage.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"message protocolMessage key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"message\",\"protocolMessage\",\"key\",\"remoteJid\"]},\"_p_message.protocolMessage.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"message protocolMessage key fromMe\",\"sample_value\":true,\"path\":[\"message\",\"protocolMessage\",\"key\",\"fromMe\"]},\"_p_message.protocolMessage.key.id\":{\"ret_value\":\"text\",\"caption\":\"message protocolMessage key id\",\"sample_value\":\"BDBEEC3E32A306677E490678342C44EC\",\"path\":[\"message\",\"protocolMessage\",\"key\",\"id\"]},\"_p_message.protocolMessage.type\":{\"ret_value\":\"text\",\"caption\":\"message protocolMessage type\",\"sample_value\":\"REVOKE\",\"path\":[\"message\",\"protocolMessage\",\"type\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1673375434\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/chat/deleteMessageForEveryone/[instance]",
+            "url_params": {
+                "AXv": {
+                    "key": "url"
+                },
+                "Acl": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            }
+        },
+        "AYA": {
+            "body": "{\n  \"image\": \"<image_url>\"\n}",
+            "body_params": {
+                "AdE": {
+                    "key": "image_url",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AYB": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "put",
+            "name": "✅ Group - Change picture",
+            "publish_as": "action",
+            "rank": 32,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AYA",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AYA\":{\"caption\":\"✅ Alterar imagem do grupo\",\"fields\":{\"_p_update\":{\"ret_value\":\"text\",\"caption\":\"update\",\"sample_value\":\"success\",\"path\":[\"update\"]}}}}",
+            "url": "[url]/group/updateGroupPicture/[instance]?groupJid=[groupJid]",
+            "url_params": {
+                "AYC": {
+                    "key": "url"
+                },
+                "AYD": {
+                    "key": "instance",
+                    "value": ""
+                },
+                "AYE": {
+                    "key": "groupJid",
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AYG": {
+            "body": "{\n    \"number\": \"<number>\",\n    \"listMessage\": {\n        \"title\": <title>,\n        \"description\": \"<message>\",\n        \"footerText\": <footer>,\n        \"buttonText\": \"<button>\",\n        \"sections\": [\n                 \t   {    \"title\": \"<title_section>\",\n       \t\t\t\t\t\t \"rows\": [ <rows> ]\n        \t\t\t\t\t}\n      \t\t        ]\n    },\n  \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "AbJ": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "AbK": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "title",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "AbL": {
+                    "key": "message",
+                    "private": true,
+                    "value": ""
+                },
+                "AbM": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "footer",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "AbN": {
+                    "key": "button",
+                    "private": true,
+                    "value": ""
+                },
+                "AbO": {
+                    "key": "title_section",
+                    "private": true,
+                    "value": ""
+                },
+                "AbP": {
+                    "doc": "Fill it with a json like this:\n\n{\n    \"title\":\"Title Option 1\",\n    \"description\":\"Option Description 1\",\n    \"rowId\":\"string11\"\n},\n{\n    \"title\":\"Title Option 2\",\n    \"description\":\"Option Description 2\",\n    \"rowId\":\"string12\"\n}\n\nPT-BR:\nPreencha com um json conforme mostrado acima:",
+                    "key": "rows",
+                    "private": true,
+                    "value": ""
+                },
+                "AbQ": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AYH": {
+                    "key": "apikey"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send List (1 section)",
+            "publish_as": "action",
+            "rank": 15,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AYG",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AYG\":{\"caption\":\"✅ Enviar lista (1 titulo)\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE5D68E882C4A33\",\"path\":[\"key\",\"id\"]},\"_p_message.listMessage.title\":{\"ret_value\":\"text\",\"caption\":\"message listMessage title\",\"sample_value\":\"\",\"path\":[\"message\",\"listMessage\",\"title\"]},\"_p_message.listMessage.description\":{\"ret_value\":\"text\",\"caption\":\"message listMessage description\",\"sample_value\":\"msg\",\"path\":[\"message\",\"listMessage\",\"description\"]},\"_p_message.listMessage.buttonText\":{\"ret_value\":\"text\",\"caption\":\"message listMessage buttonText\",\"sample_value\":\"selecione\",\"path\":[\"message\",\"listMessage\",\"buttonText\"]},\"_p_message.listMessage.listType\":{\"ret_value\":\"text\",\"caption\":\"message listMessage listType\",\"sample_value\":\"SINGLE_SELECT\",\"path\":[\"message\",\"listMessage\",\"listType\"]},\"_p_message.listMessage.sections\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AYG.message.listMessage.sections\",\"caption\":\"message listMessage sections\",\"path\":[\"message\",\"listMessage\",\"sections\"]},\"_p_message.listMessage.footerText\":{\"ret_value\":\"text\",\"caption\":\"message listMessage footerText\",\"sample_value\":\"\",\"path\":[\"message\",\"listMessage\",\"footerText\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1673485479\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}},\"plugin_api.AYG.message.listMessage.sections\":{\"caption\":\"✅ Enviar lista (1 titulo) message listMessage section\",\"fields\":{\"_p_title\":{\"ret_value\":\"text\",\"caption\":\"title\",\"sample_value\":\"titulo1\",\"path\":[\"title\"]},\"_p_rows\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AYG.rows\",\"caption\":\"rows\",\"path\":[\"rows\"]}}},\"plugin_api.AYG.rows\":{\"caption\":\"✅ Enviar lista (1 titulo) row\",\"fields\":{\"_p_title\":{\"ret_value\":\"text\",\"caption\":\"title\",\"sample_value\":\"Title Option 1\",\"path\":[\"title\"]},\"_p_description\":{\"ret_value\":\"text\",\"caption\":\"description\",\"sample_value\":\"Option Description 1\",\"path\":[\"description\"]},\"_p_rowId\":{\"ret_value\":\"text\",\"caption\":\"rowId\",\"sample_value\":\"string11\",\"path\":[\"rowId\"]}}}}",
+            "url": "[url]/message/sendList/[instance]",
+            "url_params": {
+                "AYI": {
+                    "key": "url"
+                },
+                "Aai": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "AdP": {
+            "0": "A",
+            "1": "d",
+            "2": "O",
+            "body": "{\n  \"number\": \"<number>\",\n  \"audioMessage\": {\n    \"audio\": \"<audio_url>\"\n  },\n  \"options\": {\n    \"delay\": <delay>,\n    \"presence\": \"recording\"\n  }\n}",
+            "body_params": {
+                "AZR": {
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "Ado": {
+                    "doc": "",
+                    "key": "audio_url",
+                    "private": true,
+                    "value": ""
+                },
+                "Adq": {
+                    "doc": "Your status will stay as recording during the delay.\n\nPt-BR:\nSeu status ficará como gravando aúdio durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": "10"
+                }
+            },
+            "headers": {
+                "AUn": {
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send audio",
+            "publish_as": "action",
+            "rank": 11,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AdP",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AdP\":{\"caption\":\"✅ Send audio\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE5703D97A93B33\",\"path\":[\"key\",\"id\"]},\"_p_message.audioMessage.url\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/d/f/AnsOKU6noC94Foctb4UVs3U87naMRrEuV55w1GY3S-yR.enc\",\"path\":[\"message\",\"audioMessage\",\"url\"]},\"_p_message.audioMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage mimetype\",\"sample_value\":\"audio/ogg; codecs=opus\",\"path\":[\"message\",\"audioMessage\",\"mimetype\"]},\"_p_message.audioMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage fileSha256\",\"sample_value\":\"+iggJW8s0/LfA/okfXsB550/55Q0Sq3OoIzuBrzOPJQ=\",\"path\":[\"message\",\"audioMessage\",\"fileSha256\"]},\"_p_message.audioMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage fileLength\",\"sample_value\":\"764176\",\"path\":[\"message\",\"audioMessage\",\"fileLength\"]},\"_p_message.audioMessage.seconds\":{\"ret_value\":\"number\",\"caption\":\"message audioMessage seconds\",\"sample_value\":27,\"path\":[\"message\",\"audioMessage\",\"seconds\"]},\"_p_message.audioMessage.ptt\":{\"ret_value\":\"boolean\",\"caption\":\"message audioMessage ptt\",\"sample_value\":true,\"path\":[\"message\",\"audioMessage\",\"ptt\"]},\"_p_message.audioMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage mediaKey\",\"sample_value\":\"skgOLNF0Qy3XUKIspCIG3QGo4xHZD8uBtugl5xUVXJw=\",\"path\":[\"message\",\"audioMessage\",\"mediaKey\"]},\"_p_message.audioMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage fileEncSha256\",\"sample_value\":\"rX2d/zfMIwhUA3YwQpSKhU+EuPLTcsi6DjSFsGIVCbo=\",\"path\":[\"message\",\"audioMessage\",\"fileEncSha256\"]},\"_p_message.audioMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage directPath\",\"sample_value\":\"/v/t62.7114-24/29608477_3002738906697765_1997202049089989908_n.enc?ccb=11-4&oh=01_AdTwyLbro-DX75ySPgZb-U9Fna0nzGRMsWV4817a0rRSbw&oe=63F2C6F7\",\"path\":[\"message\",\"audioMessage\",\"directPath\"]},\"_p_message.audioMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"message audioMessage mediaKeyTimestamp\",\"sample_value\":\"1674273602\",\"path\":[\"message\",\"audioMessage\",\"mediaKeyTimestamp\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1674273602\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}}}",
+            "url": "[url]/message/sendWhatsAppAudio/[instance]",
+            "url_params": {
+                "AUo": {
+                    "key": "url",
+                    "value": ""
+                },
+                "AZJ": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        },
+        "Ads": {
+            "0": "A",
+            "1": "d",
+            "2": "r",
+            "body": "{\n  \"number\": \"<number>\",\n  \"templateMessage\": {\n    \"title\": <title>,\n    \"description\": \"<message>\" ,\n    \"footerText\": <footer>,\n    \"buttons\": [\n      <buttons>\n    ]\n          <media-opcional>\n      \n  },\n \"options\": {\n    \"delay\": <delay>\n  }\n}",
+            "body_params": {
+                "Aab": {
+                    "doc": "iOS devices do not receive this type of message.",
+                    "key": "number",
+                    "private": true,
+                    "value": ""
+                },
+                "Aac": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "title",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "Aad": {
+                    "key": "message",
+                    "private": true,
+                    "value": "message"
+                },
+                "Aae": {
+                    "doc": "Do not forget the quotes, if you want this field empty, just leave the quotes.\n\nPT-BR:\nNão esqueça das aspas, caso queira esse campo vazio, deixe apenas as aspas.",
+                    "key": "footer",
+                    "private": true,
+                    "value": "\"\""
+                },
+                "Aaf": {
+                    "doc": "Send a json (text) with these attributes:\n\n      {\n        \"type\": \"url\",\n        \"displayText\": \"Go\",\n        \"payload\": \"https://uazapi.bubbleapps.io/\"\n      },\n      {\n        \"type\": \"call\",\n        \"displayText\": \"Call me\",\n        \"payload\": \"+55 31 9 0000-0000\"\n      },\n      {\n        \"type\": \"reply\",\n        \"displayText\": \"Click here 1\",\n        \"payload\": \"1\"\n      }\n\nPT-BR:\nEnvie um json (texto) com os atributos acima.",
+                    "key": "buttons",
+                    "private": true,
+                    "value": ""
+                },
+                "Aag": {
+                    "allow_blank": false,
+                    "doc": "If you didn't want this field, leave an empty space, otherwise the bubble understands it as null and gives an error.\n\nPt-BR:\nCaso não queria esse campo, deixe um espaço vazio, caso contrário o bubble entende como null e dá erro.\n\nThis value is optional, you can send an image or video along with the button, example below:\n\n----------------------\n,\n\"mediaMessage\" : {\n    \"mediatype\" : \"image\",\n    \"media\" : \"<url>\"\n}\n\n-----------------\n\nDon't forget the comma at the beginning.\n\n\nPT-BR:\nEsse valor é opcional, você pode enviar uma imagem ou vídeo junto com o botão, exemplo abaixo:\n\n----------------------\n,\n\"mediaMessage\" : {\n   \"mediatype\" : \"image\",\n   \"media\" : \"<url>\"\n}\n\n-----------------\n\nNão esqueça da vírgula no início.",
+                    "key": "media-opcional",
+                    "private": true,
+                    "value": "  "
+                },
+                "Aah": {
+                    "doc": "Your status will stay as typing during the delay.\n\nPt-BR:\nSeu status ficará como digitando durante o delay.",
+                    "key": "delay",
+                    "private": true,
+                    "value": "0"
+                }
+            },
+            "doc_link": "",
+            "headers": {
+                "AVE": {
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Send Template Buttons",
+            "publish_as": "action",
+            "rank": 14,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.Ads",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.Ads\":{\"caption\":\"✅ Send Template Button\",\"fields\":{\"_p_key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"key\",\"remoteJid\"]},\"_p_key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"key fromMe\",\"sample_value\":true,\"path\":[\"key\",\"fromMe\"]},\"_p_key.id\":{\"ret_value\":\"text\",\"caption\":\"key id\",\"sample_value\":\"BAE560B947D54579\",\"path\":[\"key\",\"id\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedTitleText\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate hydratedTitleText\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedTitleText\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/d/f/AqhiUnYdmPEz7LYZJlVYLwxt_yCe8uEe9oooedQOBW8k.enc\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"url\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mimetype\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileSha256\",\"sample_value\":\"X1OMOqAqF7P0FeaIYE9e17VPcnsqMsMumAlNWJckJl4=\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileLength\",\"sample_value\":\"289553\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileLength\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.height\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage height\",\"sample_value\":1165,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"height\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.width\":{\"ret_value\":\"number\",\"caption\":\"message templateMessage hydratedTemplate imageMessage width\",\"sample_value\":1599,\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"width\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mediaKey\",\"sample_value\":\"ETkzOUE7xWpePmqRsJalLhp889DgrhvyY00v/uYDUjk=\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKey\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage fileEncSha256\",\"sample_value\":\"zmNAnaK7iVeiw6JIdilE1iGPtZUSLtzvfZAmI+zC2yI=\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileEncSha256\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/12083008_155328693605183_4343688339030990777_n.enc?ccb=11-4&oh=01_AdSthjBAq9Q3hQ6RY5dqBT7HWXhiekwgbANlkCMjb8NDEg&oe=63F29C94\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"directPath\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage mediaKeyTimestamp\",\"sample_value\":\"1674253808\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKeyTimestamp\"]},\"_p_message.templateMessage.hydratedTemplate.imageMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate imageMessage jpegThumbnail\",\"sample_value\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIABcAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AJ9MIaJVyo2ygEdznFZvctbFiJTKskiuGWIAN83TLD/6/wCtTfWw7My9NlQRXbnqTuz3xnNaSWxKZduY2iijjC52xqpA6ZwM/rmoXcpmTp4YCRQzKRhwQcdK0exC3NK1gtjpb3n2lhPGSCBj5c8AEYrnlJxkkjoiua9zPtHSISKB8jYBHc1te5lZIuzX5llYkDL5IRR0OOfxo5bIVyzZ6S8LtGwTzWG4D0XkZz9e3tWXtVuUoFNoHa3it0OZdp35PqDkf99Y/KtLrcWuxlyQMrhcjIBIZSfnI+tXdMnUeV3q2948Kud4yO+OmKL2Dc//2Q==\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"jpegThumbnail\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedContentText\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate hydratedContentText\",\"sample_value\":\"message\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedContentText\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedFooterText\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate hydratedFooterText\",\"sample_value\":\"\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedFooterText\"]},\"_p_message.templateMessage.hydratedTemplate.hydratedButtons\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.Ads.message.templateMessage.hydratedTemplate.hydratedButtons\",\"caption\":\"message templateMessage hydratedTemplate hydratedButtons\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedButtons\"]},\"_p_message.templateMessage.hydratedTemplate.templateId\":{\"ret_value\":\"text\",\"caption\":\"message templateMessage hydratedTemplate templateId\",\"sample_value\":\"69e1b2c2-47d5-401c-8d37-1af6a8598341\",\"path\":[\"message\",\"templateMessage\",\"hydratedTemplate\",\"templateId\"]},\"_p_messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"messageTimestamp\",\"sample_value\":\"1674253808\",\"path\":[\"messageTimestamp\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"PENDING\",\"path\":[\"status\"]}}},\"plugin_api.Ads.message.templateMessage.hydratedTemplate.hydratedButtons\":{\"caption\":\"✅ Send Template Buttons message templateMessage hydratedTemplate hydratedButton\",\"fields\":{\"_p_urlButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"urlButton displayText\",\"sample_value\":\"Go\",\"path\":[\"urlButton\",\"displayText\"]},\"_p_urlButton.url\":{\"ret_value\":\"text\",\"caption\":\"urlButton url\",\"sample_value\":\"https://uazapi.bubbleapps.io/\",\"path\":[\"urlButton\",\"url\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]},\"_p_callButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"callButton displayText\",\"sample_value\":\"Call me\",\"path\":[\"callButton\",\"displayText\"]},\"_p_callButton.phoneNumber\":{\"ret_value\":\"text\",\"caption\":\"callButton phoneNumber\",\"sample_value\":\"+55 31 9 0000-0000\",\"path\":[\"callButton\",\"phoneNumber\"]},\"_p_quickReplyButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton displayText\",\"sample_value\":\"Click here 1\",\"path\":[\"quickReplyButton\",\"displayText\"]},\"_p_quickReplyButton.id\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton id\",\"sample_value\":\"1\",\"path\":[\"quickReplyButton\",\"id\"]}}}}",
+            "url": "[url]/message/sendTemplate/[instance]",
+            "url_params": {
+                "AVF": {
+                    "doc": "doesn't work on ios",
+                    "key": "url",
+                    "value": ""
+                },
+                "AaI": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": false
+        }
+    },
+    "human": "🤖 uazapi",
+    "said": "dWF6YXBp",
+    "shared_headers": {
+        "bTIKX": {
+            "key": "Accept",
+            "private": true,
+            "value": "*/*",
+            "visibility": "hidden"
+        },
+        "bTIKY": {
+            "key": "Accept-Encoding",
+            "private": true,
+            "value": "gzip, deflate, br",
+            "visibility": "hidden"
+        },
+        "bTIKZ": {
+            "key": "Connection",
+            "private": true,
+            "value": "keep-alive",
+            "visibility": "hidden"
+        },
+        "cnsgD0": {
+            "key": "Content-Type",
+            "private": true,
+            "value": "application/json",
+            "visibility": "hidden"
+        }
+    }
+}

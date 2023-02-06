@@ -1,0 +1,13 @@
+{
+    "categories": {
+        "0": "social network",
+        "1": "technical",
+        "2": "productivity",
+        "3": "customer support"
+    },
+    "description": "For the plugin to work you need to hire our services:\n\nhttps://uazapi.bubbleapps.io/\n\nPlugin for WhatsApp API, this API is hosted by you.\n\nWe sell this API license along with the support service. For now it is only available for Brazilians, but soon we will provide ways for users from other countries to buy and enjoy our excellent API.\n\n⚠️ = only works with global apikey\n\n----------------------\n\nPT-BR:\nPara o plugin funcionar você precisa contratar nossos serviços:\n\nhttps://uazapi.bubbleapps.io/\n\nPlugin para API WhatsApp, esta API é hospedada por você.\n\nVendemos a licença da API junto com o serviço de suporte. Por enquanto está disponível apenas para brasileiros, mas em breve disponibilizaremos formas para que usuários de outros países possam comprar e usufruir de nossa excelente API.\n\n⚠️ = chamadas que só funcionam com apikey global ",
+    "image": "//s3.amazonaws.com/appforest_uf/f1674264071237x461664621645137000/uazap%20i%20%2814%29%20corners.png",
+    "license": "open_source",
+    "name": "uazapi - WhatsApp API - Self Hosted",
+    "plugin_instructions": ""
+}
