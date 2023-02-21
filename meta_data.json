@@ -5,9 +5,11 @@
         "2": "productivity",
         "3": "customer support"
     },
-    "description": "For the plugin to work you need to hire our services:\n\nhttps://uazapi.bubbleapps.io/\n\nPlugin for WhatsApp API, this API is hosted by you.\n\nWe sell this API license along with the support service. \n\nIt is now possible to copy the plugin using the fork option.\n\n⚠️ = only works with global apikey\n\n\n----------------------\n\nPT-BR:\nPara o plugin funcionar você precisa contratar nossos serviços:\n\nhttps://uazapi.bubbleapps.io/\n\nPlugin para API WhatsApp, esta API é hospedada por você.\n\nVendemos a licença da API junto com o serviço de suporte. \n\nAgora é possível copiar o plugin usando a opção fork.\n\n⚠️ = chamadas que só funcionam com apikey global ",
+    "demo_page": "https://uazapi.bubbleapps.io/",
+    "description": "Para o plugin funcionar você precisa contratar nossos serviços:\n\nhttps://uazapi.bubbleapps.io/\n\nPlugin para uazapi - API WhatsApp, esta API pode ser hospedada por você, ou você pode usar nosso servidor.\n\nAgora é possível copiar o plugin usando a opção fork.\n\n\n\nObservações:\n\n⚠️ = chamadas que só funcionam com apikey global e para quem está no plano ilimitado, hospedando a API.\n\n🚀 = Atualização da API em 15/02/2023 - se você está no plano ilimitado, hospedando a API uazapi, é necessário atualizar a API no seu servidor.",
     "image": "//s3.amazonaws.com/appforest_uf/f1674264071237x461664621645137000/uazap%20i%20%2814%29%20corners.png",
     "license": "open_source",
-    "name": "uazapi - WhatsApp API - Self Hosted",
+    "link": "https://uazapi.bubbleapps.io/",
+    "name": "uazapi - WhatsApp API",
     "plugin_instructions": ""
 }
