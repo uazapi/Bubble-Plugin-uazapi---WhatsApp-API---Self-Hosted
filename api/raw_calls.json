@@ -514,10 +514,10 @@
                     "value": ""
                 },
                 "AaH": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -575,9 +575,10 @@
                     "value": ""
                 },
                 "Adf": {
+                    "doc": "O atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -647,13 +648,13 @@
                     "doc": "Caso não queria esse campo, deixe um espaço vazio, caso contrário o bubble entende como null e dá erro.\n\n\nEsse valor é opcional, você pode enviar uma imagem ou vídeo junto com o botão, exemplo abaixo:\n\n----------------------\n,\n\"mediaMessage\" : {\n   \"mediatype\" : \"image\",\n   \"media\" : \"<url>\"\n}\n\n-----------------\n\nobs: Não esqueça da vírgula no início.",
                     "key": "media-opcional",
                     "private": true,
-                    "value": ""
+                    "value": "   "
                 },
                 "Aah": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -719,10 +720,10 @@
                     "value": ""
                 },
                 "AaF": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo\n",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -792,10 +793,10 @@
                     "value": ""
                 },
                 "Abe": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -844,10 +845,10 @@
                     "value": ""
                 },
                 "Abq": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -1690,10 +1691,10 @@
                     "value": ""
                 },
                 "AbQ": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -1744,10 +1745,10 @@
                     "value": ""
                 },
                 "Adq": {
-                    "doc": "Seu status ficará como gravando aúdio durante o delay.",
+                    "doc": "Seu status ficará como gravando aúdio durante o delay.\n\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
-                    "value": ""
+                    "value": "0"
                 }
             },
             "headers": {
@@ -1819,10 +1820,10 @@
                     "doc": "Caso não queria esse campo, deixe um espaço vazio, caso contrário o bubble entende como null e dá erro.\n\n\nEsse valor é opcional, você pode enviar uma imagem ou vídeo junto com o botão, exemplo abaixo:\n\n----------------------\n,\n\"mediaMessage\" : {\n   \"mediatype\" : \"image\",\n   \"media\" : \"<url>\"\n}\n\n-----------------\n\nobs: Não esqueça da vírgula no início.",
                     "key": "media-opcional",
                     "private": true,
-                    "value": ""
+                    "value": "  "
                 },
                 "Aah": {
-                    "doc": "Seu status ficará como digitando durante o delay.",
+                    "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
                     "key": "delay",
                     "private": true,
                     "value": "0"
@@ -2157,6 +2158,51 @@
                 }
             },
             "wrap_error": false
+        },
+        "AhE": {
+            "data_type": "file",
+            "get_headers": true,
+            "headers": {
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Upload to Bubble - Base64",
+            "params": {
+                "AhJ": {
+                    "doc": "coloque o arquivo base64 aqui",
+                    "key": "contents",
+                    "long_text": true,
+                    "private": true,
+                    "value": ""
+                },
+                "AhK": {
+                    "doc": "nomedoarquivo.txt\n\ncoloque o nome do arquivo e sua extensão",
+                    "key": "name",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "action",
+            "rank": 41,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AhE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AhE\":{\"caption\":\"✅ Upload to Bubble - Base64\",\"fields\":{\"_p_body\":{\"ret_value\":\"_ignore\"},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Wed, 01 Mar 2023 04:19:00 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"_ignore\"},\"_p_headers.transfer-encoding\":{\"ret_value\":\"_ignore\"},\"_p_headers.connection\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-powered-by\":{\"ret_value\":\"_ignore\"},\"_p_headers.cache-control\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-appname\":{\"ret_value\":\"text\",\"caption\":\"headers x-bubble-appname\",\"sample_value\":\"uazapi-exemplo\",\"path\":[\"headers\",\"x-bubble-appname\"]},\"_p_headers.x-bubble-request-took\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-perf\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-capacity-used\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-capacity-limit\":{\"ret_value\":\"_ignore\"},\"_p_headers.vary\":{\"ret_value\":\"_ignore\"},\"_p_headers.cf-cache-status\":{\"ret_value\":\"_ignore\"},\"_p_headers.server\":{\"ret_value\":\"_ignore\"},\"_p_headers.cf-ray\":{\"ret_value\":\"_ignore\"},\"_p_headers.content-encoding\":{\"ret_value\":\"_ignore\"}}}}",
+            "url": "https://[appname].bubbleapps.io/[version-test/]fileupload",
+            "url_params": {
+                "AhG": {
+                    "doc": "Coloque o nome/id do seu aplicativo no bubble, o que está entre colchetes\n\nse seu aplicativo for free ou não tiver domínio ainda, pegue esse dado\nhttps://[appname].bubbleapps.io/\n\nse você já tem domínio no seu aplicativo, e vc não lembra o nome/id, você pode pegar no link do editor, vai estar assim\n\nhttps://bubble.io/page?name=index&id=[appname]&tab=tabs-1",
+                    "key": "appname",
+                    "private": true,
+                    "value": "uazapi-exemplo"
+                },
+                "AhN": {
+                    "allow_blank": true,
+                    "doc": "se for version-test coloque version-test/, se for version live, deixe em branco",
+                    "key": "version-test/",
+                    "private": true,
+                    "value": "version-test/"
+                }
+            }
         }
     },
     "human": "🤖 uazapi",
