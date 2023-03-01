@@ -2160,10 +2160,8 @@
             "wrap_error": false
         },
         "AhE": {
-            "data_type": "file",
+            "data_type": "JSON",
             "get_headers": true,
-            "headers": {
-            },
             "initialized": true,
             "method": "post",
             "name": "✅ Upload to Bubble - Base64",
@@ -2186,7 +2184,7 @@
             "rank": 41,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AhE",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AhE\":{\"caption\":\"✅ Upload to Bubble - Base64\",\"fields\":{\"_p_body\":{\"ret_value\":\"_ignore\"},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Wed, 01 Mar 2023 04:19:00 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"_ignore\"},\"_p_headers.transfer-encoding\":{\"ret_value\":\"_ignore\"},\"_p_headers.connection\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-powered-by\":{\"ret_value\":\"_ignore\"},\"_p_headers.cache-control\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-appname\":{\"ret_value\":\"text\",\"caption\":\"headers x-bubble-appname\",\"sample_value\":\"uazapi-exemplo\",\"path\":[\"headers\",\"x-bubble-appname\"]},\"_p_headers.x-bubble-request-took\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-perf\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-capacity-used\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-capacity-limit\":{\"ret_value\":\"_ignore\"},\"_p_headers.vary\":{\"ret_value\":\"_ignore\"},\"_p_headers.cf-cache-status\":{\"ret_value\":\"_ignore\"},\"_p_headers.server\":{\"ret_value\":\"_ignore\"},\"_p_headers.cf-ray\":{\"ret_value\":\"_ignore\"},\"_p_headers.content-encoding\":{\"ret_value\":\"_ignore\"}}}}",
+            "types": "{\"plugin_api.AhE\":{\"caption\":\"✅ Upload to Bubble - Base64\",\"fields\":{\"_p_body\":{\"ret_value\":\"text\",\"caption\":\"body\",\"sample_value\":\"//s3.amazonaws.com/appforest_uf/f1677647589133x644077376946096400/test.json\",\"path\":[\"body\"]},\"_p_headers.date\":{\"ret_value\":\"text\",\"caption\":\"headers date\",\"sample_value\":\"Wed, 01 Mar 2023 05:13:09 GMT\",\"path\":[\"headers\",\"date\"]},\"_p_headers.content-type\":{\"ret_value\":\"_ignore\"},\"_p_headers.transfer-encoding\":{\"ret_value\":\"_ignore\"},\"_p_headers.connection\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-powered-by\":{\"ret_value\":\"_ignore\"},\"_p_headers.cache-control\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-appname\":{\"ret_value\":\"text\",\"caption\":\"headers x-bubble-appname\",\"sample_value\":\"uazapi-exemplo\",\"path\":[\"headers\",\"x-bubble-appname\"]},\"_p_headers.x-bubble-request-took\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-perf\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-capacity-used\":{\"ret_value\":\"_ignore\"},\"_p_headers.x-bubble-capacity-limit\":{\"ret_value\":\"_ignore\"},\"_p_headers.vary\":{\"ret_value\":\"_ignore\"},\"_p_headers.cf-cache-status\":{\"ret_value\":\"_ignore\"},\"_p_headers.server\":{\"ret_value\":\"_ignore\"},\"_p_headers.cf-ray\":{\"ret_value\":\"_ignore\"},\"_p_headers.content-encoding\":{\"ret_value\":\"_ignore\"}}}}",
             "url": "https://[appname].bubbleapps.io/[version-test/]fileupload",
             "url_params": {
                 "AhG": {
@@ -2212,12 +2210,6 @@
             "key": "Accept",
             "private": true,
             "value": "*/*",
-            "visibility": "hidden"
-        },
-        "bTIKY": {
-            "key": "Accept-Encoding",
-            "private": true,
-            "value": "gzip, deflate, br",
             "visibility": "hidden"
         },
         "bTIKZ": {
