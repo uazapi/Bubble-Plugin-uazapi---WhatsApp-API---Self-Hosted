@@ -1739,7 +1739,7 @@
                     "value": ""
                 },
                 "Ado": {
-                    "doc": "",
+                    "doc": "O audio precisa estar no padrão do WhatsApp: extenção ogg, codec opus, mono, taxa de amostragem de áudio (sample rate) 48000 kHz.",
                     "key": "audio_url",
                     "private": true,
                     "value": ""
