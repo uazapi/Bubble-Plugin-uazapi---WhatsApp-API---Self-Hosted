@@ -32,7 +32,7 @@
             "initialized": true,
             "is_list": true,
             "method": "post",
-            "name": "📄 Find messages 🚫",
+            "name": "📄 Buscar mensagens 🚫",
             "publish_as": "data",
             "rank": 22,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.ATo",
@@ -83,7 +83,7 @@
             "initialized": true,
             "is_list": true,
             "method": "post",
-            "name": "📄 Message Status (received or read) 🚫",
+            "name": "📄 Buscar status de recebimento 🚫",
             "publish_as": "data",
             "rank": 24,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.ATu",
@@ -105,10 +105,16 @@
             "wrap_error": false
         },
         "AUA": {
-            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
+            "body": "{\n  \"instanceName\": \"<instanceName>\",\n  \"apikey\": \"<apikey_da_instancia>\"\n\n}",
             "body_params": {
                 "AUD": {
                     "key": "instanceName",
+                    "value": ""
+                },
+                "Ahk": {
+                    "doc": "definir a senha (apikey) da instancia criada, quanto mais caracteres, mais seguro",
+                    "key": "apikey_da_instancia",
+                    "private": true,
                     "value": ""
                 }
             },
@@ -121,12 +127,12 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Instance - Create  ⚠️▶️",
+            "name": "✅ Instancia - Criar  ⚠️▶️",
             "publish_as": "action",
             "rank": 0,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUA",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AUA\":{\"caption\":\"✅ Instance - Create  ⚠️\",\"fields\":{\"_p_body.instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"body instance instanceName\",\"sample_value\":\"teste1\",\"path\":[\"body\",\"instance\",\"instanceName\"]},\"_p_body.instance.status\":{\"ret_value\":\"text\",\"caption\":\"body instance status\",\"sample_value\":\"created\",\"path\":[\"body\",\"instance\",\"status\"]},\"_p_body.hash.apikey\":{\"ret_value\":\"text\",\"caption\":\"body hash apikey\",\"sample_value\":\"C37122A8-D916-4D72-AEB0-939CC3F12653\",\"path\":[\"body\",\"hash\",\"apikey\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"instance\\\\\\\":{\\\\\\\"instanceName\\\\\\\":\\\\\\\"teste1\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"created\\\\\\\"},\\\\\\\"hash\\\\\\\":{\\\\\\\"apikey\\\\\\\":\\\\\\\"C37122A8-D916-4D72-AEB0-939CC3F12653\\\\\\\"}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "types": "{\"plugin_api.AUA\":{\"caption\":\"✅ Instance - Create  ⚠️▶️\",\"fields\":{\"_p_body.instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"body instance instanceName\",\"sample_value\":\"teste2\",\"path\":[\"body\",\"instance\",\"instanceName\"]},\"_p_body.instance.status\":{\"ret_value\":\"text\",\"caption\":\"body instance status\",\"sample_value\":\"created\",\"path\":[\"body\",\"instance\",\"status\"]},\"_p_body.hash.apikey\":{\"ret_value\":\"text\",\"caption\":\"body hash apikey\",\"sample_value\":\"senha2\",\"path\":[\"body\",\"hash\",\"apikey\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"instance\\\\\\\":{\\\\\\\"instanceName\\\\\\\":\\\\\\\"teste2\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"created\\\\\\\"},\\\\\\\"hash\\\\\\\":{\\\\\\\"apikey\\\\\\\":\\\\\\\"senha2\\\\\\\"}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
             "url": "[url]/instance/create",
             "url_params": {
                 "AUC": {
@@ -161,7 +167,7 @@
             },
             "initialized": true,
             "method": "get",
-            "name": "📄 Instance - Get QR Code 🚫",
+            "name": "📄 Instance - Pegar QR Code 🚫",
             "publish_as": "data",
             "rank": 1,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUE",
@@ -206,7 +212,7 @@
             "initialized": true,
             "is_list": true,
             "method": "get",
-            "name": "📄 Instance - List all ⚠️🚫",
+            "name": "📄 Instance - Listar todas ⚠️🚫",
             "publish_as": "data",
             "rank": 2,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUK",
@@ -245,12 +251,12 @@
             },
             "initialized": true,
             "method": "get",
-            "name": "📄 Instance - Connection state ▶️",
+            "name": "📄 Instance - Info ▶️",
             "publish_as": "data",
-            "rank": 4,
+            "rank": 3,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUP",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AUP\":{\"caption\":\"📄 Instance - Connection state ▶️\",\"fields\":{\"_p_body.state\":{\"ret_value\":\"text\",\"caption\":\"body state\",\"sample_value\":\"open\",\"path\":[\"body\",\"state\"]},\"_p_body.statusReason\":{\"ret_value\":\"number\",\"caption\":\"body statusReason\",\"sample_value\":200,\"path\":[\"body\",\"statusReason\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"state\\\\\\\":\\\\\\\"open\\\\\\\",\\\\\\\"statusReason\\\\\\\":200}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "types": "{\"plugin_api.AUP\":{\"caption\":\"📄 Instance - Connection state ▶️\",\"fields\":{\"_p_body.connectionStatus.state\":{\"ret_value\":\"text\",\"caption\":\"body connectionStatus state\",\"sample_value\":\"open\",\"path\":[\"body\",\"connectionStatus\",\"state\"]},\"_p_body.connectionStatus.statusReason\":{\"ret_value\":\"number\",\"caption\":\"body connectionStatus statusReason\",\"sample_value\":200,\"path\":[\"body\",\"connectionStatus\",\"statusReason\"]},\"_p_body.instanceInfo.instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"body instanceInfo instance instanceName\",\"sample_value\":\"teste\",\"path\":[\"body\",\"instanceInfo\",\"instance\",\"instanceName\"]},\"_p_body.instanceInfo.instance.owner\":{\"ret_value\":\"text\",\"caption\":\"body instanceInfo instance owner\",\"sample_value\":\"5521987905995\",\"path\":[\"body\",\"instanceInfo\",\"instance\",\"owner\"]},\"_p_body.instanceInfo.instance.profileName\":{\"ret_value\":\"text\",\"caption\":\"body instanceInfo instance profileName\",\"sample_value\":\"Pedro - Desenvolvedor\",\"path\":[\"body\",\"instanceInfo\",\"instance\",\"profileName\"]},\"_p_body.instanceInfo.instance.profilePictureUrl\":{\"ret_value\":\"text\",\"caption\":\"body instanceInfo instance profilePictureUrl\",\"sample_value\":null,\"path\":[\"body\",\"instanceInfo\",\"instance\",\"profilePictureUrl\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"connectionStatus\\\\\\\":{\\\\\\\"state\\\\\\\":\\\\\\\"open\\\\\\\",\\\\\\\"statusReason\\\\\\\":200},\\\\\\\"instanceInfo\\\\\\\":{\\\\\\\"instance\\\\\\\":{\\\\\\\"instanceName\\\\\\\":\\\\\\\"teste\\\\\\\",\\\\\\\"owner\\\\\\\":\\\\\\\"5521987905995\\\\\\\",\\\\\\\"profileName\\\\\\\":\\\\\\\"Pedro - Desenvolvedor\\\\\\\",\\\\\\\"profilePictureUrl\\\\\\\":null}}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
             "url": "[url]/instance/connectionState/[instance]",
             "url_params": {
                 "AUS": {
@@ -277,7 +283,7 @@
             "method": "delete_method",
             "name": "✅ Instance - Logout ▶️",
             "publish_as": "action",
-            "rank": 5,
+            "rank": 4,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUV",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AUV\":{\"caption\":\"✅ Instance - Logout\",\"fields\":{\"_p_body.error\":{\"ret_value\":\"boolean\",\"caption\":\"body error\",\"sample_value\":false,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Instance logged out\",\"path\":[\"body\",\"message\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"error\\\\\\\":false,\\\\\\\"message\\\\\\\":\\\\\\\"Instance logged out\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
@@ -298,7 +304,7 @@
             "wrap_error": true
         },
         "AUZ": {
-            "body": "{\n    \"enabled\": <enabled>,\n    \"url\": \"<url>\",\n    \"STATUS_INSTANCE\":<status_instance>,\n    \"CONNECTION_UPDATE\":<connection_update>,\n    \"QRCODE_UPDATED\":<qrcode_updated>,\n    \"MESSAGES_SET\":<messages_set>,\n    \"MESSAGES_UPDATE\":<messages_update>,\n    \"MESSAGES_UPSERT\":<messages_upsert>,\n    \"SEND_MESSAGE\":<send_message>,\n    \"CONTACTS_SET\":<contacts_set>,\n    \"CONTACTS_UPSERT\":<contacts_upsert>,\n    \"CONTACTS_UPDATE\":<contacts_update>,\n    \"PRESENCE_UPDATE\":<presence_update>,\n    \"CHATS_SET\":<chats_set>,\n    \"CHATS_UPSERT\":<chats_upsert>,\n    \"CHATS_UPDATE\":<chats_update>,\n    \"CHATS_DELETE\":<chats_delete>,\n    \"GROUPS_UPSERT\":<groups_upsert>,\n    \"GROUPS_UPDATE\":<groups_update>,\n    \"GROUP_PARTICIPANTS_UPDATE\":<group_participants_update>\n }\n",
+            "body": "{\n    \"enabled\": <enabled>,\n    \"url\": \"<url>\",\n    \"local_map\": <local_map>,\n    \"STATUS_INSTANCE\":<status_instance>,\n    \"CONNECTION_UPDATE\":<connection_update>,\n    \"QRCODE_UPDATED\":<qrcode_updated>,\n    \"MESSAGES_SET\":<messages_set>,\n    \"MESSAGES_UPDATE\":<messages_update>,\n    \"MESSAGES_UPSERT\":<messages_upsert>,\n    \"SEND_MESSAGE\":<send_message>,\n    \"CONTACTS_SET\":<contacts_set>,\n    \"CONTACTS_UPSERT\":<contacts_upsert>,\n    \"CONTACTS_UPDATE\":<contacts_update>,\n    \"PRESENCE_UPDATE\":<presence_update>,\n    \"CHATS_SET\":<chats_set>,\n    \"CHATS_UPSERT\":<chats_upsert>,\n    \"CHATS_UPDATE\":<chats_update>,\n    \"CHATS_DELETE\":<chats_delete>,\n    \"GROUPS_UPSERT\":<groups_upsert>,\n    \"GROUPS_UPDATE\":<groups_update>,\n    \"GROUP_PARTICIPANTS_UPDATE\":<group_participants_update>\n }\n",
             "body_params": {
                 "Age": {
                     "doc": "true/false",
@@ -420,6 +426,12 @@
                     "key": "group_participants_update",
                     "private": true,
                     "value": "false"
+                },
+                "AiL": {
+                    "doc": "se habilitado, cada evento vai para uma url diferente, veja:\n\n                  \n    CONNECTION_UPDATE:  [https://seulinkwebhook.com]/wa-connection-update\n\n    STATUS_INSTANCE: [https://seulinkwebhook.com]/wa-connection-update\n\n    QRCODE_UPDATED: [https://seulinkwebhook.com]/wa-qrcode\n\n    MESSAGES_SET: [https://seulinkwebhook.com]/wa-message \n\n    MESSAGES_UPSERT: [https://seulinkwebhook.com]/wa-message\n\n    SEND_MESSAGE: [https://seulinkwebhook.com]/wa-message\n\n    MESSAGES_UPDATE: [https://seulinkwebhook.com]/wa-message-update\n\n    CONTACTS_SET: [https://seulinkwebhook.com]/wa-contacts  \n\n    CONTACTS_UPSERT: [https://seulinkwebhook.com]/wa-contacts\n\n    CONTACTS_UPDATE:  [https://seulinkwebhook.com]/wa-contacts\n\n    PRESENCE_UPDATE: [https://seulinkwebhook.com]/wa-presence\n\n    CHATS_SET: [https://seulinkwebhook.com]/wa-chats\n\n    CHATS_UPSERT: [https://seulinkwebhook.com]/wa-chats \n\n    CHATS_UPDATE: [https://seulinkwebhook.com]/wa-chats \n\n    CHATS_DELETE: [https://seulinkwebhook.com]/wa-chats \n\n    GROUPS_UPSERT: [https://seulinkwebhook.com]/wa-groups\n\n    GROUP_UPDATE: [https://seulinkwebhook.com]/wa-groups\n\n    GROUP_PARTICIPANTS_UPDATE: [https://seulinkwebhook.com/]wa-groups  \n",
+                    "key": "local_map",
+                    "private": true,
+                    "value": "false"
                 }
             },
             "headers": {
@@ -430,12 +442,12 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Instance - Set Webhook 🚀 ▶️",
+            "name": "✅ Instance - Definir Webhook ▶️",
             "publish_as": "action",
-            "rank": 7,
+            "rank": 6,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUZ",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AUZ\":{\"caption\":\"✅ Instance - Set Webhook 🚀\",\"fields\":{\"_p_body.webhook.instanceName\":{\"ret_value\":\"text\",\"caption\":\"body webhook instanceName\",\"sample_value\":\"teste1\",\"path\":[\"body\",\"webhook\",\"instanceName\"]},\"_p_body.webhook.webhook.enabled\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook enabled\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"enabled\"]},\"_p_body.webhook.webhook.url\":{\"ret_value\":\"text\",\"caption\":\"body webhook webhook url\",\"sample_value\":\"https://uazapi.bubbleapps.io/api/1.1/wf/uazapi/\",\"path\":[\"body\",\"webhook\",\"webhook\",\"url\"]},\"_p_body.webhook.webhook.STATUS_INSTANCE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook STATUS_INSTANCE\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"STATUS_INSTANCE\"]},\"_p_body.webhook.webhook.CONNECTION_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONNECTION_UPDATE\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONNECTION_UPDATE\"]},\"_p_body.webhook.webhook.QRCODE_UPDATED\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook QRCODE_UPDATED\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"QRCODE_UPDATED\"]},\"_p_body.webhook.webhook.MESSAGES_SET\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook MESSAGES_SET\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"MESSAGES_SET\"]},\"_p_body.webhook.webhook.MESSAGES_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook MESSAGES_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"MESSAGES_UPDATE\"]},\"_p_body.webhook.webhook.MESSAGES_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook MESSAGES_UPSERT\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"MESSAGES_UPSERT\"]},\"_p_body.webhook.webhook.SEND_MESSAGE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook SEND_MESSAGE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"SEND_MESSAGE\"]},\"_p_body.webhook.webhook.CONTACTS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONTACTS_SET\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONTACTS_SET\"]},\"_p_body.webhook.webhook.CONTACTS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONTACTS_UPSERT\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONTACTS_UPSERT\"]},\"_p_body.webhook.webhook.CONTACTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONTACTS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONTACTS_UPDATE\"]},\"_p_body.webhook.webhook.PRESENCE_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook PRESENCE_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"PRESENCE_UPDATE\"]},\"_p_body.webhook.webhook.CHATS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_SET\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_SET\"]},\"_p_body.webhook.webhook.CHATS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_UPSERT\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_UPSERT\"]},\"_p_body.webhook.webhook.CHATS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_UPDATE\"]},\"_p_body.webhook.webhook.CHATS_DELETE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_DELETE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_DELETE\"]},\"_p_body.webhook.webhook.GROUPS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook GROUPS_UPSERT\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"GROUPS_UPSERT\"]},\"_p_body.webhook.webhook.GROUPS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook GROUPS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"GROUPS_UPDATE\"]},\"_p_body.webhook.webhook.GROUP_PARTICIPANTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook GROUP_PARTICIPANTS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"GROUP_PARTICIPANTS_UPDATE\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"webhook\\\\\\\":{\\\\\\\"instanceName\\\\\\\":\\\\\\\"teste1\\\\\\\",\\\\\\\"webhook\\\\\\\":{\\\\\\\"enabled\\\\\\\":true,\\\\\\\"url\\\\\\\":\\\\\\\"https://uazapi.bubbleapps.io/api/1.1/wf/uazapi/\\\\\\\",\\\\\\\"STATUS_INSTANCE\\\\\\\":true,\\\\\\\"CONNECTION_UPDATE\\\\\\\":true,\\\\\\\"QRCODE_UPDATED\\\\\\\":true,\\\\\\\"MESSAGES_SET\\\\\\\":false,\\\\\\\"MESSAGES_UPDATE\\\\\\\":false,\\\\\\\"MESSAGES_UPSERT\\\\\\\":true,\\\\\\\"SEND_MESSAGE\\\\\\\":false,\\\\\\\"CONTACTS_SET\\\\\\\":false,\\\\\\\"CONTACTS_UPSERT\\\\\\\":false,\\\\\\\"CONTACTS_UPDATE\\\\\\\":false,\\\\\\\"PRESENCE_UPDATE\\\\\\\":false,\\\\\\\"CHATS_SET\\\\\\\":false,\\\\\\\"CHATS_UPSERT\\\\\\\":false,\\\\\\\"CHATS_UPDATE\\\\\\\":false,\\\\\\\"CHATS_DELETE\\\\\\\":false,\\\\\\\"GROUPS_UPSERT\\\\\\\":false,\\\\\\\"GROUPS_UPDATE\\\\\\\":false,\\\\\\\"GROUP_PARTICIPANTS_UPDATE\\\\\\\":false}}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "types": "{\"plugin_api.AUZ\":{\"caption\":\"✅ Instance - Set Webhook 🚀 ▶️\",\"fields\":{\"_p_body.webhook.instanceName\":{\"ret_value\":\"text\",\"caption\":\"body webhook instanceName\",\"sample_value\":\"teste\",\"path\":[\"body\",\"webhook\",\"instanceName\"]},\"_p_body.webhook.webhook.enabled\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook enabled\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"enabled\"]},\"_p_body.webhook.webhook.url\":{\"ret_value\":\"text\",\"caption\":\"body webhook webhook url\",\"sample_value\":\"https://yourapp.bubbleapps.io/api/1.1/wf/uazapi/\",\"path\":[\"body\",\"webhook\",\"webhook\",\"url\"]},\"_p_body.webhook.webhook.local_map\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook local_map\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"local_map\"]},\"_p_body.webhook.webhook.STATUS_INSTANCE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook STATUS_INSTANCE\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"STATUS_INSTANCE\"]},\"_p_body.webhook.webhook.CONNECTION_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONNECTION_UPDATE\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONNECTION_UPDATE\"]},\"_p_body.webhook.webhook.QRCODE_UPDATED\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook QRCODE_UPDATED\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"QRCODE_UPDATED\"]},\"_p_body.webhook.webhook.MESSAGES_SET\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook MESSAGES_SET\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"MESSAGES_SET\"]},\"_p_body.webhook.webhook.MESSAGES_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook MESSAGES_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"MESSAGES_UPDATE\"]},\"_p_body.webhook.webhook.MESSAGES_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook MESSAGES_UPSERT\",\"sample_value\":true,\"path\":[\"body\",\"webhook\",\"webhook\",\"MESSAGES_UPSERT\"]},\"_p_body.webhook.webhook.SEND_MESSAGE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook SEND_MESSAGE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"SEND_MESSAGE\"]},\"_p_body.webhook.webhook.CONTACTS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONTACTS_SET\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONTACTS_SET\"]},\"_p_body.webhook.webhook.CONTACTS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONTACTS_UPSERT\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONTACTS_UPSERT\"]},\"_p_body.webhook.webhook.CONTACTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CONTACTS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CONTACTS_UPDATE\"]},\"_p_body.webhook.webhook.PRESENCE_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook PRESENCE_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"PRESENCE_UPDATE\"]},\"_p_body.webhook.webhook.CHATS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_SET\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_SET\"]},\"_p_body.webhook.webhook.CHATS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_UPSERT\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_UPSERT\"]},\"_p_body.webhook.webhook.CHATS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_UPDATE\"]},\"_p_body.webhook.webhook.CHATS_DELETE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook CHATS_DELETE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"CHATS_DELETE\"]},\"_p_body.webhook.webhook.GROUPS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook GROUPS_UPSERT\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"GROUPS_UPSERT\"]},\"_p_body.webhook.webhook.GROUPS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook GROUPS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"GROUPS_UPDATE\"]},\"_p_body.webhook.webhook.GROUP_PARTICIPANTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"body webhook webhook GROUP_PARTICIPANTS_UPDATE\",\"sample_value\":false,\"path\":[\"body\",\"webhook\",\"webhook\",\"GROUP_PARTICIPANTS_UPDATE\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"webhook\\\\\\\":{\\\\\\\"instanceName\\\\\\\":\\\\\\\"teste\\\\\\\",\\\\\\\"webhook\\\\\\\":{\\\\\\\"enabled\\\\\\\":true,\\\\\\\"url\\\\\\\":\\\\\\\"https://yourapp.bubbleapps.io/api/1.1/wf/uazapi/\\\\\\\",\\\\\\\"local_map\\\\\\\":false,\\\\\\\"STATUS_INSTANCE\\\\\\\":true,\\\\\\\"CONNECTION_UPDATE\\\\\\\":true,\\\\\\\"QRCODE_UPDATED\\\\\\\":true,\\\\\\\"MESSAGES_SET\\\\\\\":false,\\\\\\\"MESSAGES_UPDATE\\\\\\\":false,\\\\\\\"MESSAGES_UPSERT\\\\\\\":true,\\\\\\\"SEND_MESSAGE\\\\\\\":false,\\\\\\\"CONTACTS_SET\\\\\\\":false,\\\\\\\"CONTACTS_UPSERT\\\\\\\":false,\\\\\\\"CONTACTS_UPDATE\\\\\\\":false,\\\\\\\"PRESENCE_UPDATE\\\\\\\":false,\\\\\\\"CHATS_SET\\\\\\\":false,\\\\\\\"CHATS_UPSERT\\\\\\\":false,\\\\\\\"CHATS_UPDATE\\\\\\\":false,\\\\\\\"CHATS_DELETE\\\\\\\":false,\\\\\\\"GROUPS_UPSERT\\\\\\\":false,\\\\\\\"GROUPS_UPDATE\\\\\\\":false,\\\\\\\"GROUP_PARTICIPANTS_UPDATE\\\\\\\":false}}}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
             "url": "[url]/webhook/set/[instance]",
             "url_params": {
                 "AUb": {
@@ -480,10 +492,10 @@
             "method": "get",
             "name": "📄 Instance - Status Webhook 🚫",
             "publish_as": "data",
-            "rank": 8,
+            "rank": 7,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUf",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AUf\":{\"caption\":\"📄 Instance - Status Webhook\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"teste1\",\"path\":[\"_id\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://uazapi.bubbleapps.io/api/1.1/wf/uazapi/\",\"path\":[\"url\"]},\"_p_enabled\":{\"ret_value\":\"boolean\",\"caption\":\"enabled\",\"sample_value\":true,\"path\":[\"enabled\"]},\"_p_STATUS_INSTANCE\":{\"ret_value\":\"boolean\",\"caption\":\"STATUS_INSTANCE\",\"sample_value\":true,\"path\":[\"STATUS_INSTANCE\"]},\"_p_QRCODE_UPDATED\":{\"ret_value\":\"boolean\",\"caption\":\"QRCODE_UPDATED\",\"sample_value\":true,\"path\":[\"QRCODE_UPDATED\"]},\"_p_MESSAGES_SET\":{\"ret_value\":\"boolean\",\"caption\":\"MESSAGES_SET\",\"sample_value\":false,\"path\":[\"MESSAGES_SET\"]},\"_p_MESSAGES_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"MESSAGES_UPDATE\",\"sample_value\":false,\"path\":[\"MESSAGES_UPDATE\"]},\"_p_MESSAGES_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"MESSAGES_UPSERT\",\"sample_value\":true,\"path\":[\"MESSAGES_UPSERT\"]},\"_p_SEND_MESSAGE\":{\"ret_value\":\"boolean\",\"caption\":\"SEND_MESSAGE\",\"sample_value\":false,\"path\":[\"SEND_MESSAGE\"]},\"_p_CONTACTS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"CONTACTS_SET\",\"sample_value\":false,\"path\":[\"CONTACTS_SET\"]},\"_p_CONTACTS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"CONTACTS_UPSERT\",\"sample_value\":false,\"path\":[\"CONTACTS_UPSERT\"]},\"_p_CONTACTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"CONTACTS_UPDATE\",\"sample_value\":false,\"path\":[\"CONTACTS_UPDATE\"]},\"_p_PRESENCE_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"PRESENCE_UPDATE\",\"sample_value\":false,\"path\":[\"PRESENCE_UPDATE\"]},\"_p_CHATS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_SET\",\"sample_value\":false,\"path\":[\"CHATS_SET\"]},\"_p_CHATS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_UPSERT\",\"sample_value\":false,\"path\":[\"CHATS_UPSERT\"]},\"_p_CHATS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_UPDATE\",\"sample_value\":false,\"path\":[\"CHATS_UPDATE\"]},\"_p_CHATS_DELETE\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_DELETE\",\"sample_value\":false,\"path\":[\"CHATS_DELETE\"]},\"_p_CONNECTION_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"CONNECTION_UPDATE\",\"sample_value\":true,\"path\":[\"CONNECTION_UPDATE\"]},\"_p_GROUPS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"GROUPS_UPSERT\",\"sample_value\":false,\"path\":[\"GROUPS_UPSERT\"]},\"_p_GROUPS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"GROUPS_UPDATE\",\"sample_value\":false,\"path\":[\"GROUPS_UPDATE\"]},\"_p_GROUP_PARTICIPANTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"GROUP_PARTICIPANTS_UPDATE\",\"sample_value\":false,\"path\":[\"GROUP_PARTICIPANTS_UPDATE\"]},\"_p___v\":{\"ret_value\":\"_ignore\"}}}}",
+            "types": "{\"plugin_api.AUf\":{\"caption\":\"📄 Instance - Status Webhook 🚫\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"teste\",\"path\":[\"_id\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://yourapp.bubbleapps.io/api/1.1/wf/uazapi/\",\"path\":[\"url\"]},\"_p_enabled\":{\"ret_value\":\"boolean\",\"caption\":\"enabled\",\"sample_value\":true,\"path\":[\"enabled\"]},\"_p_local_map\":{\"ret_value\":\"boolean\",\"caption\":\"local_map\",\"sample_value\":false,\"path\":[\"local_map\"]},\"_p_STATUS_INSTANCE\":{\"ret_value\":\"boolean\",\"caption\":\"STATUS_INSTANCE\",\"sample_value\":true,\"path\":[\"STATUS_INSTANCE\"]},\"_p_QRCODE_UPDATED\":{\"ret_value\":\"boolean\",\"caption\":\"QRCODE_UPDATED\",\"sample_value\":true,\"path\":[\"QRCODE_UPDATED\"]},\"_p_MESSAGES_SET\":{\"ret_value\":\"boolean\",\"caption\":\"MESSAGES_SET\",\"sample_value\":false,\"path\":[\"MESSAGES_SET\"]},\"_p_MESSAGES_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"MESSAGES_UPDATE\",\"sample_value\":false,\"path\":[\"MESSAGES_UPDATE\"]},\"_p_MESSAGES_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"MESSAGES_UPSERT\",\"sample_value\":true,\"path\":[\"MESSAGES_UPSERT\"]},\"_p_SEND_MESSAGE\":{\"ret_value\":\"boolean\",\"caption\":\"SEND_MESSAGE\",\"sample_value\":false,\"path\":[\"SEND_MESSAGE\"]},\"_p_CONTACTS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"CONTACTS_SET\",\"sample_value\":false,\"path\":[\"CONTACTS_SET\"]},\"_p_CONTACTS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"CONTACTS_UPSERT\",\"sample_value\":false,\"path\":[\"CONTACTS_UPSERT\"]},\"_p_CONTACTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"CONTACTS_UPDATE\",\"sample_value\":false,\"path\":[\"CONTACTS_UPDATE\"]},\"_p_PRESENCE_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"PRESENCE_UPDATE\",\"sample_value\":false,\"path\":[\"PRESENCE_UPDATE\"]},\"_p_CHATS_SET\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_SET\",\"sample_value\":false,\"path\":[\"CHATS_SET\"]},\"_p_CHATS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_UPSERT\",\"sample_value\":false,\"path\":[\"CHATS_UPSERT\"]},\"_p_CHATS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_UPDATE\",\"sample_value\":false,\"path\":[\"CHATS_UPDATE\"]},\"_p_CHATS_DELETE\":{\"ret_value\":\"boolean\",\"caption\":\"CHATS_DELETE\",\"sample_value\":false,\"path\":[\"CHATS_DELETE\"]},\"_p_CONNECTION_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"CONNECTION_UPDATE\",\"sample_value\":true,\"path\":[\"CONNECTION_UPDATE\"]},\"_p_GROUPS_UPSERT\":{\"ret_value\":\"boolean\",\"caption\":\"GROUPS_UPSERT\",\"sample_value\":false,\"path\":[\"GROUPS_UPSERT\"]},\"_p_GROUPS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"GROUPS_UPDATE\",\"sample_value\":false,\"path\":[\"GROUPS_UPDATE\"]},\"_p_GROUP_PARTICIPANTS_UPDATE\":{\"ret_value\":\"boolean\",\"caption\":\"GROUP_PARTICIPANTS_UPDATE\",\"sample_value\":false,\"path\":[\"GROUP_PARTICIPANTS_UPDATE\"]},\"_p___v\":{\"ret_value\":\"_ignore\"}}}}",
             "url": "[url]/webhook/find/[instance]",
             "url_params": {
                 "AUi": {
@@ -522,15 +534,16 @@
             },
             "headers": {
                 "AUn": {
+                    "doc": "",
                     "key": "apikey",
                     "value": ""
                 }
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send text ▶️",
+            "name": "✅ Enviar texto ▶️",
             "publish_as": "action",
-            "rank": 9,
+            "rank": 8,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUm",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AUm\":{\"caption\":\"✅ Send text\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"588888885@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE5DDEB26667F22\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.extendedTextMessage.text\":{\"ret_value\":\"text\",\"caption\":\"body message extendedTextMessage text\",\"sample_value\":\"oi\",\"path\":[\"body\",\"message\",\"extendedTextMessage\",\"text\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1676932704\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"5588888885@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE5DDEB26667F22\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"extendedTextMessage\\\\\\\":{\\\\\\\"text\\\\\\\":\\\\\\\"oi\\\\\\\",\\\\\\\"contextInfo\\\\\\\":{}}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1676932704\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
@@ -589,9 +602,9 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send media ▶️",
+            "name": "✅ Enviar arquivo ▶️",
             "publish_as": "action",
-            "rank": 10,
+            "rank": 9,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AUt",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AUt\":{\"caption\":\"✅ Send media\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE58CC98AD58E4B\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/v/t62.7118-24/11669686_2048377502025717_4313163739104808093_n.enc?ccb=11-4&oh=01_AdSlUGYepxBwHStu_cImbvoZf5eiCiRd9LkoC185hS9pjA&oe=641B5F69&mms3=true\",\"path\":[\"body\",\"message\",\"imageMessage\",\"url\"]},\"_p_body.message.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"body\",\"message\",\"imageMessage\",\"mimetype\"]},\"_p_body.message.imageMessage.caption\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage caption\",\"sample_value\":\"oi\",\"path\":[\"body\",\"message\",\"imageMessage\",\"caption\"]},\"_p_body.message.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage fileSha256\",\"sample_value\":\"+PMZTyzVITqruuqKtjczFyaoDVIzhsnnBY4pv0xoRQ0=\",\"path\":[\"body\",\"message\",\"imageMessage\",\"fileSha256\"]},\"_p_body.message.imageMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage fileLength\",\"sample_value\":\"31001\",\"path\":[\"body\",\"message\",\"imageMessage\",\"fileLength\"]},\"_p_body.message.imageMessage.height\":{\"ret_value\":\"number\",\"caption\":\"body message imageMessage height\",\"sample_value\":640,\"path\":[\"body\",\"message\",\"imageMessage\",\"height\"]},\"_p_body.message.imageMessage.width\":{\"ret_value\":\"number\",\"caption\":\"body message imageMessage width\",\"sample_value\":640,\"path\":[\"body\",\"message\",\"imageMessage\",\"width\"]},\"_p_body.message.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage mediaKey\",\"sample_value\":\"cUadaKD0kWC5aMq17m8RhXGH/x+wi2qM0mFCN8Kzozw=\",\"path\":[\"body\",\"message\",\"imageMessage\",\"mediaKey\"]},\"_p_body.message.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage fileEncSha256\",\"sample_value\":\"a8vj31rleK+ZcvICtMGh3odeI2WdFBGPO8H0ifWP+vo=\",\"path\":[\"body\",\"message\",\"imageMessage\",\"fileEncSha256\"]},\"_p_body.message.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/11669686_2048377502025717_4313163739104808093_n.enc?ccb=11-4&oh=01_AdSlUGYepxBwHStu_cImbvoZf5eiCiRd9LkoC185hS9pjA&oe=641B5F69\",\"path\":[\"body\",\"message\",\"imageMessage\",\"directPath\"]},\"_p_body.message.imageMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage mediaKeyTimestamp\",\"sample_value\":\"1676934743\",\"path\":[\"body\",\"message\",\"imageMessage\",\"mediaKeyTimestamp\"]},\"_p_body.message.imageMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"body message imageMessage jpegThumbnail\",\"sample_value\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIACAAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AMgNXvDLk9jPbIjzBVjcAq2cg5Gccd6xp1o1PhKa5ZcrJLmCJZI0tXaQuM4PUDAwT6dz7frXNh8TUlzyrLljHr33v8trdy63s6avf+v6/wCGK7Ao7IwwynBFd8ZKSUlszNNNXRDbQNcM2CAFGTzzj2/z7dSKxqVY01qQ21sjS0iCTUWit5pG+zREthQMe/fPUj161nKajH2iWrDms7E+rJpti8UumXgkmxynDjacjORx2xj/ACc4S+sJ06i0/wCCTKMZrlZn3SpHsHmM8xGZSegJ7Vphqk53bVo7L0R01Kap2j1IdJSWS7zFK8TIN25G2seQMA9s56//AKqqrypXauYN2NPTXTTbx1jlFwoGGcKQAO+PX+Ht6/WicZVaeqsRN8qUjRvbnTLe1jhgs7aSKU75NmBwOMjHfk9x0rno0Zu8thqacuVM5iXYsziMMI8nbu647Z9671e2poVI5Sm7gHcMcjpz2qHG7XkSnYvG5hIjEcbAKh388s2P5ZA4/wD1VSumZuDad3uMM7MPmxn86psdOlGGvUjZ92KVzS5//9k=\",\"path\":[\"body\",\"message\",\"imageMessage\",\"jpegThumbnail\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1676934743\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"5521959032485@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE58CC98AD58E4B\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"imageMessage\\\\\\\":{\\\\\\\"url\\\\\\\":\\\\\\\"https://mmg.whatsapp.net/v/t62.7118-24/11669686_2048377502025717_4313163739104808093_n.enc?ccb=11-4&oh=01_AdSlUGYepxBwHStu_cImbvoZf5eiCiRd9LkoC185hS9pjA&oe=641B5F69&mms3=true\\\\\\\",\\\\\\\"mimetype\\\\\\\":\\\\\\\"image/jpeg\\\\\\\",\\\\\\\"caption\\\\\\\":\\\\\\\"oi\\\\\\\",\\\\\\\"fileSha256\\\\\\\":\\\\\\\"+PMZTyzVITqruuqKtjczFyaoDVIzhsnnBY4pv0xoRQ0=\\\\\\\",\\\\\\\"fileLength\\\\\\\":\\\\\\\"31001\\\\\\\",\\\\\\\"height\\\\\\\":640,\\\\\\\"width\\\\\\\":640,\\\\\\\"mediaKey\\\\\\\":\\\\\\\"cUadaKD0kWC5aMq17m8RhXGH/x+wi2qM0mFCN8Kzozw=\\\\\\\",\\\\\\\"fileEncSha256\\\\\\\":\\\\\\\"a8vj31rleK+ZcvICtMGh3odeI2WdFBGPO8H0ifWP+vo=\\\\\\\",\\\\\\\"directPath\\\\\\\":\\\\\\\"/v/t62.7118-24/11669686_2048377502025717_4313163739104808093_n.enc?ccb=11-4&oh=01_AdSlUGYepxBwHStu_cImbvoZf5eiCiRd9LkoC185hS9pjA&oe=641B5F69\\\\\\\",\\\\\\\"mediaKeyTimestamp\\\\\\\":\\\\\\\"1676934743\\\\\\\",\\\\\\\"jpegThumbnail\\\\\\\":\\\\\\\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIACAAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AMgNXvDLk9jPbIjzBVjcAq2cg5Gccd6xp1o1PhKa5ZcrJLmCJZI0tXaQuM4PUDAwT6dz7frXNh8TUlzyrLljHr33v8trdy63s6avf+v6/wCGK7Ao7IwwynBFd8ZKSUlszNNNXRDbQNcM2CAFGTzzj2/z7dSKxqVY01qQ21sjS0iCTUWit5pG+zREthQMe/fPUj161nKajH2iWrDms7E+rJpti8UumXgkmxynDjacjORx2xj/ACc4S+sJ06i0/wCCTKMZrlZn3SpHsHmM8xGZSegJ7Vphqk53bVo7L0R01Kap2j1IdJSWS7zFK8TIN25G2seQMA9s56//AKqqrypXauYN2NPTXTTbx1jlFwoGGcKQAO+PX+Ht6/WicZVaeqsRN8qUjRvbnTLe1jhgs7aSKU75NmBwOMjHfk9x0rno0Zu8thqacuVM5iXYsziMMI8nbu647Z9671e2poVI5Sm7gHcMcjpz2qHG7XkSnYvG5hIjEcbAKh388s2P5ZA4/wD1VSumZuDad3uMM7MPmxn86psdOlGGvUjZ92KVzS5//9k=\\\\\\\",\\\\\\\"contextInfo\\\\\\\":{}}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1676934743\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
@@ -641,7 +654,7 @@
                     "doc": "Envie no seguinte formato json(texto) abaixo.\n\n{\n   \"buttonText\":\"Click here 1\",\n   \"buttonId\":\"1\"\n},\n{\n   \"buttonText\":\"Click here 2\",\n   \"buttonId\":\"2\"\n},\n{\n   \"buttonText\":\"Click here 3\",\n   \"buttonId\":\"3\"\n}",
                     "key": "buttons",
                     "private": true,
-                    "value": ""
+                    "value": "{    \"buttonText\":\"Click here 1\",    \"buttonId\":\"1\" }, {    \"buttonText\":\"Click here 2\",    \"buttonId\":\"2\" }, {    \"buttonText\":\"Click here 3\",    \"buttonId\":\"3\" }"
                 },
                 "Aag": {
                     "allow_blank": false,
@@ -665,9 +678,9 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send Buttons ▶️",
+            "name": "✅ Enviar botões ▶️❗",
             "publish_as": "action",
-            "rank": 13,
+            "rank": 12,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVD",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AVD\":{\"caption\":\"✅ Send Button\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE5572377D187A0\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.buttonsMessage.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/v/t62.7118-24/19468389_745085110304470_7516657555758724016_n.enc?ccb=11-4&oh=01_AdQwiiSbelg16h7-IZuYA72-uCyDLbYqdtLV2JjXSts_Jg&oe=641B7688&mms3=true\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"url\"]},\"_p_body.message.buttonsMessage.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"mimetype\"]},\"_p_body.message.buttonsMessage.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage fileSha256\",\"sample_value\":\"+PMZTyzVITqruuqKtjczFyaoDVIzhsnnBY4pv0xoRQ0=\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"fileSha256\"]},\"_p_body.message.buttonsMessage.imageMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage fileLength\",\"sample_value\":\"31001\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"fileLength\"]},\"_p_body.message.buttonsMessage.imageMessage.height\":{\"ret_value\":\"number\",\"caption\":\"body message buttonsMessage imageMessage height\",\"sample_value\":640,\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"height\"]},\"_p_body.message.buttonsMessage.imageMessage.width\":{\"ret_value\":\"number\",\"caption\":\"body message buttonsMessage imageMessage width\",\"sample_value\":640,\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"width\"]},\"_p_body.message.buttonsMessage.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage mediaKey\",\"sample_value\":\"F1oUB2W0PMt23IzOaeZjS3BOqpECxF3RTHdxWZGxycs=\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"mediaKey\"]},\"_p_body.message.buttonsMessage.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage fileEncSha256\",\"sample_value\":\"Er2zftt9CrmNiFgbBm9mOJYvE0gQn2Kjtg05Rsb9VKA=\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"fileEncSha256\"]},\"_p_body.message.buttonsMessage.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/19468389_745085110304470_7516657555758724016_n.enc?ccb=11-4&oh=01_AdQwiiSbelg16h7-IZuYA72-uCyDLbYqdtLV2JjXSts_Jg&oe=641B7688\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"directPath\"]},\"_p_body.message.buttonsMessage.imageMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage mediaKeyTimestamp\",\"sample_value\":\"1676937238\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"mediaKeyTimestamp\"]},\"_p_body.message.buttonsMessage.imageMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage imageMessage jpegThumbnail\",\"sample_value\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIACAAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AMgNXvDLk9jPbIjzBVjcAq2cg5Gccd6xp1o1PhKa5ZcrJLmCJZI0tXaQuM4PUDAwT6dz7frXNh8TUlzyrLljHr33v8trdy63s6avf+v6/wCGK7Ao7IwwynBFd8ZKSUlszNNNXRDbQNcM2CAFGTzzj2/z7dSKxqVY01qQ21sjS0iCTUWit5pG+zREthQMe/fPUj161nKajH2iWrDms7E+rJpti8UumXgkmxynDjacjORx2xj/ACc4S+sJ06i0/wCCTKMZrlZn3SpHsHmM8xGZSegJ7Vphqk53bVo7L0R01Kap2j1IdJSWS7zFK8TIN25G2seQMA9s56//AKqqrypXauYN2NPTXTTbx1jlFwoGGcKQAO+PX+Ht6/WicZVaeqsRN8qUjRvbnTLe1jhgs7aSKU75NmBwOMjHfk9x0rno0Zu8thqacuVM5iXYsziMMI8nbu647Z9671e2poVI5Sm7gHcMcjpz2qHG7XkSnYvG5hIjEcbAKh388s2P5ZA4/wD1VSumZuDad3uMM7MPmxn86psdOlGGvUjZ92KVzS5//9k=\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"imageMessage\",\"jpegThumbnail\"]},\"_p_body.message.buttonsMessage.contentText\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage contentText\",\"sample_value\":\"*title*\\n\\nteste\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"contentText\"]},\"_p_body.message.buttonsMessage.footerText\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage footerText\",\"sample_value\":\"footer\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"footerText\"]},\"_p_body.message.buttonsMessage.buttons\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AVD.body.message.buttonsMessage.buttons\",\"caption\":\"body message buttonsMessage buttons\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"buttons\"]},\"_p_body.message.buttonsMessage.headerType\":{\"ret_value\":\"text\",\"caption\":\"body message buttonsMessage headerType\",\"sample_value\":\"IMAGE\",\"path\":[\"body\",\"message\",\"buttonsMessage\",\"headerType\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1676937238\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"5521996015792@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE5572377D187A0\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"buttonsMessage\\\\\\\":{\\\\\\\"imageMessage\\\\\\\":{\\\\\\\"url\\\\\\\":\\\\\\\"https://mmg.whatsapp.net/v/t62.7118-24/19468389_745085110304470_7516657555758724016_n.enc?ccb=11-4&oh=01_AdQwiiSbelg16h7-IZuYA72-uCyDLbYqdtLV2JjXSts_Jg&oe=641B7688&mms3=true\\\\\\\",\\\\\\\"mimetype\\\\\\\":\\\\\\\"image/jpeg\\\\\\\",\\\\\\\"fileSha256\\\\\\\":\\\\\\\"+PMZTyzVITqruuqKtjczFyaoDVIzhsnnBY4pv0xoRQ0=\\\\\\\",\\\\\\\"fileLength\\\\\\\":\\\\\\\"31001\\\\\\\",\\\\\\\"height\\\\\\\":640,\\\\\\\"width\\\\\\\":640,\\\\\\\"mediaKey\\\\\\\":\\\\\\\"F1oUB2W0PMt23IzOaeZjS3BOqpECxF3RTHdxWZGxycs=\\\\\\\",\\\\\\\"fileEncSha256\\\\\\\":\\\\\\\"Er2zftt9CrmNiFgbBm9mOJYvE0gQn2Kjtg05Rsb9VKA=\\\\\\\",\\\\\\\"directPath\\\\\\\":\\\\\\\"/v/t62.7118-24/19468389_745085110304470_7516657555758724016_n.enc?ccb=11-4&oh=01_AdQwiiSbelg16h7-IZuYA72-uCyDLbYqdtLV2JjXSts_Jg&oe=641B7688\\\\\\\",\\\\\\\"mediaKeyTimestamp\\\\\\\":\\\\\\\"1676937238\\\\\\\",\\\\\\\"jpegThumbnail\\\\\\\":\\\\\\\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIACAAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AMgNXvDLk9jPbIjzBVjcAq2cg5Gccd6xp1o1PhKa5ZcrJLmCJZI0tXaQuM4PUDAwT6dz7frXNh8TUlzyrLljHr33v8trdy63s6avf+v6/wCGK7Ao7IwwynBFd8ZKSUlszNNNXRDbQNcM2CAFGTzzj2/z7dSKxqVY01qQ21sjS0iCTUWit5pG+zREthQMe/fPUj161nKajH2iWrDms7E+rJpti8UumXgkmxynDjacjORx2xj/ACc4S+sJ06i0/wCCTKMZrlZn3SpHsHmM8xGZSegJ7Vphqk53bVo7L0R01Kap2j1IdJSWS7zFK8TIN25G2seQMA9s56//AKqqrypXauYN2NPTXTTbx1jlFwoGGcKQAO+PX+Ht6/WicZVaeqsRN8qUjRvbnTLe1jhgs7aSKU75NmBwOMjHfk9x0rno0Zu8thqacuVM5iXYsziMMI8nbu647Z9671e2poVI5Sm7gHcMcjpz2qHG7XkSnYvG5hIjEcbAKh388s2P5ZA4/wD1VSumZuDad3uMM7MPmxn86psdOlGGvUjZ92KVzS5//9k=\\\\\\\"},\\\\\\\"contentText\\\\\\\":\\\\\\\"*title*\\\\\\\\n\\\\\\\\nteste\\\\\\\",\\\\\\\"footerText\\\\\\\":\\\\\\\"footer\\\\\\\",\\\\\\\"contextInfo\\\\\\\":{},\\\\\\\"buttons\\\\\\\":[{\\\\\\\"buttonId\\\\\\\":\\\\\\\"1\\\\\\\",\\\\\\\"buttonText\\\\\\\":{\\\\\\\"displayText\\\\\\\":\\\\\\\"Click here 1\\\\\\\"},\\\\\\\"type\\\\\\\":\\\\\\\"RESPONSE\\\\\\\"},{\\\\\\\"buttonId\\\\\\\":\\\\\\\"2\\\\\\\",\\\\\\\"buttonText\\\\\\\":{\\\\\\\"displayText\\\\\\\":\\\\\\\"Click here 2\\\\\\\"},\\\\\\\"type\\\\\\\":\\\\\\\"RESPONSE\\\\\\\"},{\\\\\\\"buttonId\\\\\\\":\\\\\\\"3\\\\\\\",\\\\\\\"buttonText\\\\\\\":{\\\\\\\"displayText\\\\\\\":\\\\\\\"Click here 3\\\\\\\"},\\\\\\\"type\\\\\\\":\\\\\\\"RESPONSE\\\\\\\"}],\\\\\\\"headerType\\\\\\\":\\\\\\\"IMAGE\\\\\\\"}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1676937238\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.AVD.body.message.buttonsMessage.buttons\":{\"caption\":\"✅ Send Buttons body message buttonsMessage button\",\"fields\":{\"_p_buttonId\":{\"ret_value\":\"text\",\"caption\":\"buttonId\",\"sample_value\":\"1\",\"path\":[\"buttonId\"]},\"_p_buttonText.displayText\":{\"ret_value\":\"text\",\"caption\":\"buttonText displayText\",\"sample_value\":\"Click here 1\",\"path\":[\"buttonText\",\"displayText\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"RESPONSE\",\"path\":[\"type\"]}}}}",
@@ -734,9 +747,9 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send location ▶️",
+            "name": "✅ Enviar localização ▶️",
             "publish_as": "action",
-            "rank": 12,
+            "rank": 11,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVO",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AVO\":{\"caption\":\"✅ Send location\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"55888882@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE5734129B0861D\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.locationMessage.degreesLatitude\":{\"ret_value\":\"number\",\"caption\":\"body message locationMessage degreesLatitude\",\"sample_value\":-22.912982815767986,\"path\":[\"body\",\"message\",\"locationMessage\",\"degreesLatitude\"]},\"_p_body.message.locationMessage.degreesLongitude\":{\"ret_value\":\"number\",\"caption\":\"body message locationMessage degreesLongitude\",\"sample_value\":-43.23028153499254,\"path\":[\"body\",\"message\",\"locationMessage\",\"degreesLongitude\"]},\"_p_body.message.locationMessage.name\":{\"ret_value\":\"text\",\"caption\":\"body message locationMessage name\",\"sample_value\":\"Maracanã\",\"path\":[\"body\",\"message\",\"locationMessage\",\"name\"]},\"_p_body.message.locationMessage.address\":{\"ret_value\":\"text\",\"caption\":\"body message locationMessage address\",\"sample_value\":\"Av. Pres. Castelo Branco, Portão 3 - Maracanã, Rio de Janeiro - RJ, 20271-130\",\"path\":[\"body\",\"message\",\"locationMessage\",\"address\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1676900700\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"55888882@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE5734129B0861D\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"locationMessage\\\\\\\":{\\\\\\\"degreesLatitude\\\\\\\":-22.912982815767986,\\\\\\\"degreesLongitude\\\\\\\":-43.23028153499254,\\\\\\\"name\\\\\\\":\\\\\\\"Maracanã\\\\\\\",\\\\\\\"address\\\\\\\":\\\\\\\"Av. Pres. Castelo Branco, Portão 3 - Maracanã, Rio de Janeiro - RJ, 20271-130\\\\\\\",\\\\\\\"contextInfo\\\\\\\":{}}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1676900700\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
@@ -790,7 +803,7 @@
                     "doc": "Preencha com um json(texto) conforme mostrado abaixo:\n\n\n{\n   \"title\":\"Row tilte 01\",\n   \"rows\":[\n      {\n         \"title\":\"Title row 01\",\n         \"description\":\"Lorem Ipsum\",\n         \"rowId\":\"arowId 001\"\n      },\n      {\n         \"title\":\"Title row 02\",\n         \"description\":\"Lorem Ipsum\",\n         \"rowId\":\"browId 002\"\n      }\n   ]\n},\n{\n   \"title\":\"Row tilte 02\",\n   \"rows\":[\n      {\n         \"title\":\"Title row 01\",\n         \"description\":\"Lorem Ipsum \",\n         \"rowId\":\"crowId 001\"\n      },\n      {\n         \"title\":\"Title row 02\",\n         \"description\":\"Lorem Ipsum\",\n         \"rowId\":\"drowId 002\"\n      }\n   ]\n}\n",
                     "key": "sections",
                     "private": true,
-                    "value": ""
+                    "value": "{    \"title\":\"Row tilte 01\",    \"rows\":[       {          \"title\":\"Title row 01\",          \"description\":\"Lorem Ipsum\",          \"rowId\":\"arowId 001\"       },       {          \"title\":\"Title row 02\",          \"description\":\"Lorem Ipsum\",          \"rowId\":\"browId 002\"       }    ] }, {    \"title\":\"Row tilte 02\",    \"rows\":[       {          \"title\":\"Title row 01\",          \"description\":\"Lorem Ipsum \",          \"rowId\":\"crowId 001\"       },       {          \"title\":\"Title row 02\",          \"description\":\"Lorem Ipsum\",          \"rowId\":\"drowId 002\"       }    ] }"
                 },
                 "Abe": {
                     "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
@@ -808,7 +821,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send List ▶️",
+            "name": "✅ Enviar lista ▶️❗",
             "publish_as": "action",
             "rank": 16,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVY",
@@ -860,7 +873,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send Contact ▶️",
+            "name": "✅ Enviar contato ▶️",
             "publish_as": "action",
             "rank": 17,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVj",
@@ -915,7 +928,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Message - Send reaction ▶️",
+            "name": "✅ Enviar reação na mensagem ▶️",
             "publish_as": "action",
             "rank": 18,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVq",
@@ -962,7 +975,7 @@
             "initialized": true,
             "is_list": true,
             "method": "post",
-            "name": "📄 Numbers - Check 🚫",
+            "name": "📄 Checkar se número existe 🚫",
             "publish_as": "data",
             "rank": 19,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AVy",
@@ -1008,7 +1021,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "📄 Number - Profile picture 🚫",
+            "name": "📄Pegar imagem de perfil 🚫",
             "publish_as": "data",
             "rank": 20,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWD",
@@ -1047,7 +1060,7 @@
             "initialized": true,
             "is_list": true,
             "method": "post",
-            "name": "📄 Find contacts 🚫",
+            "name": "📄 Buscar contatos 🚫",
             "publish_as": "data",
             "rank": 21,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWI",
@@ -1097,7 +1110,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Message - Read ▶️",
+            "name": "✅ Marcar mensagem como lida ▶️",
             "publish_as": "action",
             "rank": 25,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWM",
@@ -1146,7 +1159,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Group - Create ▶️",
+            "name": "✅ Grupo - Criar ▶️",
             "publish_as": "action",
             "rank": 27,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWb",
@@ -1202,12 +1215,12 @@
             },
             "initialized": true,
             "method": "get",
-            "name": "📄 Group - Details 🚫",
+            "name": "📄 Grupo - Detalhes de um grupo 🚫",
             "publish_as": "data",
             "rank": 28,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AWi",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AWi\":{\"caption\":\"📄 Group - Detail\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"120363027016115347@g.us\",\"path\":[\"id\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"grupo criado2\",\"path\":[\"subject\"]},\"_p_subjectOwner\":{\"ret_value\":\"text\",\"caption\":\"subjectOwner\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"subjectOwner\"]},\"_p_subjectTime\":{\"ret_value\":\"number\",\"caption\":\"subjectTime\",\"sample_value\":1670495716,\"path\":[\"subjectTime\"]},\"_p_size\":{\"ret_value\":\"number\",\"caption\":\"size\",\"sample_value\":2,\"path\":[\"size\"]},\"_p_creation\":{\"ret_value\":\"number\",\"caption\":\"creation\",\"sample_value\":1670495716,\"path\":[\"creation\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p_desc\":{\"ret_value\":\"text\",\"caption\":\"desc\",\"sample_value\":\"descrição\",\"path\":[\"desc\"]},\"_p_descId\":{\"ret_value\":\"text\",\"caption\":\"descId\",\"sample_value\":\"BAE55136F1098CD9\",\"path\":[\"descId\"]},\"_p_restrict\":{\"ret_value\":\"boolean\",\"caption\":\"restrict\",\"sample_value\":false,\"path\":[\"restrict\"]},\"_p_announce\":{\"ret_value\":\"boolean\",\"caption\":\"announce\",\"sample_value\":false,\"path\":[\"announce\"]},\"_p_participants\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AWi.participants\",\"caption\":\"participants\",\"path\":[\"participants\"]}}},\"plugin_api.AWi.participants\":{\"caption\":\"📄 Group - Details participant\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_admin\":{\"ret_value\":\"text\",\"caption\":\"admin\",\"sample_value\":\"admin\",\"path\":[\"admin\"]}}}}",
+            "types": "{\"plugin_api.AWi\":{\"caption\":\"📄 Group - Details 🚫\",\"fields\":{\"_p_metadata.id\":{\"ret_value\":\"text\",\"caption\":\"metadata id\",\"sample_value\":\"120363148122601519@g.us\",\"path\":[\"metadata\",\"id\"]},\"_p_metadata.subject\":{\"ret_value\":\"text\",\"caption\":\"metadata subject\",\"sample_value\":\"teste menção\",\"path\":[\"metadata\",\"subject\"]},\"_p_metadata.subjectOwner\":{\"ret_value\":\"text\",\"caption\":\"metadata subjectOwner\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"metadata\",\"subjectOwner\"]},\"_p_metadata.subjectTime\":{\"ret_value\":\"number\",\"caption\":\"metadata subjectTime\",\"sample_value\":1682509236,\"path\":[\"metadata\",\"subjectTime\"]},\"_p_metadata.size\":{\"ret_value\":\"number\",\"caption\":\"metadata size\",\"sample_value\":2,\"path\":[\"metadata\",\"size\"]},\"_p_metadata.creation\":{\"ret_value\":\"number\",\"caption\":\"metadata creation\",\"sample_value\":1682509236,\"path\":[\"metadata\",\"creation\"]},\"_p_metadata.owner\":{\"ret_value\":\"text\",\"caption\":\"metadata owner\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"metadata\",\"owner\"]},\"_p_metadata.desc\":{\"ret_value\":\"text\",\"caption\":\"metadata desc\",\"sample_value\":\"null\",\"path\":[\"metadata\",\"desc\"]},\"_p_metadata.descId\":{\"ret_value\":\"text\",\"caption\":\"metadata descId\",\"sample_value\":\"BAE582508DADB034\",\"path\":[\"metadata\",\"descId\"]},\"_p_metadata.restrict\":{\"ret_value\":\"boolean\",\"caption\":\"metadata restrict\",\"sample_value\":false,\"path\":[\"metadata\",\"restrict\"]},\"_p_metadata.announce\":{\"ret_value\":\"boolean\",\"caption\":\"metadata announce\",\"sample_value\":false,\"path\":[\"metadata\",\"announce\"]},\"_p_metadata.participants\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AWi.metadata.participants\",\"caption\":\"metadata participants\",\"path\":[\"metadata\",\"participants\"]},\"_p_imageLowRes\":{\"ret_value\":\"text\",\"caption\":\"imageLowRes\",\"sample_value\":null,\"path\":[\"imageLowRes\"]},\"_p_imageHiRes\":{\"ret_value\":\"text\",\"caption\":\"imageHiRes\",\"sample_value\":null,\"path\":[\"imageHiRes\"]}}},\"plugin_api.AWi.metadata.participants\":{\"caption\":\"📄 Group - Details 🚫 metadata participant\",\"fields\":{\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"5521959032485@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_admin\":{\"ret_value\":\"text\",\"caption\":\"admin\",\"sample_value\":\"superadmin\",\"path\":[\"admin\"]}}}}",
             "url": "[url]/group/findGroupInfos/[instance]?groupJid=[groupJid]",
             "url_params": {
                 "AWk": {
@@ -1217,7 +1230,7 @@
                 },
                 "AWl": {
                     "key": "instance",
-                    "value": "teste1"
+                    "value": ""
                 },
                 "AWm": {
                     "key": "groupJid",
@@ -1261,7 +1274,7 @@
             },
             "initialized": true,
             "method": "get",
-            "name": "📄 Group - Invite URL code 🚫",
+            "name": "📄 Grupo - Invite URL code 🚫",
             "publish_as": "data",
             "rank": 29,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXA",
@@ -1309,7 +1322,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Update members ▶️",
+            "name": "✅ Grupo - Modificar membros ▶️",
             "publish_as": "action",
             "rank": 31,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXJ",
@@ -1342,7 +1355,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Revoke invite URL code ▶️",
+            "name": "✅ Group - Revogar invite URL code ▶️",
             "publish_as": "action",
             "rank": 30,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXQ",
@@ -1375,7 +1388,7 @@
             },
             "initialized": true,
             "method": "delete_method",
-            "name": "✅ Group - Leave ▶️",
+            "name": "✅ Grupo - Sair ▶️",
             "publish_as": "action",
             "rank": 33,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXV",
@@ -1410,7 +1423,7 @@
             "method": "delete_method",
             "name": "✅ Instance - Delete ▶️",
             "publish_as": "action",
-            "rank": 6,
+            "rank": 5,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXa",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AXa\":{\"caption\":\"✅ Instance - Delete\",\"fields\":{\"_p_body.error\":{\"ret_value\":\"boolean\",\"caption\":\"body error\",\"sample_value\":false,\"path\":[\"body\",\"error\"]},\"_p_body.message\":{\"ret_value\":\"text\",\"caption\":\"body message\",\"sample_value\":\"Instance deleted\",\"path\":[\"body\",\"message\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"OK\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"error\\\\\\\":false,\\\\\\\"message\\\\\\\":\\\\\\\"Instance deleted\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
@@ -1454,7 +1467,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "📄 Get Base64 From Media Message 🚫",
+            "name": "📄 Baixar arquivo de uma mensagem 🚫",
             "publish_as": "data",
             "rank": 40,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXe",
@@ -1468,51 +1481,6 @@
                     "value": "https://server02.uazapi.dev"
                 },
                 "AXh": {
-                    "key": "instance",
-                    "value": ""
-                }
-            },
-            "wrap_error": false
-        },
-        "AXj": {
-            "body": "{\n  \"instanceName\": \"<instanceName>\"\n}",
-            "body_params": {
-                "AXo": {
-                    "key": "instanceName",
-                    "value": "codechat2"
-                }
-            },
-            "headers": {
-                "AXl": {
-                    "doc": "⚠️ chamada só funciona com apikey global.\n\nPara ter uma apikey global você precisa estar no plano ilimitado, hospedando a API no seu servidor.",
-                    "key": "apikey",
-                    "value": ""
-                },
-                "AdH": {
-                    "doc": "Opcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
-                    "key": "date",
-                    "optional": true,
-                    "private": true,
-                    "value": ""
-                }
-            },
-            "initialized": true,
-            "method": "get",
-            "name": "📄 Instance - details ⚠️🚫",
-            "publish_as": "data",
-            "rank": 3,
-            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXj",
-            "should_reinitialize": true,
-            "types": "{\"plugin_api.AXj\":{\"caption\":\"📄 Instance - details ⚠️\",\"fields\":{\"_p_instance.instanceName\":{\"ret_value\":\"text\",\"caption\":\"instance instanceName\",\"sample_value\":\"teste1\",\"path\":[\"instance\",\"instanceName\"]},\"_p_instance.owner\":{\"ret_value\":\"text\",\"caption\":\"instance owner\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"instance\",\"owner\"]},\"_p_instance.profileName\":{\"ret_value\":\"text\",\"caption\":\"instance profileName\",\"sample_value\":\"Augusto\",\"path\":[\"instance\",\"profileName\"]},\"_p_instance.profilePictureUrl\":{\"ret_value\":\"text\",\"caption\":\"instance profilePictureUrl\",\"sample_value\":\"https://pps.whatsapp.net/v/t61.24694-24/64330091_457280348153664_4544115063190978560_n.jpg?ccb=11-4&oh=01_AdT1-R_B3Lyei3MvVxHCBdqKdaanLnCjiWlN1-RYpO5BzQ&oe=64030FAB\",\"path\":[\"instance\",\"profilePictureUrl\"]}}}}",
-            "url": "[url]/instance/fetchInstances?instanceName=[instance]",
-            "url_params": {
-                "AXm": {
-                    "doc": "Se você está não está no plano ilimitado, e está usando o servidor oficial da uazapi, coloque nesse campo:\n\nhttps://server02.uazapi.dev\n\n\n\nSe você está no plano ilimitado, hospedando a API em seu servidor, coloque:\n\nhttp://[ip_da_vps]:8080\n\nou se você ativou SSL e domínio na sua VPS/API\n\nhttps://[subdomínio].[seu_domínio]",
-                    "key": "url",
-                    "value": "https://server02.uazapi.dev"
-                },
-                "AXn": {
-                    "doc": "",
                     "key": "instance",
                     "value": ""
                 }
@@ -1536,12 +1504,12 @@
             "initialized": true,
             "is_list": true,
             "method": "get",
-            "name": "📄 Find chats 🚫",
+            "name": "📄 Buscar chats 🚫",
             "publish_as": "data",
             "rank": 23,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXp",
-            "should_reinitialize": true,
-            "types": "{\"plugin_api.AXp\":{\"caption\":\"📄 Find chat\",\"fields\":{\"_p__id\":{\"ret_value\":\"text\",\"caption\":\"_id\",\"sample_value\":\"63f36b8d3a2c6f9fd872a96a\",\"path\":[\"_id\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"5521997089106@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"owner\"]},\"_p___v\":{\"ret_value\":\"_ignore\"}}}}",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AXp\":{\"caption\":\"📄 Buscar chats 🚫\",\"fields\":{\"_p__id\":{\"ret_value\":\"_ignore\"},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"5521996346909@s.whatsapp.net\",\"path\":[\"id\"]},\"_p_owner\":{\"ret_value\":\"_ignore\"},\"_p___v\":{\"ret_value\":\"_ignore\"},\"_p_lastcache\":{\"ret_value\":\"date_unix\",\"caption\":\"lastcache\",\"sample_value\":1685632007,\"path\":[\"lastcache\"]},\"_p_lastmsg\":{\"ret_value\":\"date_unix\",\"caption\":\"lastmsg\",\"sample_value\":1685632007,\"path\":[\"lastmsg\"]},\"_p_unreadcount\":{\"ret_value\":\"number\",\"caption\":\"unreadcount\",\"sample_value\":0,\"path\":[\"unreadcount\"]},\"_p_group\":{\"ret_value\":\"boolean\",\"caption\":\"group\",\"sample_value\":false,\"path\":[\"group\"]},\"_p_archived\":{\"ret_value\":\"boolean\",\"caption\":\"archived\",\"sample_value\":false,\"path\":[\"archived\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":null,\"path\":[\"name\"]},\"_p_contactname\":{\"ret_value\":\"text\",\"caption\":\"contactname\",\"sample_value\":null,\"path\":[\"contactname\"]},\"_p_imagechat\":{\"ret_value\":\"text\",\"caption\":\"imagechat\",\"sample_value\":null,\"path\":[\"imagechat\"]}}}}",
             "url": "[url]/chat/findChats/[instance]",
             "url_params": {
                 "AXr": {
@@ -1585,7 +1553,7 @@
             },
             "initialized": true,
             "method": "delete_method",
-            "name": "✅ Message - Delete ▶️",
+            "name": "✅ Apagar mensagem ▶️",
             "publish_as": "action",
             "rank": 26,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AXt",
@@ -1623,7 +1591,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Change picture ▶️",
+            "name": "✅ Grupo - Mudar imagem do grupo ▶️",
             "publish_as": "action",
             "rank": 32,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AYA",
@@ -1688,7 +1656,7 @@
                     "doc": "Preencha com um json conforme mostrado:\n\n{\n    \"title\":\"Title Option 1\",\n    \"description\":\"Option Description 1\",\n    \"rowId\":\"string11\"\n},\n{\n    \"title\":\"Title Option 2\",\n    \"description\":\"Option Description 2\",\n    \"rowId\":\"string12\"\n}",
                     "key": "rows",
                     "private": true,
-                    "value": ""
+                    "value": "{     \"title\":\"Title Option 1\",     \"description\":\"Option Description 1\",     \"rowId\":\"string11\" }, {     \"title\":\"Title Option 2\",     \"description\":\"Option Description 2\",     \"rowId\":\"string12\" }"
                 },
                 "AbQ": {
                     "doc": "Seu status ficará como digitando durante o delay.\nO atributo é em milisegundos, 1000 = 1 segundo",
@@ -1705,7 +1673,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send List (1 section) ▶️",
+            "name": "✅ Enviar lista (1 seção) ▶️❗",
             "publish_as": "action",
             "rank": 15,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AYG",
@@ -1759,9 +1727,9 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send audio ▶️",
+            "name": "✅ Enviar audio ▶️",
             "publish_as": "action",
-            "rank": 11,
+            "rank": 10,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AdP",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AdP\":{\"caption\":\"✅ Send audio\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"588888885@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE5CB1EEE652A99\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.audioMessage.url\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/v/t62.7114-24/31806695_1185352205486199_8365172170257598413_n.enc?ccb=11-4&oh=01_AdQc4FmBi8upYZ1gBylUMISsegUzO3WfeIhQbAIvK1RFkQ&oe=641AF282&mms3=true\",\"path\":[\"body\",\"message\",\"audioMessage\",\"url\"]},\"_p_body.message.audioMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage mimetype\",\"sample_value\":\"audio/ogg; codecs=opus\",\"path\":[\"body\",\"message\",\"audioMessage\",\"mimetype\"]},\"_p_body.message.audioMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage fileSha256\",\"sample_value\":\"difl7mulrlUjAteQKFnFwBUERprUPGtU8SyEFhk8uvw=\",\"path\":[\"body\",\"message\",\"audioMessage\",\"fileSha256\"]},\"_p_body.message.audioMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage fileLength\",\"sample_value\":\"78720\",\"path\":[\"body\",\"message\",\"audioMessage\",\"fileLength\"]},\"_p_body.message.audioMessage.seconds\":{\"ret_value\":\"number\",\"caption\":\"body message audioMessage seconds\",\"sample_value\":4,\"path\":[\"body\",\"message\",\"audioMessage\",\"seconds\"]},\"_p_body.message.audioMessage.ptt\":{\"ret_value\":\"boolean\",\"caption\":\"body message audioMessage ptt\",\"sample_value\":true,\"path\":[\"body\",\"message\",\"audioMessage\",\"ptt\"]},\"_p_body.message.audioMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage mediaKey\",\"sample_value\":\"F5MwfQCHleOhLXqoG50Xf/6ZRRzrsD+9m79Vpzr4R1g=\",\"path\":[\"body\",\"message\",\"audioMessage\",\"mediaKey\"]},\"_p_body.message.audioMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage fileEncSha256\",\"sample_value\":\"3EJgJmh0nw1MD/arnTnb/rLM8TB7zSv2MOBH5isaedQ=\",\"path\":[\"body\",\"message\",\"audioMessage\",\"fileEncSha256\"]},\"_p_body.message.audioMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage directPath\",\"sample_value\":\"/v/t62.7114-24/31806695_1185352205486199_8365172170257598413_n.enc?ccb=11-4&oh=01_AdQc4FmBi8upYZ1gBylUMISsegUzO3WfeIhQbAIvK1RFkQ&oe=641AF282\",\"path\":[\"body\",\"message\",\"audioMessage\",\"directPath\"]},\"_p_body.message.audioMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body message audioMessage mediaKeyTimestamp\",\"sample_value\":\"1676900530\",\"path\":[\"body\",\"message\",\"audioMessage\",\"mediaKeyTimestamp\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1676900530\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"558888885@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE5CB1EEE652A99\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"audioMessage\\\\\\\":{\\\\\\\"url\\\\\\\":\\\\\\\"https://mmg.whatsapp.net/v/t62.7114-24/31806695_1185352205486199_8365172170257598413_n.enc?ccb=11-4&oh=01_AdQc4FmBi8upYZ1gBylUMISsegUzO3WfeIhQbAIvK1RFkQ&oe=641AF282&mms3=true\\\\\\\",\\\\\\\"mimetype\\\\\\\":\\\\\\\"audio/ogg; codecs=opus\\\\\\\",\\\\\\\"fileSha256\\\\\\\":\\\\\\\"difl7mulrlUjAteQKFnFwBUERprUPGtU8SyEFhk8uvw=\\\\\\\",\\\\\\\"fileLength\\\\\\\":\\\\\\\"78720\\\\\\\",\\\\\\\"seconds\\\\\\\":4,\\\\\\\"ptt\\\\\\\":true,\\\\\\\"mediaKey\\\\\\\":\\\\\\\"F5MwfQCHleOhLXqoG50Xf/6ZRRzrsD+9m79Vpzr4R1g=\\\\\\\",\\\\\\\"fileEncSha256\\\\\\\":\\\\\\\"3EJgJmh0nw1MD/arnTnb/rLM8TB7zSv2MOBH5isaedQ=\\\\\\\",\\\\\\\"directPath\\\\\\\":\\\\\\\"/v/t62.7114-24/31806695_1185352205486199_8365172170257598413_n.enc?ccb=11-4&oh=01_AdQc4FmBi8upYZ1gBylUMISsegUzO3WfeIhQbAIvK1RFkQ&oe=641AF282\\\\\\\",\\\\\\\"mediaKeyTimestamp\\\\\\\":\\\\\\\"1676900530\\\\\\\"}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1676900530\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
@@ -1813,7 +1781,7 @@
                     "doc": "Envie um json (texto) com os atributos abaixo:\n\n      {\n        \"type\": \"url\",\n        \"displayText\": \"Go\",\n        \"payload\": \"https://uazapi.bubbleapps.io/\"\n      },\n      {\n        \"type\": \"call\",\n        \"displayText\": \"Call me\",\n        \"payload\": \"+55 31 9 0000-0000\"\n      },\n      {\n        \"type\": \"reply\",\n        \"displayText\": \"Click here 1\",\n        \"payload\": \"1\"\n      }\n",
                     "key": "buttons",
                     "private": true,
-                    "value": ""
+                    "value": "  {         \"type\": \"url\",         \"displayText\": \"Go\",         \"payload\": \"https://uazapi.bubbleapps.io/\"       },       {         \"type\": \"call\",         \"displayText\": \"Call me\",         \"payload\": \"+55 31 9 0000-0000\"       },       {         \"type\": \"reply\",         \"displayText\": \"Click here 1\",         \"payload\": \"1\"       }"
                 },
                 "Aag": {
                     "allow_blank": false,
@@ -1838,9 +1806,9 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Send Template Buttons ▶️",
+            "name": "✅ Enviar botões tipo template ▶️❗",
             "publish_as": "action",
-            "rank": 14,
+            "rank": 13,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.Ads",
             "should_reinitialize": true,
             "types": "{\"plugin_api.Ads\":{\"caption\":\"✅ Send Template Button\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE5DA7A4B19189D\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.templateMessage.hydratedTemplate.hydratedTitleText\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate hydratedTitleText\",\"sample_value\":\"\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedTitleText\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.url\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage url\",\"sample_value\":\"https://mmg.whatsapp.net/v/t62.7118-24/26650040_753398899338679_3682119117922771248_n.enc?ccb=11-4&oh=01_AdSl9LJ5Vb-NM9j6mWTMxAljcVK3f7MWnsbctuPVuFTZHQ&oe=641B89C5&mms3=true\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"url\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.mimetype\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage mimetype\",\"sample_value\":\"image/jpeg\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mimetype\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.fileSha256\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage fileSha256\",\"sample_value\":\"+PMZTyzVITqruuqKtjczFyaoDVIzhsnnBY4pv0xoRQ0=\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileSha256\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.fileLength\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage fileLength\",\"sample_value\":\"31001\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileLength\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.height\":{\"ret_value\":\"number\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage height\",\"sample_value\":640,\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"height\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.width\":{\"ret_value\":\"number\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage width\",\"sample_value\":640,\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"width\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.mediaKey\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage mediaKey\",\"sample_value\":\"sERrKQ9MB+w3X0ppZG7Lh7UwsZhCJ7cYwYwOMuelwS0=\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKey\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.fileEncSha256\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage fileEncSha256\",\"sample_value\":\"wKyZnwLUXQstqzwUrJ3uKZpBFLN2HEdLVAdUdF61S8Y=\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"fileEncSha256\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.directPath\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage directPath\",\"sample_value\":\"/v/t62.7118-24/26650040_753398899338679_3682119117922771248_n.enc?ccb=11-4&oh=01_AdSl9LJ5Vb-NM9j6mWTMxAljcVK3f7MWnsbctuPVuFTZHQ&oe=641B89C5\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"directPath\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.mediaKeyTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage mediaKeyTimestamp\",\"sample_value\":\"1676937223\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"mediaKeyTimestamp\"]},\"_p_body.message.templateMessage.hydratedTemplate.imageMessage.jpegThumbnail\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate imageMessage jpegThumbnail\",\"sample_value\":\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIACAAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AMgNXvDLk9jPbIjzBVjcAq2cg5Gccd6xp1o1PhKa5ZcrJLmCJZI0tXaQuM4PUDAwT6dz7frXNh8TUlzyrLljHr33v8trdy63s6avf+v6/wCGK7Ao7IwwynBFd8ZKSUlszNNNXRDbQNcM2CAFGTzzj2/z7dSKxqVY01qQ21sjS0iCTUWit5pG+zREthQMe/fPUj161nKajH2iWrDms7E+rJpti8UumXgkmxynDjacjORx2xj/ACc4S+sJ06i0/wCCTKMZrlZn3SpHsHmM8xGZSegJ7Vphqk53bVo7L0R01Kap2j1IdJSWS7zFK8TIN25G2seQMA9s56//AKqqrypXauYN2NPTXTTbx1jlFwoGGcKQAO+PX+Ht6/WicZVaeqsRN8qUjRvbnTLe1jhgs7aSKU75NmBwOMjHfk9x0rno0Zu8thqacuVM5iXYsziMMI8nbu647Z9671e2poVI5Sm7gHcMcjpz2qHG7XkSnYvG5hIjEcbAKh388s2P5ZA4/wD1VSumZuDad3uMM7MPmxn86psdOlGGvUjZ92KVzS5//9k=\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"imageMessage\",\"jpegThumbnail\"]},\"_p_body.message.templateMessage.hydratedTemplate.hydratedContentText\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate hydratedContentText\",\"sample_value\":\"message\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedContentText\"]},\"_p_body.message.templateMessage.hydratedTemplate.hydratedFooterText\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate hydratedFooterText\",\"sample_value\":\"\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedFooterText\"]},\"_p_body.message.templateMessage.hydratedTemplate.hydratedButtons\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.Ads.body.message.templateMessage.hydratedTemplate.hydratedButtons\",\"caption\":\"body message templateMessage hydratedTemplate hydratedButtons\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"hydratedButtons\"]},\"_p_body.message.templateMessage.hydratedTemplate.templateId\":{\"ret_value\":\"text\",\"caption\":\"body message templateMessage hydratedTemplate templateId\",\"sample_value\":\"81f7a1b4-3eae-4d43-9596-63064ee90af6\",\"path\":[\"body\",\"message\",\"templateMessage\",\"hydratedTemplate\",\"templateId\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1676937223\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"5521996015792@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE5DA7A4B19189D\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"templateMessage\\\\\\\":{\\\\\\\"contextInfo\\\\\\\":{},\\\\\\\"hydratedTemplate\\\\\\\":{\\\\\\\"hydratedTitleText\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"imageMessage\\\\\\\":{\\\\\\\"url\\\\\\\":\\\\\\\"https://mmg.whatsapp.net/v/t62.7118-24/26650040_753398899338679_3682119117922771248_n.enc?ccb=11-4&oh=01_AdSl9LJ5Vb-NM9j6mWTMxAljcVK3f7MWnsbctuPVuFTZHQ&oe=641B89C5&mms3=true\\\\\\\",\\\\\\\"mimetype\\\\\\\":\\\\\\\"image/jpeg\\\\\\\",\\\\\\\"fileSha256\\\\\\\":\\\\\\\"+PMZTyzVITqruuqKtjczFyaoDVIzhsnnBY4pv0xoRQ0=\\\\\\\",\\\\\\\"fileLength\\\\\\\":\\\\\\\"31001\\\\\\\",\\\\\\\"height\\\\\\\":640,\\\\\\\"width\\\\\\\":640,\\\\\\\"mediaKey\\\\\\\":\\\\\\\"sERrKQ9MB+w3X0ppZG7Lh7UwsZhCJ7cYwYwOMuelwS0=\\\\\\\",\\\\\\\"fileEncSha256\\\\\\\":\\\\\\\"wKyZnwLUXQstqzwUrJ3uKZpBFLN2HEdLVAdUdF61S8Y=\\\\\\\",\\\\\\\"directPath\\\\\\\":\\\\\\\"/v/t62.7118-24/26650040_753398899338679_3682119117922771248_n.enc?ccb=11-4&oh=01_AdSl9LJ5Vb-NM9j6mWTMxAljcVK3f7MWnsbctuPVuFTZHQ&oe=641B89C5\\\\\\\",\\\\\\\"mediaKeyTimestamp\\\\\\\":\\\\\\\"1676937223\\\\\\\",\\\\\\\"jpegThumbnail\\\\\\\":\\\\\\\"/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2MBERISGBUYLxoaL2NCOEJjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY//AABEIACAAIAMBEQACEQEDEQH/xAGiAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgsQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+gEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoLEQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AMgNXvDLk9jPbIjzBVjcAq2cg5Gccd6xp1o1PhKa5ZcrJLmCJZI0tXaQuM4PUDAwT6dz7frXNh8TUlzyrLljHr33v8trdy63s6avf+v6/wCGK7Ao7IwwynBFd8ZKSUlszNNNXRDbQNcM2CAFGTzzj2/z7dSKxqVY01qQ21sjS0iCTUWit5pG+zREthQMe/fPUj161nKajH2iWrDms7E+rJpti8UumXgkmxynDjacjORx2xj/ACc4S+sJ06i0/wCCTKMZrlZn3SpHsHmM8xGZSegJ7Vphqk53bVo7L0R01Kap2j1IdJSWS7zFK8TIN25G2seQMA9s56//AKqqrypXauYN2NPTXTTbx1jlFwoGGcKQAO+PX+Ht6/WicZVaeqsRN8qUjRvbnTLe1jhgs7aSKU75NmBwOMjHfk9x0rno0Zu8thqacuVM5iXYsziMMI8nbu647Z9671e2poVI5Sm7gHcMcjpz2qHG7XkSnYvG5hIjEcbAKh388s2P5ZA4/wD1VSumZuDad3uMM7MPmxn86psdOlGGvUjZ92KVzS5//9k=\\\\\\\"},\\\\\\\"hydratedContentText\\\\\\\":\\\\\\\"message\\\\\\\",\\\\\\\"hydratedFooterText\\\\\\\":\\\\\\\"\\\\\\\",\\\\\\\"hydratedButtons\\\\\\\":[{\\\\\\\"urlButton\\\\\\\":{\\\\\\\"displayText\\\\\\\":\\\\\\\"Go\\\\\\\",\\\\\\\"url\\\\\\\":\\\\\\\"https://uazapi.bubbleapps.io/\\\\\\\"},\\\\\\\"index\\\\\\\":0},{\\\\\\\"callButton\\\\\\\":{\\\\\\\"displayText\\\\\\\":\\\\\\\"Call me\\\\\\\",\\\\\\\"phoneNumber\\\\\\\":\\\\\\\"+55 31 9 0000-0000\\\\\\\"},\\\\\\\"index\\\\\\\":1},{\\\\\\\"quickReplyButton\\\\\\\":{\\\\\\\"displayText\\\\\\\":\\\\\\\"Click here 1\\\\\\\",\\\\\\\"id\\\\\\\":\\\\\\\"1\\\\\\\"},\\\\\\\"index\\\\\\\":2}],\\\\\\\"templateId\\\\\\\":\\\\\\\"81f7a1b4-3eae-4d43-9596-63064ee90af6\\\\\\\"}}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1676937223\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.Ads.body.message.templateMessage.hydratedTemplate.hydratedButtons\":{\"caption\":\"✅ Send Template Buttons body message templateMessage hydratedTemplate hydratedButton\",\"fields\":{\"_p_urlButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"urlButton displayText\",\"sample_value\":\"Go\",\"path\":[\"urlButton\",\"displayText\"]},\"_p_urlButton.url\":{\"ret_value\":\"text\",\"caption\":\"urlButton url\",\"sample_value\":\"https://uazapi.bubbleapps.io/\",\"path\":[\"urlButton\",\"url\"]},\"_p_index\":{\"ret_value\":\"number\",\"caption\":\"index\",\"sample_value\":0,\"path\":[\"index\"]},\"_p_callButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"callButton displayText\",\"sample_value\":\"Call me\",\"path\":[\"callButton\",\"displayText\"]},\"_p_callButton.phoneNumber\":{\"ret_value\":\"text\",\"caption\":\"callButton phoneNumber\",\"sample_value\":\"+55 31 9 0000-0000\",\"path\":[\"callButton\",\"phoneNumber\"]},\"_p_quickReplyButton.displayText\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton displayText\",\"sample_value\":\"Click here 1\",\"path\":[\"quickReplyButton\",\"displayText\"]},\"_p_quickReplyButton.id\":{\"ret_value\":\"text\",\"caption\":\"quickReplyButton id\",\"sample_value\":\"1\",\"path\":[\"quickReplyButton\",\"id\"]}}}}",
@@ -1877,7 +1845,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Change Description 🚀 ▶️",
+            "name": "✅ Grupo - Mudar Descrição ▶️",
             "publish_as": "action",
             "rank": 36,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.Adt",
@@ -1925,7 +1893,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Change Name 🚀▶️",
+            "name": "✅ Grupo - Mudar nome ▶️",
             "publish_as": "action",
             "rank": 37,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.Ady",
@@ -1975,7 +1943,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Change Settings 🚀▶️",
+            "name": "✅ Grupo - Mudar configurações▶️",
             "publish_as": "action",
             "rank": 38,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AeA",
@@ -2006,17 +1974,11 @@
             "0": "A",
             "1": "e",
             "2": "B",
-            "body": "{\n  \"allContact\": false,\n  \"mention\": \"<message>\",\n  \"contactMention\": [\n    <numbers>\n  ]\n}",
+            "body": "{\n  \"mention\": \"<message>\"\n}",
             "body_params": {
                 "Aex": {
-                    "doc": "Essa função as vezes não funciona, muitas vezes a mensagem enviada vai vazia, estamos tentando resolver.",
+                    "doc": "Todos os contatos do grupo serão mencionados, use com moderação.",
                     "key": "message",
-                    "private": true,
-                    "value": ""
-                },
-                "AfK": {
-                    "doc": "Example:\n\"552198765431\", \"551198765431\"",
-                    "key": "numbers",
                     "private": true,
                     "value": ""
                 }
@@ -2030,7 +1992,7 @@
             },
             "initialized": true,
             "method": "post",
-            "name": "✅ Group - Send Mention ▶️",
+            "name": "✅Enviar menção fantasma para todos no grupo ▶️",
             "publish_as": "action",
             "rank": 39,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AeC",
@@ -2078,7 +2040,7 @@
             },
             "initialized": true,
             "method": "put",
-            "name": "✅ Group - Join Group 🚀 ▶️",
+            "name": "✅ Grupo - Entrar no grupo ▶️",
             "publish_as": "action",
             "rank": 35,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AeE",
@@ -2126,7 +2088,7 @@
             "headers": {
                 "AWj": {
                     "key": "apikey",
-                    "value": "ntEcTiOUSAnCEASemEtrABLEnTIoNfEn"
+                    "value": ""
                 },
                 "AYb": {
                     "doc": "Opcional\nAo colocar um dado diferente na chamada API, obriga o bubble a atualizar os dados. O campo data faz essa função.",
@@ -2139,12 +2101,12 @@
             "initialized": true,
             "is_list": true,
             "method": "get",
-            "name": "📄 Group - Find Groups 🚀 🚫",
+            "name": "📄 Grupo - Buscar todos 🚫",
             "publish_as": "data",
             "rank": 34,
             "ret_value": "api.1674157317439x684864161158529000.plugin_api.AfM",
             "should_reinitialize": true,
-            "types": "{\"plugin_api.AfM\":{\"caption\":\"📄 Group - Find Groups 🚀\",\"fields\":{\"_p_groupJid\":{\"ret_value\":\"text\",\"caption\":\"groupJid\",\"sample_value\":\"5521981501084-1408794333@g.us\",\"path\":[\"groupJid\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"Eterno Bola Murcha\",\"path\":[\"subject\"]},\"_p_subjectTime\":{\"ret_value\":\"text\",\"caption\":\"subjectTime\",\"sample_value\":\"2014-08-23 08:45:33\",\"path\":[\"subjectTime\"]},\"_p_size\":{\"ret_value\":\"number\",\"caption\":\"size\",\"sample_value\":12,\"path\":[\"size\"]},\"_p_creation\":{\"ret_value\":\"text\",\"caption\":\"creation\",\"sample_value\":\"2014-08-23 08:45:33\",\"path\":[\"creation\"]},\"_p_restrict\":{\"ret_value\":\"boolean\",\"caption\":\"restrict\",\"sample_value\":false,\"path\":[\"restrict\"]},\"_p_announce\":{\"ret_value\":\"boolean\",\"caption\":\"announce\",\"sample_value\":false,\"path\":[\"announce\"]},\"_p_subjectOwner\":{\"ret_value\":\"text\",\"caption\":\"subjectOwner\",\"sample_value\":\"557183422499\",\"path\":[\"subjectOwner\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"557183422499\",\"path\":[\"owner\"]},\"_p_desc\":{\"ret_value\":\"text\",\"caption\":\"desc\",\"sample_value\":\"Bem-vindo ao grupo de Experiência do Usuário em Aplicativos NoCode! \\n\\nAqui, compartilhamos nossas experiências e conhecimentos sobre boas práticas de Experiência do Usuário.\\n\\nLink do grupo:\\nhttps://chat.whatsapp.com/BEifDEaHt1CBYvEnT945vZ\",\"path\":[\"desc\"]}}}}",
+            "types": "{\"plugin_api.AfM\":{\"caption\":\"📄 Group - Find Groups 🚀 🚫\",\"fields\":{\"_p_groupJid\":{\"ret_value\":\"text\",\"caption\":\"groupJid\",\"sample_value\":\"120363071450366240@g.us\",\"path\":[\"groupJid\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"test\",\"path\":[\"subject\"]},\"_p_subjectOwner\":{\"ret_value\":\"text\",\"caption\":\"subjectOwner\",\"sample_value\":\"5521996015792\",\"path\":[\"subjectOwner\"]},\"_p_subjectTime\":{\"ret_value\":\"text\",\"caption\":\"subjectTime\",\"sample_value\":\"2023-03-03 14:36:49\",\"path\":[\"subjectTime\"]},\"_p_size\":{\"ret_value\":\"number\",\"caption\":\"size\",\"sample_value\":1,\"path\":[\"size\"]},\"_p_owner\":{\"ret_value\":\"text\",\"caption\":\"owner\",\"sample_value\":\"5521996015792\",\"path\":[\"owner\"]},\"_p_creation\":{\"ret_value\":\"text\",\"caption\":\"creation\",\"sample_value\":\"2023-03-03 14:36:49\",\"path\":[\"creation\"]},\"_p_restrict\":{\"ret_value\":\"boolean\",\"caption\":\"restrict\",\"sample_value\":false,\"path\":[\"restrict\"]},\"_p_announce\":{\"ret_value\":\"boolean\",\"caption\":\"announce\",\"sample_value\":false,\"path\":[\"announce\"]},\"_p_imageLowRes\":{\"ret_value\":\"text\",\"caption\":\"imageLowRes\",\"sample_value\":\"https://pps.whatsapp.net/v/t61.24694-24/317683411_932724444399770_6730974144081695166_n.jpg?stp=dst-jpg_s96x96&ccb=11-4&oh=01_AdQ0i5Nv8MH2hnFdKi62fAYOtlCeG-Ouy7vBi23EJLzJRQ&oe=645C39AC\",\"path\":[\"imageLowRes\"]},\"_p_desc\":{\"ret_value\":\"text\",\"caption\":\"desc\",\"sample_value\":\"descrição\",\"path\":[\"desc\"]}}}}",
             "url": "[url]/group/findGroups/[instance]",
             "url_params": {
                 "AWk": {
@@ -2154,7 +2116,7 @@
                 },
                 "AWl": {
                     "key": "instance",
-                    "value": "teste1"
+                    "value": ""
                 }
             },
             "wrap_error": false
@@ -2164,7 +2126,7 @@
             "get_headers": true,
             "initialized": true,
             "method": "post",
-            "name": "✅ Upload to Bubble - Base64 ▶️",
+            "name": "✅ Fazer upload de um arquivo para o bubble ▶️",
             "params": {
                 "AhJ": {
                     "doc": "coloque o arquivo base64 aqui",
@@ -2201,6 +2163,66 @@
                     "value": "version-test/"
                 }
             }
+        },
+        "AiN": {
+            "0": "A",
+            "1": "i",
+            "2": "M",
+            "body": "{\n  \"number\": \"<number>\",\n  \"pollMessage\": {\n    \"name\": \"<mensagem>\" ,\n    \"selectableCount\": <quantidade de respostas>,\n    \"values\": [\n         <opções>\n         ]\n\n      \n  }\n}",
+            "body_params": {
+                "AjI": {
+                    "doc": "Coloque o número do telefone \nou <groupid>@g.us - para grupos",
+                    "key": "number",
+                    "private": true,
+                    "value": "5521996015792"
+                },
+                "AjJ": {
+                    "doc": "Nome da enquete",
+                    "key": "mensagem",
+                    "private": true,
+                    "value": "teste esquete"
+                },
+                "AjK": {
+                    "doc": "quantidade máxima de respostas",
+                    "key": "quantidade de respostas",
+                    "private": true,
+                    "value": "1"
+                },
+                "AjL": {
+                    "doc": "coloque cada opção entre aspas e separado por virgula.\n\nExemplo: \"Opção 1\", \"Opção 2\", \"Opção 3\"",
+                    "key": "opções",
+                    "private": true,
+                    "value": "\"Opção 1\", \"Opção 2\", \"Opção 3\""
+                }
+            },
+            "headers": {
+                "AVE": {
+                    "key": "apikey",
+                    "value": ""
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "✅ Enviar Enquete ▶️",
+            "publish_as": "action",
+            "rank": 14,
+            "ret_value": "api.1674157317439x684864161158529000.plugin_api.AiN",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AiN\":{\"caption\":\"✅ Enviar Enquete ▶️\",\"fields\":{\"_p_body.key.remoteJid\":{\"ret_value\":\"text\",\"caption\":\"body key remoteJid\",\"sample_value\":\"5521996015792@s.whatsapp.net\",\"path\":[\"body\",\"key\",\"remoteJid\"]},\"_p_body.key.fromMe\":{\"ret_value\":\"boolean\",\"caption\":\"body key fromMe\",\"sample_value\":true,\"path\":[\"body\",\"key\",\"fromMe\"]},\"_p_body.key.id\":{\"ret_value\":\"text\",\"caption\":\"body key id\",\"sample_value\":\"BAE5BCDF072781D4\",\"path\":[\"body\",\"key\",\"id\"]},\"_p_body.message.messageContextInfo.messageSecret\":{\"ret_value\":\"text\",\"caption\":\"body message messageContextInfo messageSecret\",\"sample_value\":\"AE3+m3HglmKmBn9AXUZXnnIV4My5G7qk5n6nAtcHknw=\",\"path\":[\"body\",\"message\",\"messageContextInfo\",\"messageSecret\"]},\"_p_body.message.pollCreationMessage.name\":{\"ret_value\":\"text\",\"caption\":\"body message pollCreationMessage name\",\"sample_value\":\"teste esquete\",\"path\":[\"body\",\"message\",\"pollCreationMessage\",\"name\"]},\"_p_body.message.pollCreationMessage.options\":{\"ret_value\":\"list.api.1674157317439x684864161158529000.plugin_api.AiN.body.message.pollCreationMessage.options\",\"caption\":\"body message pollCreationMessage options\",\"path\":[\"body\",\"message\",\"pollCreationMessage\",\"options\"]},\"_p_body.message.pollCreationMessage.selectableOptionsCount\":{\"ret_value\":\"number\",\"caption\":\"body message pollCreationMessage selectableOptionsCount\",\"sample_value\":1,\"path\":[\"body\",\"message\",\"pollCreationMessage\",\"selectableOptionsCount\"]},\"_p_body.messageTimestamp\":{\"ret_value\":\"text\",\"caption\":\"body messageTimestamp\",\"sample_value\":\"1685658119\",\"path\":[\"body\",\"messageTimestamp\"]},\"_p_body.status\":{\"ret_value\":\"text\",\"caption\":\"body status\",\"sample_value\":\"PENDING\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_value\":\"number\",\"caption\":\"error status_code\",\"sample_value\":201,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_value\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"Created\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_value\":\"text\",\"caption\":\"error body\",\"sample_value\":\"\\\"{\\\\\\\"key\\\\\\\":{\\\\\\\"remoteJid\\\\\\\":\\\\\\\"5521996015792@s.whatsapp.net\\\\\\\",\\\\\\\"fromMe\\\\\\\":true,\\\\\\\"id\\\\\\\":\\\\\\\"BAE5BCDF072781D4\\\\\\\"},\\\\\\\"message\\\\\\\":{\\\\\\\"messageContextInfo\\\\\\\":{\\\\\\\"messageSecret\\\\\\\":\\\\\\\"AE3+m3HglmKmBn9AXUZXnnIV4My5G7qk5n6nAtcHknw=\\\\\\\"},\\\\\\\"pollCreationMessage\\\\\\\":{\\\\\\\"name\\\\\\\":\\\\\\\"teste esquete\\\\\\\",\\\\\\\"options\\\\\\\":[{\\\\\\\"optionName\\\\\\\":\\\\\\\"Opção 1\\\\\\\"},{\\\\\\\"optionName\\\\\\\":\\\\\\\"Opção 2\\\\\\\"},{\\\\\\\"optionName\\\\\\\":\\\\\\\"Opção 3\\\\\\\"}],\\\\\\\"selectableOptionsCount\\\\\\\":1}},\\\\\\\"messageTimestamp\\\\\\\":\\\\\\\"1685658119\\\\\\\",\\\\\\\"status\\\\\\\":\\\\\\\"PENDING\\\\\\\"}\\\"\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_value\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}},\"plugin_api.AiN.body.message.pollCreationMessage.options\":{\"caption\":\"✅ Enviar Enquete ▶️ body message pollCreationMessage option\",\"fields\":{\"_p_optionName\":{\"ret_value\":\"text\",\"caption\":\"optionName\",\"sample_value\":\"Opção 1\",\"path\":[\"optionName\"]}}}}",
+            "url": "[url]/message/sendPoll/[instance]",
+            "url_params": {
+                "AVF": {
+                    "doc": "Se você está não está no plano ilimitado, e está usando o servidor oficial da uazapi, coloque nesse campo:\n\nhttps://server02.uazapi.dev\n\n\n\nSe você está no plano ilimitado, hospedando a API em seu servidor, coloque:\n\nhttp://[ip_da_vps]:8080\n\nou se você ativou SSL e domínio na sua VPS/API\n\nhttps://[subdomínio].[seu_domínio]",
+                    "key": "url",
+                    "value": "https://server02.uazapi.dev"
+                },
+                "AaI": {
+                    "key": "instance",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "wrap_error": true
         }
     },
     "human": "🤖 uazapi",
